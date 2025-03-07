@@ -19,7 +19,7 @@ jobs:
           git config --global user.email "193622162+nauarchus@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
-      - name: Clone and Merge XML Data Only
+      - name: Clone and Merge Permissively Licensed XML Data Only
         run: |
           # Define repositories
           REPOS=(
@@ -39,9 +39,17 @@ jobs:
             # Clone repo in a temp directory
             git clone --depth=1 "$REPO" "$REPO_NAME"
 
-            # Copy only XML files, preserving directory structure
+            # Check XML files for permissive license before copying
             if [ -d "$REPO_NAME/data" ]; then
-              rsync -av --include="*/" --include="*.xml" --exclude="*" "$REPO_NAME/data/" data/
+              find "$REPO_NAME/data" -name "*.xml" | while read -r FILE; do
+                if grep -qE '<licence[^>]*target="(https://creativecommons.org/licenses/by/4.0/|https://creativecommons.org/licenses/by-nc-sa/4.0/|https://creativecommons.org/licenses/by-sa/4.0/)"' "$FILE"; then
+                  REL_PATH="${FILE#*/data/}"
+                  mkdir -p "data/$(dirname "$REL_PATH")"
+                  cp "$FILE" "data/$REL_PATH"
+                else
+                  echo "Skipping $FILE due to non-permissive license."
+                fi
+              done
             fi
 
             # Clean up the cloned repository
@@ -55,4 +63,3 @@ jobs:
           git add data/
           git commit -m "Auto-sync CTS XML data from source repositories - $(date)" || echo "No changes to commit"
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/nauarchus/src_data.git public
-
