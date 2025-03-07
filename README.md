@@ -2,8 +2,8 @@
 funnels data from document-level repositories into a shared data library
 
 For document-level README.md and LICENSE.md information, see the respective repositories:
-> https://github.com/nauarchus/Evangelium_Petri
-> https://github.com/nauarchus/Ignatius_Epistulae
-> https://github.com/nauarchus/Marcion_Apostolos
-> https://github.com/nauarchus/Marcion_Evangelion
+- https://github.com/nauarchus/Evangelium_Petri
+- https://github.com/nauarchus/Ignatius_Epistulae
+- https://github.com/nauarchus/Marcion_Apostolos
+- https://github.com/nauarchus/Marcion_Evangelion
 
