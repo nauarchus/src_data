@@ -1,6 +1,6 @@
 # src_data
 
-A cts_urn xml data library funneled and filtered from document-level repositories.
+A cts_urn xml data library funneled and filtered from document-specific repositories.
 
 This combined corpus is the basis for periodic releases and api tarball generation required for document reading via the Scaife viewer.
 
