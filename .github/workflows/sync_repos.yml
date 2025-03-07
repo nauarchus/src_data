@@ -39,11 +39,20 @@ jobs:
             # Clone repo in a temp directory
             git clone --depth=1 "$REPO" "$REPO_NAME"
 
-            # Check XML files for permissive license before copying
+            # Check XML files for permissive license before copying, except for __cts__.xml files
             if [ -d "$REPO_NAME/data" ]; then
               find "$REPO_NAME/data" -name "*.xml" | while read -r FILE; do
-                if grep -qE '<licence[^>]*target="(https://creativecommons.org/licenses/by/4.0/|https://creativecommons.org/licenses/by-nc-sa/4.0/|https://creativecommons.org/licenses/by-sa/4.0/)"' "$FILE"; then
-                  REL_PATH="${FILE#*/data/}"
+                REL_PATH="${FILE#*/data/}"
+                
+                # If file is __cts__.xml, only copy if it does not already exist
+                if [[ "$FILE" == *"__cts__.xml"* ]]; then
+                  if [ ! -f "data/$REL_PATH" ]; then
+                    mkdir -p "data/$(dirname "$REL_PATH")"
+                    cp "$FILE" "data/$REL_PATH"
+                  else
+                    echo "Skipping existing $REL_PATH."
+                  fi
+                elif grep -qE '<licence[^>]*target="(https://creativecommons.org/licenses/by/4.0/|https://creativecommons.org/licenses/by-nc-sa/4.0/|https://creativecommons.org/licenses/by-sa/4.0/)"' "$FILE"; then
                   mkdir -p "data/$(dirname "$REL_PATH")"
                   cp "$FILE" "data/$REL_PATH"
                 else
