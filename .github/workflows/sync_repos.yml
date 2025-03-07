@@ -19,7 +19,7 @@ jobs:
           git config --global user.email "193622162+nauarchus@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
-      - name: Clone and Merge Data Folders
+      - name: Clone and Merge XML Data Only
         run: |
           # Define repositories
           REPOS=(
@@ -38,10 +38,10 @@ jobs:
 
             # Clone repo in a temp directory
             git clone --depth=1 "$REPO" "$REPO_NAME"
-            
-            # Copy only the "data/" directory to the combined "data/" folder
+
+            # Copy only XML files, preserving directory structure
             if [ -d "$REPO_NAME/data" ]; then
-              rsync -av --exclude="README.md" --exclude="LICENSE.md" "$REPO_NAME/data/" data/
+              rsync -av --include="*/" --include="*.xml" --exclude="*" "$REPO_NAME/data/" data/
             fi
 
             # Clean up the cloned repository
@@ -51,5 +51,5 @@ jobs:
       - name: Commit and Push Changes
         run: |
           git add data/
-          git commit -m "Auto-sync CTS data from source repositories - $(date)" || exit 0
-          git push origin main
+          git commit -m "Auto-sync CTS XML data from source repositories - $(date)" || echo "No changes to commit"
+          git push origin public
