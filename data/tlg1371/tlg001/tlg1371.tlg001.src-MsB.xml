@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PatristicTextArchive/Schema/master/tei-pta.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="la">
+					Evangelium Petri (Ms B)
+				</title>
+				<author>
+					<persName key="tlg1371">
+						Pseudo-Peter
+					</persName>
+				</author>
+				<respStmt>
+					<resp>
+						Transcribed and encoded by
+					</resp>
+					<persName xml:id="MGB">
+						Mark G. Bilby
+					</persName>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<p>
+					Diplomatic transcription
+				</p>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>
+					Clavis Consulting, LLC (Kansas)
+				</publisher>
+				<distributor>
+					@nauarchus account on GitHub
+				</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+						Available under a Creative Commons Attribution Non-Commercial ShareAlike 4.0 International License
+					</licence>
+					<p>
+						© 2025 Clavis Consulting, LLC (Kansas)
+					</p>
+				</availability>
+				<date when="2025-01-27">
+				</date>
+				<idno type="TLG">
+					tlg1371.tlg001
+				</idno>
+				<idno type="CANT">
+					13
+				</idno>
+				<idno type="BHG">
+					1486x
+				</idno>
+				<idno type="Pinakes-Oeuvre">
+					16616
+				</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier xml:id="B" corresp="SRCMS00002">
+						<settlement>
+							Oxford
+						</settlement>
+						<repository ref="https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_XLI_2949_frgments_of_an_Apocryphal_Gospel_/21166660">
+							Sackler Library
+						</repository>
+						<idno source="https://www.trismegistos.org/text/63897">
+							P.Oxy. 41 2949
+						</idno>
+						<altIdentifier type="LDAB">
+							<idno source="https://www.trismegistos.org/text/63897">
+								5111
+							</idno>
+						</altIdentifier>
+						<altIdentifier type="trismegistos">
+							<idno source="https://www.trismegistos.org/text/63897">
+								63897
+							</idno>
+						</altIdentifier>
+						<altIdentifier type="DCLP">
+							<idno source="https://papyri.info/dclp/63897">
+								63897
+							</idno>
+						</altIdentifier>
+						<altIdentifier type="Oxford_inventory">
+							<idno>
+								7 1B.217/B(d)
+							</idno>
+						</altIdentifier>
+						<altIdentifier type="CANT">
+							<idno source="https://clavis.brepols.net/clacla/OA/Details.aspx?id=35EDD02735AD0D449563343E0A46C089">
+								8
+							</idno>
+						</altIdentifier>
+						<altIdentifier type="ECCA">
+							<idno source="https://www.nasscal.com/e-clavis-christian-apocrypha/papyrus-oxyrhynchus-2949/">
+								505
+							</idno>
+						</altIdentifier>
+					</msIdentifier>
+				</msDesc>
+				<list type="photographs">
+					<item>
+						<p>
+							Photographs consulted are listed below:
+						</p>
+					</item>
+					<item>
+						<bibl>
+							<title>
+								P.Oxy. XLI 2949. frgments of an Apocryphal Gospel (?)
+							</title>
+							<ptr target="https://portal.sds.ox.ac.uk/articles/online_resource/P_Oxy_XLI_2949_frgments_of_an_Apocryphal_Gospel_/21166660" />
+							<note>
+								Four images are available, including three color images and one grayscale image. The metadata note a date of "[l]ate second or early third century."
+								The location is the "Papyrology Rooms, Art, Archaeology and Ancient World Library, Oxford."
+							</note>
+						</bibl>
+					</item>
+				</list>
+				<listPerson>
+					<person xml:id="Coles">
+						<persName>
+							Revel A. Coles
+						</persName>
+					</person>
+					<person xml:id="Foster">
+						<persName>
+							Paul Foster
+						</persName>
+					</person>
+					<person xml:id="KrausNicklas">
+						<persName>
+							Thomas J. Kraus and Tobias Nicklas
+						</persName>
+					</person>
+					<person xml:id="Lührmann">
+						<persName>
+							Dieter Lührmann
+						</persName>
+					</person>
+					<person xml:id="Wayment">
+						<persName>
+							Thomas A. Wayment
+						</persName>
+					</person>
+				</listPerson>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])" />
+			</refsDecl>
+			<editorialDecl>
+				<interpretation>
+					<p>
+						This file is encoded according to the guidelines of the Patristic Text Archive (PTA). See
+						<ref target="https://pta.bbaw.de/project/encoding-guidelines">
+							PTA encoding guidelines
+						</ref>
+						and
+						<ref target="https://doi.org/10.5281/zenodo.3737666">
+							https://doi.org/10.5281/zenodo.3737666
+						</ref>
+						.
+					</p>
+					<p xml:id="biblical-quotations" ana="not-annotated not-identified">
+						Biblical quotations are not annotated and not referenced. References follow the scheme declared
+						<ref target="#biblical">
+							above
+						</ref>
+						.
+					</p>
+					<p xml:id="other-references" ana="not-annotated not-identified">
+						Other references are not annotated and not referenced. References to texts in the PTA follow the scheme declared
+						<ref target="#pta">
+							above (pta)
+						</ref>
+						, references to texts available in the
+						<ref target="https://scaife.perseus.org/">
+							Perseus Digital Library
+						</ref>
+						follow the scheme declared
+						<ref target="#perseus">
+							above (perseus)
+						</ref>
+						. If the referenced text is not available in either repository, the reference for the referenced text is given in the attribute @source in the form “Authorabbrev_Workabbrev_Location”; ancient Greek authors should be referenced according to the lists of H. G. Liddell/R. Scott/H. S. Jones, A Greek - English Lexicon, Oxford 1968 (9th edition) and G. W. H. Lampe, A Patristic Greek Lexicon, Oxford 1987 (3d edition), for Latin ones the abbreviations of the Thesaurus Linguae Latinae (cf. Index librorum scriptorum inscriptionum ex quibus exempla afferuntur) should be used, with dots in the abbreviations deleted without replacement.
+					</p>
+					<p xml:id="persons" ana="not-annotated not-identified">
+						Persons are not annotated and not referenced with IDs according to the
+						<ref target="https://github.com/PatristicTextArchive/tipnr_data">
+							TIPNR - Tyndale Individualised Proper Names with all References
+						</ref>
+						list for biblical persons and IDs of
+						<ref target="https://github.com/PatristicTextArchive/pta_metadata/blob/main/pta_persons.json">
+							PTA persons index
+						</ref>
+						for all other persons.
+					</p>
+					<p xml:id="groups" ana="not-annotated not-identified">
+						Groups of persons and organisations are not annotated and not referenced with IDs according to the IDs of
+						<ref target="https://github.com/PatristicTextArchive/pta_metadata/blob/main/pta_groups.json">
+							PTA groups index
+						</ref>
+						for all other groups.
+					</p>
+					<p xml:id="places" ana="not-annotated not-identified">
+						Places are not annotated and not referenced with
+						<ref target="https://pleiades.stoa.org/">
+							Pleiades Gazetteer
+						</ref>
+						IDs.
+					</p>
+				</interpretation>
+				<normalization>
+					<p>
+						Diplomatic transcript without normalisation.
+					</p>
+				</normalization>
+				<punctuation>
+					<p>
+						Punctuation as in manuscript (as discerned by the transcriber).
+					</p>
+				</punctuation>
+			</editorialDecl>
+			<classDecl>
+				<taxonomy xml:id="comphistsem">
+					<bibl>
+						Text Type Classification by
+						<ref target="https://www.comphistsem.org/46.html">
+							"Computational Historical Semantics
+						</ref>
+					</bibl>
+				</taxonomy>
+				<taxonomy xml:id="editionstatus">
+					<bibl>
+						Scripture Restoration Collective Status of edition
+					</bibl>
+					<category xml:id="critical-edition">
+						<catDesc>
+							Critical edition in which the text-critical variants have been encoded.
+						</catDesc>
+					</category>
+					<category xml:id="critical-edition-no-app">
+						<catDesc>
+							Critical edition in which the text-critical variants have not been encoded, e.g. because it is a retro-digitisation of a printed critical edition and for copyright reasons the apparatus cannot be included in the retro-digitisation.
+						</catDesc>
+					</category>
+					<category xml:id="critical-edition-outdated">
+						<catDesc>
+							Edition which notes text-critical variants, but does not, for example, comprehensively include the manuscripts.
+						</catDesc>
+					</category>
+					<category xml:id="pre-critical-edition">
+						<catDesc>
+							Pre-modern editions (e.g. editions in the Patrologia Graeca or Latina)
+						</catDesc>
+					</category>
+				</taxonomy>
+				<taxonomy xml:id="annotationstatus">
+					<bibl>
+						Scripture Restoration Collective Status of annotation
+					</bibl>
+					<category xml:id="fully-annotated">
+						<catDesc>
+							All instances of a phenomenon (e.g. biblical quotations, persons, places) are encoded with the respective element.
+						</catDesc>
+					</category>
+					<category xml:id="partially-annotated">
+						<catDesc>
+							Some instances of a phenomenon (e.g. biblical quotations, persons, places) are encoded with the respective element.
+						</catDesc>
+					</category>
+					<category xml:id="not-annotated">
+						<catDesc>
+							No instances of a phenomenon (e.g. biblical quotations, persons, places) are encoded with the respective element.
+						</catDesc>
+					</category>
+					<category xml:id="fully-identified">
+						<catDesc>
+							All encoded instances of a phenomenon (e.g. biblical quotations, persons, places) are identified with the respective norm data.
+						</catDesc>
+					</category>
+					<category xml:id="partially-identified">
+						<catDesc>
+							Some encoded instances of a phenomenon (e.g. biblical quotations, persons, places) are identified with the respective norm data
+						</catDesc>
+					</category>
+					<category xml:id="not-identified">
+						<catDesc>
+							No encoded instances of a phenomenon (e.g. biblical quotations, persons, places) are identified with the respective norm data.
+						</catDesc>
+					</category>
+				</taxonomy>
+			</classDecl>
+			<schemaRef key="v3" url="https://raw.githubusercontent.com/PatristicTextArchive/Schema/master/tei-pta.rng" />
+		</encodingDesc>
+		<profileDesc>
+			<creation>
+				<date notBefore="0050" notAfter="0180" />
+			</creation>
+			<textClass>
+				<keywords scheme="#comphistsem">
+					<term>
+						Gospel
+					</term>
+					<term>
+						Apocrypha
+					</term>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc status="draft">
+			<change when="2025-01-29" who="#MGB">
+				Initial diplomatic edition released together with initial critical edition of EvPet
+			</change>
+			<change when="2025-02-24" who="#MGB">
+				added Revel Coles persName; PTA schema update required removal of "ana" attributes for unclear text and addition of page numbers for manuscript
+			</change>
+         <change when="2025-02-24" who="#MGB">
+				standardized XML indentation 
+			</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1371.tlg001.src-MsB">
+				<pb n="1" facs="https://portal.sds.ox.ac.uk/ndownloader/files/37536061" />
+				<lb n="frg1_ln1" />
+				<p>
+					<gap reason="damage" unit="character" extent="unknown" />
+					<unclear reason="damage">
+						<supplied resp="#Coles #Lührmann #KrausNicklas">
+							τ
+						</supplied>
+					</unclear>
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg1_ln2" />
+					<gap reason="damage" unit="line" extent="1" />
+					<lb n="frg1_ln3" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					ν
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg1_ln4" />
+					<gap reason="damage" unit="line" extent="1" />
+					<lb n="frg1_ln5" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					<supplied resp="#Lührmann">
+						Ϊωϲηφ
+					</supplied>
+					<unclear reason="damage">
+						<supplied resp="#Coles #Lührmann #KrausNicklas">
+							ο
+						</supplied>
+					</unclear>
+					φιλοϲ
+					π
+					<unclear reason="damage">
+						<supplied resp="#Coles #Lührmann #KrausNicklas">
+							ε
+						</supplied>
+					</unclear>
+					ιλα
+					<unclear reason="damage">
+						<supplied resp="#Lührmann #KrausNicklas">
+							τ
+						</supplied>
+					</unclear>
+					ου
+					<unclear reason="damage">
+						<supplied resp="#Coles #Lührmann">
+							κ
+						</supplied>
+					</unclear>
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg1_ln6" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					<supplied resp="#Lührmann">
+						ειδ
+					</supplied>
+					<unclear reason="damage">
+						<supplied resp="#Lührmann">
+							ω
+						</supplied>
+						<supplied resp="#Coles #KrausNicklas">
+							ι
+						</supplied>
+					</unclear>
+					ϲ οτι εκελευϲεν
+					<gap reason="damage" unit="character" extent="unknown" />
+					<supplied resp="#Lührmann">
+						Ηρωδηϲ
+					</supplied>
+					<lb n="frg1_ln7" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					<supplied resp="#Lührmann">
+						ελ
+					</supplied>
+					<supplied resp="#Coles #KrausNicklas #Lührmann">
+						θ
+					</supplied>
+					ων προϲ πειλατ
+					<gap reason="damage" unit="character" extent="1" />
+					<supplied resp="#Coles #Lührmann">
+						ο
+					</supplied>
+					<supplied resp="#Lührmann #KrausNicklas">
+						ν
+					</supplied>
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg1_ln8" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					<gap reason="damage" unit="character" extent="1" />
+					<supplied resp="#Lührmann">
+						το
+					</supplied>
+					<unclear reason="damage">
+						<supplied resp="#Coles #Lührmann">
+							ϲ
+						</supplied>
+					</unclear>
+					<unclear reason="damage">
+						<supplied resp="#Coles #Lührmann #KrausNicklas">
+							ω
+						</supplied>
+					</unclear>
+					μα ειϲ ταφην
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg1_ln9" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					<supplied resp="#Lührmann">
+						Ηρωδ
+					</supplied>
+					<unclear reason="damage">
+						<supplied resp="#Coles #Lührmann #KrausNicklas">
+							η
+						</supplied>
+					</unclear>
+					ν ητηϲα
+					<gap reason="damage" unit="character" extent="2" />
+					<supplied resp="#Lührmann #KrausNicklas">
+						το
+					</supplied>
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg1_ln10" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					<gap reason="damage" unit="character" extent="1" />
+					<supplied resp="#Lührmann">
+						ν
+					</supplied>
+					ηναι ειπω
+					<gap reason="damage" unit="character" extent="1" />
+					<supplied resp="#Lührmann #KrausNicklas">
+						ν
+					</supplied>
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg1_ln11" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					<unclear>
+						<supplied resp="#Lührmann">
+							η
+						</supplied>
+						<supplied resp="#Coles #KrausNicklas">
+							αι
+						</supplied>
+					</unclear>
+					τηϲα
+					<gap reason="damage" unit="character" extent="unknown" />
+					<supplied resp="#Coles">
+						μεν
+					</supplied>
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg1_ln12" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					αυτον
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg1_ln13" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					οτι α
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg1_ln14" />
+					<gap reason="damage" unit="line" extent="unknown" />
+				</p>
+				<lb n="frg2_ln1" />
+				<p>
+					<gap reason="damage" unit="character" extent="unknown" />
+					μου
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg2_ln2" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					πειλ
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg2_ln3" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					τιϲ α
+					<gap reason="damage" unit="character" extent="unknown" />
+					<lb n="frg2_ln4" />
+					<gap reason="damage" unit="character" extent="unknown" />
+					μ
+					<unclear reason="damage">
+						<supplied resp="#MGB">
+							ελ
+						</supplied>
+					</unclear>
+					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
+			</div>
+		</body>
+	</text>
+</TEI>

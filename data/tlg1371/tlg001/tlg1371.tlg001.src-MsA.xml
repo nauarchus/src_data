@@ -1,0 +1,1570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/PatristicTextArchive/Schema/master/tei-pta.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title xml:lang="la">
+					Evangelium Petri (Ms A)
+				</title>
+				<author>
+					<persName key="tlg1371">
+						Pseudo-Peter
+					</persName>
+				</author>
+				<respStmt>
+					<resp>
+						Transcribed and encoded by
+					</resp>
+					<persName xml:id="MGB">
+						Mark G. Bilby
+					</persName>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<p>
+					Diplomatic transcription
+				</p>
+			</editionStmt>
+			<publicationStmt>
+				<publisher>
+					Clavis Consulting, LLC (Kansas)
+				</publisher>
+				<distributor>
+					@nauarchus account on GitHub
+				</distributor>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+						Available under a Creative Commons Attribution Non-Commercial ShareAlike 4.0 International License
+					</licence>
+					<p>
+						© 2025 Clavis Consulting, LLC (Kansas)
+					</p>
+				</availability>
+				<date when="2025-01-20">
+				</date>
+				<idno type="TLG">
+					tlg1371.tlg001
+				</idno>
+				<idno type="CANT">
+					13
+				</idno>
+				<idno type="BHG">
+					1486x
+				</idno>
+				<idno type="Pinakes-Oeuvre">
+					16616
+				</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<msDesc>
+					<msIdentifier xml:id="A" corresp="SRCMS00001">
+						<settlement ref="https://pleiades.stoa.org/places/727070">
+							Alexandria
+						</settlement>
+						<repository ref="https://www.bibalex.org/antiquities/">
+							Bibliotheca Alexandria Antiquities Museum (BAAM)
+						</repository>
+						<idno source="https://antiquities.bibalex.org/Collection/Detail.aspx?lang=en&amp;a=522">
+							0522
+						</idno>
+						<altIdentifier>
+							<idno source="http://ipap.csad.ox.ac.uk/GP/GP.html">
+								P.Cair. 10579
+							</idno>
+						</altIdentifier>
+						<altIdentifier type="LDAB">
+							<idno source="https://www.trismegistos.org/text/59976">
+								1088
+							</idno>
+						</altIdentifier>
+						<altIdentifier type="trismegistos">
+							<idno source="https://www.trismegistos.org/text/59976">
+								59976
+							</idno>
+						</altIdentifier>
+						<altIdentifier type="DCLP">
+							<idno source="https://papyri.info/dclp/59976">
+								59976
+							</idno>
+						</altIdentifier>
+						<altIdentifier type="APIS">
+							<idno source="https://papyri.info/dclp/59976">
+								oxford-ipap.apis.2174
+							</idno>
+						</altIdentifier>
+					</msIdentifier>
+					<physDesc>
+						<objectDesc>
+							<layoutDesc>
+								<layout columns="1">
+								</layout>
+							</layoutDesc>
+						</objectDesc>
+						<handDesc hands="1">
+							<handNote xml:id="m1">
+								Scribe
+							</handNote>
+						</handDesc>
+					</physDesc>
+				</msDesc>
+				<list type="photographs">
+					<item>
+						<p>
+							Two sets of photographs were consulted, listed below:
+						</p>
+					</item>
+					<item>
+						<bibl>
+							<title>
+								Photographic Archive of Papyri, Centre for the Study of Ancient Documents, University of Oxford
+							</title>
+							<ptr target="http://ipap.csad.ox.ac.uk/GP/GP.html" />
+							<note>
+								According to personal correspondence, images of the Cairo Papyri were made from negatives and colour slides taken
+								by Dr. Adam Bülow-Jacobsen as part of the photographic mission in the Cairo Museum sponsored by the
+								Association Internationale de Papyrologues and were digitized at the Centre for the Study of Ancient Documents
+								around 2005. The resulting 300dpi black and white images are not under copyright.
+							</note>
+						</bibl>
+					</item>
+					<item>
+						<bibl>
+							<title>
+								Bibliotheca Alexandria Antiquities Museum (BAAM)
+							</title>
+							<ptr target="https://antiquities.bibalex.org/Collection/Detail.aspx?lang=en&amp;a=522" />
+							<note>
+								Upon request by personal correspondence, color photographs were provided by Mohamed Essan of the Bibliotheca Alexandrina
+								Antiquities Museum (BAAM). Photographs © BAAM by M. Aly and M. Magdy. Photographs used with permission, solely for
+								the purpose of checking the diplomatic transcription. Low resolution color photographs are publicly available from
+								the museum's webpage.
+							</note>
+						</bibl>
+					</item>
+				</list>
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<refsDecl n="CTS">
+				<cRefPattern n="section" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@n='$1'])" />
+			</refsDecl>
+			<editorialDecl>
+				<interpretation>
+					<p>
+						This file is encoded according to the guidelines of the Patristic Text Archive (PTA). See
+						<ref target="https://pta.bbaw.de/project/encoding-guidelines">
+							https://pta.bbaw.de/project/encoding-guidelines
+						</ref>
+						and
+						<ref target="https://doi.org/10.5281/zenodo.3737666">
+							https://doi.org/10.5281/zenodo.3737666
+						</ref>
+						.
+					</p>
+					<p xml:id="biblical-quotations" ana="not-annotated not-identified">
+						Biblical quotations are not annotated and not referenced. References follow the scheme declared
+						<ref target="#biblical">
+							above
+						</ref>
+						.
+					</p>
+					<p xml:id="other-references" ana="not-annotated not-identified">
+						Other references are not annotated and not referenced. References to texts in the PTA follow the scheme declared
+						<ref target="#pta">
+							above (pta)
+						</ref>
+						, references to texts available in the
+						<ref target="https://scaife.perseus.org/">
+							Perseus Digital Library
+						</ref>
+						follow the scheme declared
+						<ref target="#perseus">
+							above (perseus)
+						</ref>
+						. If the referenced text is not available in either repository, the reference for the referenced text is given in the attribute @source in the form “Authorabbrev_Workabbrev_Location”; ancient Greek authors should be referenced according to the lists of H. G. Liddell/R. Scott/H. S. Jones, A Greek - English Lexicon, Oxford 1968 (9th edition) and G. W. H. Lampe, A Patristic Greek Lexicon, Oxford 1987 (3d edition), for Latin ones the abbreviations of the Thesaurus Linguae Latinae (cf. Index librorum scriptorum inscriptionum ex quibus exempla afferuntur) should be used, with dots in the abbreviations deleted without replacement.
+					</p>
+					<p xml:id="persons" ana="not-annotated not-identified">
+						Persons are not annotated and not referenced with IDs according to the
+						<ref target="https://github.com/PatristicTextArchive/tipnr_data">
+							TIPNR - Tyndale Individualised Proper Names with all References
+						</ref>
+						list for biblical persons and IDs of
+						<ref target="https://github.com/PatristicTextArchive/pta_metadata/blob/main/pta_persons.json">
+							PTA persons index
+						</ref>
+						for all other persons.
+					</p>
+					<p xml:id="groups" ana="not-annotated not-identified">
+						Groups of persons and organisations are not annotated and not referenced with IDs according to the IDs of
+						<ref target="https://github.com/PatristicTextArchive/pta_metadata/blob/main/pta_groups.json">
+							PTA groups index
+						</ref>
+						for all other groups.
+					</p>
+					<p xml:id="places" ana="not-annotated not-identified">
+						Places are not annotated and not referenced with
+						<ref target="https://pleiades.stoa.org/">
+							Pleiades Gazetteer
+						</ref>
+						IDs.
+					</p>
+				</interpretation>
+				<normalization>
+					<p>
+						Capitalization of proper nouns, word spaces.
+					</p>
+				</normalization>
+				<punctuation>
+					<p>
+						Punctuation as in manuscript (as discerned by the transcriber).
+					</p>
+				</punctuation>
+			</editorialDecl>
+			<classDecl>
+				<taxonomy xml:id="comphistsem">
+					<bibl>
+						Text Type Classification by
+						<ref target="https://www.comphistsem.org/46.html">
+							"Computational Historical Semantics
+						</ref>
+					</bibl>
+				</taxonomy>
+				<taxonomy xml:id="editionstatus">
+					<bibl>
+						Scripture Restoration Collective Status of edition
+					</bibl>
+					<category xml:id="critical-edition">
+						<catDesc>
+							Critical edition in which the text-critical variants have been encoded.
+						</catDesc>
+					</category>
+					<category xml:id="critical-edition-no-app">
+						<catDesc>
+							Critical edition in which the text-critical variants have not been encoded, e.g. because it is a retro-digitisation of a printed critical edition and for copyright reasons the apparatus cannot be included in the retro-digitisation.
+						</catDesc>
+					</category>
+					<category xml:id="critical-edition-outdated">
+						<catDesc>
+							Edition which notes text-critical variants, but does not, for example, comprehensively include the manuscripts.
+						</catDesc>
+					</category>
+					<category xml:id="pre-critical-edition">
+						<catDesc>
+							Pre-modern editions (e.g. editions in the Patrologia Graeca or Latina)
+						</catDesc>
+					</category>
+				</taxonomy>
+				<taxonomy xml:id="annotationstatus">
+					<bibl>
+						Scripture Restoration Collective Status of annotation
+					</bibl>
+					<category xml:id="fully-annotated">
+						<catDesc>
+							All instances of a phenomenon (e.g. biblical quotations, persons, places) are encoded with the respective element.
+						</catDesc>
+					</category>
+					<category xml:id="partially-annotated">
+						<catDesc>
+							Some instances of a phenomenon (e.g. biblical quotations, persons, places) are encoded with the respective element.
+						</catDesc>
+					</category>
+					<category xml:id="not-annotated">
+						<catDesc>
+							No instances of a phenomenon (e.g. biblical quotations, persons, places) are encoded with the respective element.
+						</catDesc>
+					</category>
+					<category xml:id="fully-identified">
+						<catDesc>
+							All encoded instances of a phenomenon (e.g. biblical quotations, persons, places) are identified with the respective norm data.
+						</catDesc>
+					</category>
+					<category xml:id="partially-identified">
+						<catDesc>
+							Some encoded instances of a phenomenon (e.g. biblical quotations, persons, places) are identified with the respective norm data
+						</catDesc>
+					</category>
+					<category xml:id="not-identified">
+						<catDesc>
+							No encoded instances of a phenomenon (e.g. biblical quotations, persons, places) are identified with the respective norm data.
+						</catDesc>
+					</category>
+				</taxonomy>
+			</classDecl>
+			<schemaRef key="v3" url="https://raw.githubusercontent.com/PatristicTextArchive/Schema/master/tei-pta.rng" />
+		</encodingDesc>
+		<profileDesc>
+			<creation>
+				<date notBefore="0050" notAfter="0180" />
+			</creation>
+			<textClass>
+				<keywords scheme="#comphistsem">
+					<term>
+						Gospel
+					</term>
+					<term>
+						Apocrypha
+					</term>
+				</keywords>
+			</textClass>
+		</profileDesc>
+		<revisionDesc status="draft">
+			<change when="2025-01-20" who="#MGB">
+				Initial diplomatic edition released
+			</change>
+			<change when="2025-01-21" who="#MGB">
+				Corrections made to conform to PTA TEI-XML schema
+			</change>
+			<change when="2025-01-29" who="#MGB">
+				Additional corrections made while compiling critical edition
+			</change>
+			<change when="2025-02-01" who="#MGB">
+				moved listPerson to critical edition; removed text critical notes based on PTA TEI-XML guidance from AVS
+			</change>
+			<change when="2025-02-26" who="#MGB">
+				standardized XML indentation; removed blank rows; corrected note on final glyph
+			</change>
+		</revisionDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1371.tlg001.src-MsA">
+				<pb n="1r" />
+				<note place="top">
+					<p>
+						The recto side of the opening folio contains only drawings:
+						<g type="cross" rend="large" />
+						a large cross centered on the page,
+						<g type="alpha" rend="drawing" />
+						with a constellation line art styled Greek letter alpha in the bottom left,
+						<g type="omega" rend="drawing" />
+						and a constellation line art styled Greek letter omega in the bottom right.
+					</p>
+				</note>
+				<pb n="1v" facs="http://ipap.csad.ox.ac.uk/GP/300dpi/1-16.jpg" />
+				<note place="top">
+					<p>
+						<g type="cross" rend="bold" />
+					</p>
+				</note>
+				<div type="textpart" subtype="chapter" n="Passio">
+					<div type="textpart" subtype="verse" n="1">
+						<lb n="1v1" />
+						<p>
+							τ
+							<unclear reason="illegible" cert="high" agent="adhesion">
+								ων
+							</unclear>
+							<note>
+								inverted ων partly offset from
+								<ref target="#2r1">
+									above @2r1
+								</ref>
+							</note>
+							δε Ιουδαιων ουδειϲ ενιψατο ταϲ χειραϲ ουδε
+							<lb n="1v2" />
+							<note place="margin_outer">
+								outer left margin has inverted αι offset from
+								<ref target="#2r1">
+									και @2r1
+								</ref>
+							</note>
+							Η
+							<unclear reason="illegible" cert="high" agent="adhesion">
+								ρωδηϲ
+							</unclear>
+							<note>
+								inverted Η partly offset at
+								<ref target="#2r1">
+									@2r1
+								</ref>
+							</note>
+							<note>
+								inverted ν partly offset final letter from
+								<ref target="#2r2">
+									ενεπτυον @2r2
+								</ref>
+							</note>
+							<unclear reason="illegible" cert="high" agent="adhesion">
+								ουδε τιϲ
+							</unclear>
+							<note>
+								ε τιϲ contaminated by inverted αυτο offset from
+								<ref target="#2r1">
+									αυτου @2r1
+								</ref>
+							</note>
+							<gap reason="damage" quantity="1" unit="character" />
+							ων
+							κριτων αυτου
+							<unclear reason="damage" cert="high">
+								και
+							</unclear>
+							<unclear reason="damage" cert="high">
+								μη
+							</unclear>
+							<choice>
+								<expan>
+									βουληθεντων
+								</expan>
+								<supplied reason="abbreviation">
+									ν
+								</supplied>
+								<abbr type="suspension">
+									<hi rend="overline">
+										ω
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="1v3" />
+							νιψαϲθαι
+							ανεϲ
+							<unclear reason="damage" cert="high" quantity="1" unit="character">
+								τ
+							</unclear>
+							η
+							Πειλατηϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="2">
+						<p>
+							και τοτε κελευει Ηρωδηϲ
+							<lb n="1v4" />
+							ο
+							<note place="margin_outer">
+								above ο inverted ω from
+								<ref target="#2r2">
+									καλαμω @2r2
+								</ref>
+							</note>
+							βαϲιλευϲ
+							παρ
+							<gap reason="damage" unit="characters" extent="3" />
+							μφθηναι
+							τον
+							<choice>
+								<expan>
+									κυριον
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κν
+									</hi>
+								</abbr>
+							</choice>
+							ειπων αυτοιϲ οτι
+							<lb n="1v5" />
+							<note place="margin_outer">
+								above οϲα inverted ντεϲ from
+								<ref target="#2r3">
+									λεγοντεϲ @2r3
+								</ref>
+							</note>
+							οϲα εκελευϲα ϋμιν ποιηϲαι αυτω ποιηϲατε
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="3">
+						<p>
+							ιϲτηκει δε
+							<lb n="1v6" />
+							<note place="margin_outer">
+								in left outer margin inverted καν from
+								<ref target="#2r4">
+									ηνεγκαν @2r4
+								</ref>
+							</note>
+							<unclear reason="damage" cert="high">
+								εκ in εκει contaminated by inverted εγ from
+								<ref target="#2r4">
+									ηνεγκαν @2r4
+								</ref>
+								εκ
+							</unclear>
+							ει Ϊωϲηφ ο φιλοϲ Πειλατου και του
+							<choice>
+								<expan>
+									κυριου
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κυ
+									</hi>
+								</abbr>
+							</choice>
+							και ειδωϲ οτι
+							<lb n="1v7" />
+							<note place="margin_outer">
+								in outer left margin inverted νκν with overline offset from
+								<ref target="#2r5">
+									τον κν @2r5
+								</ref>
+							</note>
+							<unclear reason="damage">
+								inverted ντο offset from
+								<ref target="#2r5">
+									αυτων τον @2r5
+								</ref>
+								ϲτα
+							</unclear>
+							υριϲκειν
+							αυτον μελλουϲιν ηλθεν προϲ τον Πειλατον
+							<lb n="1v8" />
+							<note place="margin_outer">
+								in outer left margin inverted ρθω from
+								<ref target="#2r6">
+									ωρθωϲαν @2r6
+								</ref>
+							</note>
+							και
+							<note>
+								inverted εω from
+								<ref target="#2r6">
+									οτε ωρθωϲαν @2r6
+								</ref>
+							</note>
+							ητηϲε το ϲωμα του
+							<choice>
+								<expan>
+									κυριου
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κυ
+									</hi>
+								</abbr>
+							</choice>
+							προϲ ταφην
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="4">
+						<p>
+							και ο Πειλατοϲ
+							πεμ
+							<lb n="1v9" break="no" />
+							<note place="margin_outer">
+								in outer left margin inverted ϲ from final letter of
+								<ref target="#2r7">
+									βαϲιλευϲ @2r7
+								</ref>
+							</note>
+							ψαϲ
+							προϲ
+							<note>
+								over π inverted β offset from
+								<ref target="#2r7">
+									βαϲιλευϲ @2r7
+								</ref>
+							</note>
+							Ηρωδην ητηϲεν αυτου το ϲωμα
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="5">
+						<p>
+							και ο Ηρωδηϲ
+							<lb n="1v10" />
+							εφη αδελφε Πειλατε ει και μη τιϲ αυτον ητηκει ημειϲ
+							<lb n="1v11" />
+							αυτον εθαπτομεν επει και ϲαββατον επιφωϲκει γεγρα
+							<lb n="1v12" break="no" />
+							πται γαρ εν τω νομω ηλιον μη δυναι επι πεφονευμενω
+							<lb n="1v13" />
+							και παρεδωκεν αυτον τω λαω προ μιαϲ των αζυμων
+							<g type="dot" rend="above" />
+							<lb n="1v14" />
+							τηϲ εορτηϲ αυτων
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="6">
+						<p>
+							οι δε λαβοντεϲ τον
+							<choice>
+								<expan>
+									κυριον
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κν
+									</hi>
+								</abbr>
+							</choice>
+							ωθουν αυτων
+							<lb n="1v15" />
+							τρεχοντεϲ και ελεγον ϲυρωμεν τον ϋιον του
+							<choice>
+								<expan>
+									θεου
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										θυ
+									</hi>
+								</abbr>
+							</choice>
+							εξουϲιαν
+							<lb n="1v16" />
+							αυτου εϲχηκοτεϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="7">
+						<p>
+							και πορφυραν αυτον περιεβαλλον και
+							εκα
+							<lb n="1v17" break="no" />
+							θιϲαν αυτον επι καθεδραν κριϲεωϲ λεγοντεϲ δικαιωϲ κρινε
+							<lb n="1v18" />
+							βαϲιλευ του Ιϲραηλ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="8">
+						<p>
+							και τιϲ αυτων ενεγκων ϲτεφανον
+							<lb n="1v19" />
+							ακανθινον εθηκεν επι τηϲ κεφαληϲ του κυριου
+						</p>
+					</div>
+					<pb n="2r" facs="http://ipap.csad.ox.ac.uk/GP/300dpi/1-16.jpg" />
+					<note place="top">
+						glyph offset from
+						<ref target="#1v">
+							@1v
+						</ref>
+						<g type="cross" rend="bold" />
+					</note>
+					<note place="top">
+						above line inverted text of most of
+						<ref target="#1v1">
+							@1v1
+						</ref>
+					</note>
+					<div type="textpart" subtype="verse" n="9">
+						<lb n="2r1" />
+						<p>
+							και ετεροι εϲτωτεϲ ενεπτυον αυτου
+							<choice>
+								<expan>
+									ταιϲ
+								</expan>
+								<abbr type="suspension">
+									<hi rend="superscript">
+										ϲ
+									</hi>
+								</abbr>
+							</choice>
+							ο
+							<unclear reason="damage">
+								above ο inverted ϲ offset from final letter of Ηρωδηϲ
+								<ref target="#1v2">
+									@1v2
+								</ref>
+								ψεϲι
+							</unclear>
+							και
+							<lb n="2r2" />
+							αλλοι ταϲ ϲιαγοναϲ αυτου εραπιϲαν ετεροι καλαμω
+							<note place="margin_outer">
+								below ω in καλαμω inverted ο from
+								<ref target="#1v4">
+									ο before βαϲιλευϲ
+								</ref>
+							</note>
+							<lb n="2r3" />
+							ενυϲϲον αυτον και τινεϲ αυτον εμαϲτιζον λεγοντεϲ
+							<lb n="2r4" />
+							ταυτη τη τιμη τιμηϲωμεν τον ϋιον του
+							<choice>
+								<expan>
+									θεου
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										θυ
+									</hi>
+								</abbr>
+							</choice>
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="10">
+						<p>
+							και
+							<note>
+								inverted αν partly offset in outer left margin left of
+								<ref target="#1v6">
+									εκει @1v6
+								</ref>
+							</note>
+							ηνεγκ
+							<unclear reason="illegible">
+								αν
+							</unclear>
+							<note>
+								γκ contaminated with inverted εκ offset from εκει
+								<ref target="#1v6">
+									εκει @1v6
+								</ref>
+							</note>
+							<lb n="2r5" />
+							δυο κακουργουϲ και εϲταυρωϲαν ανα μεϲον αυτων τον
+							<choice>
+								<expan>
+									κυριον
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κν
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="2r6" />
+							αυτοϲ δε εϲιωπα ωϲ μηδεν πονον εχων
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="11">
+						<p>
+							και
+							<unclear reason="illegible" agent="adhesion">
+								οτε ω overlapped by inverted και η from
+								<ref target="#1v8">
+									και ητηϲε @1v8
+								</ref>
+								οτε ω
+							</unclear>
+							ρθω
+							<lb n="2r7" break="no" />
+							ϲαν τον ϲταυρων επεγραψαν οτι ουτοϲ εϲτιν ο
+							<unclear reason="illegible" agent="adhesion">
+								ο βαϲιλευϲ overlapped by inverted ψαϲ προϲ from
+								<ref target="#1v9">
+									ψαϲ προϲ @1v9
+								</ref>
+								βαϲιλευϲ
+							</unclear>
+							<lb n="2r8" />
+							του Ιϲραηλ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="12">
+						<p>
+							και τεθεικοτεϲ τα ενδυματα εμπροϲθεν
+							<lb n="2r9" />
+							αυτου διεμεριϲαντο και λαχμον εβαλον επ αυτοιϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="13">
+						<lb n="2r10" />
+						<p>
+							ειϲ δε τιϲ των κακουργων εκεινων ωνειδηϲεν
+							<lb n="2r11" />
+							αυτουϲ λεγων ημειϲ δια τα κακα α εποιηϲαμεν ουτω
+							<lb n="2r12" />
+							πεπονθαμεν ουτωϲ δε ϲωτηρ γενομενοϲ των
+							<choice>
+								<expan>
+									ανθρωπων
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										ανων
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="2r13" />
+							τι ηδικηϲεν ϋμαϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="14">
+						<p>
+							και αγανακτηϲαντεϲ επ αυτω εκε
+							<lb n="2r14" break="no" />
+							λευϲαν ινα μη ϲκελοκοπηθη οπωϲ βαϲανιζομενοϲ
+							<lb n="2r15" />
+							αποθανοι
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="15">
+						<p>
+							ην δε μεϲημβρια και ϲκοτοϲ κατεϲχε
+							<lb n="2r16" />
+							παϲαν την Ιουδαιαν και εθορυβουντο και ηγωνιων
+							<lb n="2r17" />
+							μηποτε ο ηλιοϲ εδυ επειδη ετι εζη γεγραπται αυτοιϲ
+							<lb n="2r18" />
+							ηλιον μη δυναι επι πεφωνευμενω
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="16">
+						<p>
+							και τιϲ αυτων
+							<pb n="2v" facs="http://ipap.csad.ox.ac.uk/GP/300dpi/16-25.jpg" />
+							<note place="top">
+								<g type="cross" rend="bold" />
+							</note>
+							<lb n="2v1" />
+							ειπεν ποτιϲατε αυτον χολην μετα οξουϲ και κερα
+							<lb n="2v2" break="no" />
+							ϲαντεϲ εποτιϲαν
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="17">
+						<p>
+							και επληρωϲαν παντα και ετε
+							<lb n="2v3" break="no" />
+							<note place="margin_outer">
+								in outer left margin inverted τω with overline from
+								<ref target="#3r3">
+									των @3r3
+								</ref>
+							</note>
+							λειωϲαν
+							κατα τηϲ κεφαληϲ αυτων τα αμαρτημα
+							<lb n="2v4" break="no" />
+							<note place="margin_outer">
+								in outer left margin inverted δια from
+								<ref target="#3r4">
+									κατα δια @3r4
+								</ref>
+							</note>
+							τα
+							<note>
+								under τα offset inverted ατα from
+								<ref target="#3r4">
+									κατα @3r4
+								</ref>
+							</note>
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="18">
+						<p>
+							περιηρχοντο δε πολλοι μετα λυχνων νομιζον
+							<lb n="2v5" break="no" />
+							τεϲ οτι νυξ εϲτιν επεϲαντο
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="19">
+						<p>
+							και ο
+							<choice>
+								<expan>
+									κυριοϲ
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κϲ
+									</hi>
+								</abbr>
+							</choice>
+							ανεβοηϲε
+							<lb n="2v6" />
+							<note place="margin_outer">
+								in outer left margin and between lines 5 and 6 inverted αυτων from
+								<ref target="#3r5">
+									αυτων @3r5
+								</ref>
+							</note>
+							λεγων η δυναμιϲ μου η δυναμιϲ κατελειψαϲ με
+							<lb n="2v7" />
+							<note place="margin_outer">
+								in outer left margin and between lines 5 and 6 inverted ηϲαι from
+								<ref target="#3r6">
+									εμπρηϲαι @3r6
+								</ref>
+							</note>
+							κ
+							<unclear reason="damage">
+								around κ offset inverted πρ from
+								<ref target="#3r6">
+									εμπρηϲαι @3r6
+								</ref>
+							</unclear>
+							αι
+							ειπων ανεληφθη
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="20">
+						<p>
+							και αυτοϲ ωραϲ διεραγη το
+							<lb n="2v8" />
+							<note place="margin_outer">
+								in outer left margin inverted μεθα from
+								<ref target="#3r7">
+									εκαθεζομεθα @3r7
+								</ref>
+							</note>
+							καταπεταϲμα του ναου τηϲ Ιερουϲαλημ ειϲ δυο
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="21">
+						<lb n="2v9" />
+						<p>
+							και τοτε απεϲπαϲαν τουϲ ηλουϲ απο των
+							<choice>
+								<expan>
+									χειρων
+								</expan>
+								<abbr type="suspension">
+									<hi rend="overline">
+										ω
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="2v10" />
+							του
+							<choice>
+								<expan>
+									κυριου
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κυ
+									</hi>
+								</abbr>
+							</choice>
+							και εθηκαν αυτον επι τηϲ γηϲ και η γη πα
+							<lb n="2v11" break="no" />
+							ϲα
+							εϲειϲθη και φοβοϲ μεγαϲ
+							εγενετ
+							<subst>
+								<del rend="overwrite">
+									ε
+								</del>
+								<add place="inline">
+									ο
+								</add>
+							</subst>
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="22">
+						<p>
+							τοτε ηλιοϲ
+							<lb n="2v12" />
+							ελαμψε και ευρεθη ωρα ενατη
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="23">
+						<p>
+							εχαρηϲαν δε
+							<lb n="2v13" />
+							οι Ιουδαιοι και δεδωκαϲιν τω Ιωϲηφ το ϲωμα
+							<lb n="2v14" />
+							αυτου ινι αυτο θαψη επειδη θεαϲαμενοϲ ην οϲ
+							<lb n="2v15" break="no" />
+							α αγαθα εποιηϲεν
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="24">
+						<p>
+							λαβων δε τον κυριον ελουϲε
+							<lb n="2v16" />
+							και ειληϲε ϲινδονιν και ειϲηγαγεν ειϲ ιδιον
+							<lb n="2v17" />
+							ταφον καλουμενον
+							κ
+							<g type="dot" rend="above" />
+							ηπον
+							Ιωϲηφ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="25">
+						<p>
+							τοτε οι Ιουδαιοι
+							<lb n="2v18" />
+							και οι πρεϲβυτεροι και οι ιερειϲ γνοντεϲ οιον
+							<pb n="3r" facs="http://ipap.csad.ox.ac.uk/GP/300dpi/25-30.jpg" />
+							<lb n="3r1" />
+							κακον εαυτοιϲ εποιηϲαν ηρξαντο κοπτεϲθαι
+							<lb n="3r2" />
+							και λεγειν ουαι ταιϲ αμαρτιαιϲ ημων ηγγιϲεν
+							<lb n="3r3" />
+							η κριϲιϲ και το τελοϲ Ιερουϲαλημ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="26">
+						<p>
+							εγω δε μετα
+							<choice>
+								<expan>
+									των
+								</expan>
+								<supplied reason="abbreviation">
+									ν
+								</supplied>
+								<abbr type="suspension">
+									<hi rend="overline">
+										ω
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="3r4" />
+							εταιρων μου ελυπουμεν και τετρωμενοι κατα δια
+							<lb n="3r5" break="no" />
+							νοιαν εκρυβομεθα εζητουμεθα γαρ ϋπ
+							αυτω
+							<subst>
+								<del rend="overwrite">
+									ς
+								</del>
+								<add place="inline">
+									ν
+								</add>
+							</subst>
+							<lb n="3r6" />
+							ωϲ κακουργοι και ωϲ τον ναον θελοντεϲ εμπρηϲαι
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="27">
+						<lb n="3r7" />
+						<p>
+							επι δε τουτοιϲ παϲιν ενηϲτευομεν και εκαθεζομεθα
+							<lb n="3r8" />
+							πενθουντεϲ και κλαιοντεϲ νυκτοϲ και ημεραϲ
+							<lb n="3r9" />
+							εωϲ του ϲαββατου
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="28">
+						<p>
+							ϲυναχθεντεϲ δε οι γραμματειϲ
+							<lb n="3r10" />
+							και φαριϲαιοι και πρεϲβυτεροι προϲ αλληλουϲ ακου
+							<lb n="3r11" break="no" />
+							ϲαντεϲ οτι ο λαοϲ απαϲ γογγυζει και κοπτεται
+							<lb n="3r12" />
+							τα ϲτηθη λεγοντεϲ οτι ει τω θανατω αυτου ταυτα τα
+							<lb n="3r13" />
+							μεγιϲτα ϲημεια γεγονεν ιδετε οτι ποϲον δικαιοϲ
+							<lb n="3r14" />
+							εϲτιν
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="29">
+						<p>
+							εφοβηθηϲαν οι πρεϲβυτεροι και ηλθον
+							<lb n="3r15" />
+							<note place="margin_inner">
+								in left inner margin inverted α with ν overline from
+								<ref target="#3v15">
+									φρουραν @3v15
+								</ref>
+							</note>
+							προϲ
+							<note>
+								προϲ contaminated by inverted φρουρ from
+								<ref target="#3v15">
+									φρουραν @3v15
+								</ref>
+							</note>
+							Πειλατον δεομενοι αυτου και λεγοντεϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="30">
+						<lb n="3r16" />
+						<p>
+							παραδοϲ ημιν ϲτρατιωταϲ ινα φυλαξω το μνημα
+							<lb n="3r17" />
+							αυτου επι τρειϲ
+							ημ
+							<gap reason="damage" unit="character" extent="3" />
+							<unclear reason="damage">
+								ϲ
+							</unclear>
+							μηποτε ελθοντεϲ
+						</p>
+						<pb n="3v" facs="http://ipap.csad.ox.ac.uk/GP/300dpi/30-36.jpg" />
+						<lb n="3v1" />
+						<p>
+							οι μαθηται αυτου κλεψωϲιν αυτον και υπολαβη
+							<lb n="3v2" />
+							ο λαοϲ οτι εκ νεκρων ανεϲτη και ποιηϲωϲιν
+							<lb n="3v3" />
+							ημιν κακα
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="31">
+						<p>
+							ο δε Πειλατοϲ παραδεδωκεν αυτοιϲ
+							<lb n="3v4" />
+							Πετρωνιον τον κεντυριωνα μετα ϲτρατιωτον
+							<lb n="3v5" />
+							φυλαϲϲειν τον ταφον και ϲυν αυτοιϲ ηλθον
+							<lb n="3v6" />
+							πρεϲβυτεροι και γραμματειϲ επι το μνημα
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="32">
+						<p>
+							και
+							<lb n="3v7" />
+							κυλιϲαντεϲ λιθον μεγαν κατα του κεντυριωνοϲ
+							<lb n="3v8" />
+							και των ϲτρατιωτων ομου παντεϲ οι οντεϲ εκει
+							<lb n="3v9" />
+							εθηκαν επι τη θυρα του μνηματοϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="33">
+						<p>
+							και επεχρειϲαν
+							<lb n="3v10" />
+							επτα ϲφραγιδαϲ και ϲκηνην εκει πηξαντεϲ
+							<lb n="3v11" />
+							εφυλαξαν
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="34">
+						<p>
+							πρωιαϲ δε επιφωϲκοντοϲ του ϲαβ
+							<lb n="3v12" break="no" />
+							βατου ηλθεν οχλοϲ απο Ιερουϲαλημ και τηϲ περι
+							<lb n="3v13" break="no" />
+							χωρου ινα ιδωϲι το μνημειον
+							<choice>
+								<expan>
+									εϲφραγιϲμενον
+								</expan>
+								<supplied reason="abbreviation">
+									ν
+								</supplied>
+								<abbr type="suspension">
+									<hi rend="overline">
+										ο
+									</hi>
+								</abbr>
+							</choice>
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="35">
+						<lb n="3v14" />
+						<p>
+							τη δε νυκτι ηι επεφωϲκεν η κυριακη φυλαϲϲον
+							<lb n="3v15" break="no" />
+							των των ϲτρατιωτων ανα δυο δυο κατα
+							<choice>
+								<expan>
+									φρουραν
+								</expan>
+								<supplied reason="abbreviation">
+									ν
+								</supplied>
+								<abbr type="suspension">
+									<hi rend="overline">
+										α
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="3v16" />
+							μεγαλη φωνη εγενετο εν τω ουρανω
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="36">
+						<p>
+							και
+							<choice>
+								<expan>
+									ειδον
+								</expan>
+								<supplied reason="abbreviation">
+									ν
+								</supplied>
+								<abbr type="suspension">
+									<hi rend="overline">
+										ο
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="3v17" />
+							ανοιχθενταϲ τουϲ ουρα
+							<unclear reason="damage" quantity="1" unit="character">
+							</unclear>
+							<supplied>
+								ν
+							</supplied>
+							ουϲ
+							και δυο ανδραϲ
+						</p>
+						<pb n="4r" facs="http://ipap.csad.ox.ac.uk/GP/300dpi/36-43.jpg" />
+						<lb n="4r1" />
+						<p>
+							κατελθονταϲ εκειθε πολυ φεγγοϲ εχονταϲ
+							<lb n="4r2" />
+							και εγγιϲανταϲ τω ταφω
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="37">
+						<p>
+							ο δε λειθοϲ εκεινοϲ
+							<lb n="4r3" />
+							ο βεβλημενοϲ επι τη θυρα αφ εαυτου κυλιϲθειϲ
+							<lb n="4r4" />
+							επεχωρηϲε παρα μεροϲ και ο ταφοϲ ενοιγη
+							<lb n="4r5" />
+							και αμφοτεροι οι νεανιϲκοι ειϲηλθον
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="38">
+						<p>
+							ιδοντεϲ
+							<lb n="4r6" />
+							ουν οι ϲτρατιωται εκεινοι εξυπνιϲαν τον κεντυ
+							<lb n="4r7" break="no" />
+							ριωνα και τουϲ πρεϲβυτερουϲ παρηϲαν γαρ και αυτοι
+							<lb n="4r8" />
+							φυλαϲϲοντεϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="39">
+						<p>
+							και εξηγουμενων αυτων α ειδον
+							<lb n="4r9" />
+							παλιν οραϲιν εξελθοντοϲ απο του ταφου τρειϲ
+							<lb n="4r10" />
+							ανδρεϲ και τουϲ δυο τον ενα υπορθουνταϲ και
+							<lb n="4r11" />
+							ϲταυρον ακολουθουντα αυτοιϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="40">
+						<p>
+							και των μεν δυο
+							<lb n="4r12" />
+							την κεφαλην χωρουϲαν μεχρι του ουρανου
+							<lb n="4r13" />
+							του δε χειρατωτουμενου υπ αυτων υπερβαινου
+							<lb n="4r14" break="no" />
+							ϲαν τουϲ ουρανουϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="41">
+						<p>
+							και φωνη ηκουον εκ των
+							<lb n="4r15" />
+							ουρανων λεγουϲηϲ εκηρυξαϲ τοιϲ κοινωμενοιϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="42">
+						<lb n="4r16" />
+						<p>
+							και υπακοη ηκουετο απο του ϲταυρου τι ναι
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="43">
+						<p>
+							ϲυνε
+							<lb n="4r17" break="no" />
+							ϲκεπτοντο ουν αλληλοιϲ εκεινοι απελθειν
+						</p>
+						<pb n="4v" facs="http://ipap.csad.ox.ac.uk/GP/300dpi/43-50.jpg" />
+						<lb n="4v1" />
+						<p>
+							και ενφανιϲαι ταυτα τω Πειλατω
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="44">
+						<p>
+							και ετι
+							<choice>
+								<expan>
+									διανοουμεν
+								</expan>
+								<supplied reason="abbreviation">
+									ν
+								</supplied>
+								<abbr type="suspension">
+									<hi rend="overline">
+										ε
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="4v2" break="no" />
+							ων αυτων φαινονται παλιν ανοιχθεντεϲ οι ουρανοι
+							<lb n="4v3" />
+							και
+							<choice>
+								<expan>
+									ανθρωποϲ
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										ανοϲ
+									</hi>
+								</abbr>
+							</choice>
+							τιϲ κατελθον και ειϲελθων ειϲ το μνημα
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="45">
+						<p>
+							<lb n="4v4" />
+							ταυτα ιδοντεϲ οι περι τον κεντυρωνα νυκτοϲ εϲπευϲαν
+							<lb n="4v5" />
+							προϲ Πειλατον αφεντεϲ τον ταφον ον εφυλαϲϲον και
+							<lb n="4v6" />
+							εξηγηϲαντο παντα απερ ειδον απωνιωντεϲ μεγαλωϲ
+							<lb n="4v7" />
+							και λεγοντεϲ αληθωϲ ϋιοϲ ην
+							<choice>
+								<expan>
+									θεου
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										θυ
+									</hi>
+								</abbr>
+							</choice>
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="46">
+						<p>
+							αποκριθειϲ ο Πειλατοϲ
+							<lb n="4v8" />
+							εφη εγω καθαρευω του αιματοϲ του ϋιου του θεου ημιν δε
+							<lb n="4v9" />
+							τουτο εδοξεν
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="47">
+						<p>
+							ειτα προϲελθοντεϲ παντεϲ εδεοντο αυτου
+							<lb n="4v10" />
+							και περεκαλουν κελευϲαι τω κεντυριων και τοιϲ ϲτρατιω
+							<lb n="4v11" break="no" />
+							ταιϲ μηδεν ειπειν α ειδον
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="48">
+						<p>
+							ϲυμφερει γαρ φαϲιν ημιν
+							<lb n="4v12" />
+							οφληϲαι μεγιϲτην αμαρτιαν εμπροϲθεν του θεου
+							<lb n="4v13" />
+							και μη εμπεϲειν ειϲ χειραϲ του λαου των Ιουδαιων
+							<lb n="4v14" />
+							και λιθαϲθηναι
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="49">
+						<p>
+							εκελευϲεν ουν ο Πειλατοϲ των κεν
+							<lb n="4v15" break="no" />
+							τυριων και τοιϲ ϲτρατιωταιϲ μηδεν ειπειν
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="50">
+						<p>
+							ορθου δε τηϲ κυριακηϲ Μαριαμ᾽ η Μαγδαλινη μαθητρια του
+							<choice>
+								<expan>
+									κυριου
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κυ
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="4v16" />
+							φοβουμενη δια τουϲ Ιουδαιουϲ επειδη εφλεγοντο
+						</p>
+						<pb n="5r" facs="http://ipap.csad.ox.ac.uk/GP/300dpi/50-55.jpg" />
+						<lb n="5r1" />
+						<p>
+							υπο τηϲ οργηϲ ουκ εποιηϲεν επι τω μνηματι του
+							<choice>
+								<expan>
+									κυριου
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κυ
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="5r2" />
+							α ειωθεϲαν ποιειν αι γυναικεϲ επι τοιϲ αποθνηϲκουϲι
+							<lb n="5r3" />
+							και τοιϲ αγαπωμενοιϲ αυταιϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="51">
+						<p>
+							λαβουϲα μεθ εαυτηϲ ταϲ φιλαϲ
+							<lb n="5r4" />
+							ηλθε επι το μνημειον οπου ην τεθειϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="52">
+						<p>
+							και εφοβουντο
+							<lb n="5r5" />
+							μη ιδωϲιν αυταϲ οι Ιουδαιοι και ελεγον ει και μη εν ε
+							<lb n="5r6" break="no" />
+							κεινη τη ημερα η εϲταυρωθη εδυνηθημεν κλαυϲαι
+							<lb n="5r7" />
+							και κοψεϲθαι και νυν επι του μνηματοϲ αυτου
+							<choice>
+								<expan>
+									ποιηϲωμεν
+								</expan>
+								<supplied reason="abbreviation">
+									ν
+								</supplied>
+								<abbr type="suspension">
+									<hi rend="overline">
+										ε
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="5r8" />
+							ταυτα
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="53">
+						<p>
+							τιϲ δε αποκυλιϲει ημιν και τον λιθον τον τεθεντα
+							<lb n="5r9" />
+							επι τηϲ θυραϲ του μνημειου ινα ειϲελθουϲαι παρακαθεϲ
+							<lb n="5r10" break="no" />
+							θωμεν αυτω και ποιηϲωμεν τα οφιλομενα
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="54">
+						<p>
+							μεγαϲ γαρ
+							<lb n="5r11" />
+							ην ο λιθοϲ και φοβουμεθα μη τιϲ ημαϲ ιδη και ει μη δυ
+							<lb n="5r12" break="no" />
+							ναμεθα καν επι τηϲ θυραϲ βαλωμεν α φερομεν ειϲ
+							<lb n="5r13" />
+							μνημοϲυνην αυτου κλαυϲομεν και κοψομεθα εωϲ
+							<lb n="5r14" />
+							ελθωμεν ειϲ τον οικον ημων
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="55">
+						<p>
+							και απελθουϲαι ευρον
+							<lb n="5r15" />
+							τον ταφον ηνεωγμενον και προϲελθουϲαι παρεκυ
+							<lb n="5r16" break="no" />
+							ψαν εκει και ορωϲιν εκει τινα νεανιϲκον καθεζο
+							<lb n="5r17" break="no" />
+							μενον μεϲω του ταφου ωραιον και
+							<choice>
+								<expan>
+									περιβεβλημενον
+								</expan>
+								<supplied reason="abbreviation">
+									ν
+								</supplied>
+								<abbr type="suspension">
+									<hi rend="overline">
+										ο
+									</hi>
+								</abbr>
+							</choice>
+						</p>
+						<pb n="5v" facs="http://ipap.csad.ox.ac.uk/GP/300dpi/55-59.jpg" />
+						<lb n="5v1" />
+						<p>
+							ϲτολην λαμπροτατην οϲτιϲ εφη αυται
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="56">
+						<p>
+							οτι ηλθα
+							<lb n="2" break="no" />
+							τε τινα ζητειτε μη τον ϲταυρωθεντα εκεινον
+							<lb n="5v3" />
+							ανεϲτη και απηλθεν ει δε μη πιϲτευεται παρακυ
+							<lb n="5v4" break="no" />
+							ψατε και ιδατε τον τοπον
+							<subst>
+								<del rend="strikethrough">
+									ενθα
+								</del>
+								<add place="right">
+									εκει
+									<abbr type="suspension">
+										<hi rend="superscript">
+											το
+										</hi>
+									</abbr>
+								</add>
+							</subst>
+							οτι ουκ εϲτιν
+							<lb n="5v5" />
+							ανεϲτη γαρ και απηλθεν εκει οθεν απεϲταλη
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="57">
+						<lb n="5v6" />
+						<p>
+							τοτε αι γυναικεϲ φοβηθειϲ εφυγον
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="58">
+						<p>
+							ην δε τελευταια
+							<lb n="5v7" />
+							ημερα των αζυμων και πολλοι τινεϲ εξηρχοντο
+							<lb n="5v8" />
+							υποϲτρεφοντεϲ ειϲ τουϲ οικουϲ αυτων τηϲ εορτηϲ
+							<lb n="5v9" />
+							παυϲαμινηϲ
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="59">
+						<p>
+							ημειϲ δε οι δωδεκα μαθηται του
+							<choice>
+								<expan>
+									κυριου
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κυ
+									</hi>
+								</abbr>
+							</choice>
+							<lb n="5v10" />
+							εκλαιομεν και ελυπουμεθα και εκαϲτοϲ λυπουμενοϲ
+							<lb n="5v11" />
+							δια το ϲυμβαν απηλλαγη ειϲ τον οικον αυτου
+						</p>
+					</div>
+					<div type="textpart" subtype="verse" n="60">
+						<p>
+							εγω δε
+							<lb n="5v12" />
+							Ϲιμων Πετροϲ και Ανδρεαϲ ο αδελφοϲ μου λα
+							<lb n="5v13" break="no" />
+							βοντεϲ ημων τα λινα απηλθαμεν ειϲ την θαλ
+							<lb n="5v14" break="no" />
+							λαϲϲαν και ην ϲυν ημιν Λευειϲ ο του Αλφαιου ον
+							<choice>
+								<expan>
+									κυριοϲ
+								</expan>
+								<abbr type="nomSac">
+									<hi rend="overline">
+										κϲ
+									</hi>
+								</abbr>
+							</choice>
+						</p>
+						<note place="bottom">
+							<g type="cross" />
+							<g type="space" />
+							<g type="cross" rend="bold" />
+							<g type="space" />
+							<g type="cross" />
+							<lb />
+							<g type="braid" />
+							Decorative interwoven braid divides Evangelium Petri from Apocalypsis Petri
+						</note>
+					</div>
+				</div>
+			</div>
+		</body>
+	</text>
+</TEI>

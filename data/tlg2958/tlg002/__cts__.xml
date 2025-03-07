@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg2958"
+   projid="greekLit:tlg2958" urn="urn:cts:greekLit:tlg2958.tlg002" xml:lang="grc">
+
+   <ti:title xml:lang="eng">Gospel of Marcion</ti:title>
+   <ti:title xml:lang="eng">Marcion's Gospel</ti:title>
+   <ti:title xml:lang="lat">Evangelium Marcionis</ti:title>
+
+   <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-grc1"
+      workUrn="urn:cts:greekLit:tlg2958.tlg002" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Marcion [Hahn]</ti:label>
+      <ti:description xml:lang="eng">Bilby, Mark G. "Normalized Datasets of Hahn's and Zahn's
+         Reconstructions of Marcion's Gospel." Journal of Open Humanities Data 7.31 (2021) 1–5. doi:
+         10.5334/johd.63</ti:description>
+   </ti:edition>
+
+   <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-grc2"
+      workUrn="urn:cts:greekLit:tlg2958.tlg002" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Marcion [Zahn]</ti:label>
+      <ti:description xml:lang="eng">Bilby, Mark G. "Normalized Datasets of Hahn's and Zahn's
+         Reconstructions of Marcion's Gospel." Journal of Open Humanities Data 7.31 (2021) 1–5. doi:
+         10.5334/johd.63 </ti:description>
+   </ti:edition>
+
+   <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-grc3"
+      workUrn="urn:cts:greekLit:tlg2958.tlg002" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Marcion [Harnack]</ti:label>
+      <ti:description xml:lang="eng">Bilby, Mark G. "Normalized Datasets of Harnack's Reconstruction
+         of Marcion's Gospel." Journal of Open Humanities Data 7.24 (2021) 1–7. doi: 10.5334/johd.47</ti:description>
+   </ti:edition>
+
+   <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-lat4"
+      workUrn="urn:cts:greekLit:tlg2958.tlg002" xml:lang="lat">
+      <ti:label xml:lang="eng">Gospel of Marcion [Tsutsui]</ti:label>
+      <ti:description xml:lang="eng">Bilby, Mark G. and Kenji Tsutsui. "Tsutsui's Latin 
+      Reconstruction of Marcion’s Gospel." N.p. (2025).</ti:description>
+   </ti:edition>
+
+   <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-grc5"
+      workUrn="urn:cts:greekLit:tlg2958.tlg002" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Marcion [BeDuhn]</ti:label>
+      <ti:description xml:lang="eng">Bilby, Mark G. and Jason D. BeDuhn. "BeDuhn’s Greek
+         Reconstruction of Marcion’s Gospel." Journal of Open Humanities Data 9.25 (2023) 1-6. doi:
+         10.5334/johd.126 </ti:description>
+   </ti:edition>
+
+   <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-grc6"
+      workUrn="urn:cts:greekLit:tlg2958.tlg002" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Marcion [Roth]</ti:label>
+      <ti:description xml:lang="eng">Bilby, Mark G. "Normalized Datasets of Roth's Reconstruction of
+         Marcion's Gospel." Journal of Open Humanities Data 7.27 (2021) 1-6. doi: 10.5334/johd.57
+         Leipzig: F.C.G. Vogel, 1832. </ti:description>
+   </ti:edition>
+
+   <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-grc7"
+      workUrn="urn:cts:greekLit:tlg2958.tlg002" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Marcion [Klinghardt]</ti:label>
+      <ti:description xml:lang="eng">Bilby, Mark G. "Normalized Datasets of Klinghardt's and
+         Nicolotti's Reconstructions of Marcion's Gospel." Journal of Open Humanities Data 7.32
+         (2021) 1-6. doi: 10.5334/johd.70 </ti:description>
+   </ti:edition>
+
+   <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-grc8"
+      workUrn="urn:cts:greekLit:tlg2958.tlg002" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Marcion [Nicolotti]</ti:label>
+      <ti:description xml:lang="eng">Bilby, Mark G. "Normalized Datasets of Klinghardt's and
+         Nicolotti's Reconstructions of Marcion's Gospel." Journal of Open Humanities Data 7.32
+         (2021) 1-6. doi: 10.5334/johd.70 </ti:description>
+   </ti:edition>
+
+   <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-grc9"
+      workUrn="urn:cts:greekLit:tlg2958.tlg002" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Marcion [Bilby]</ti:label>
+      <ti:description xml:lang="eng">Bilby, Mark G. The First Gospel, the Gospel of the Poor: A New
+         Reconstruction of Q and Resolution of the Synoptic Problem based on Marcion's Early Luke."
+         Clavis Consulting, LLC: Kansas City, 2020/2025. doi: 10.5281/zenodo.3927056 </ti:description>
+   </ti:edition>
+
+</ti:work>

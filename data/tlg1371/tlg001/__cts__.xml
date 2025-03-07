@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg1371" projid="greekLit:tlg001" urn="urn:cts:greekLit:tlg1371.tlg001" xml:lang="grc">
+   
+   <ti:title xml:lang="eng">Gospel of Peter</ti:title>
+   <ti:title xml:lang="eng">Evangelium Petri</ti:title>
+   <ti:title xml:lang="eng">Gospel according to Peter</ti:title>
+   <ti:title xml:lang="deu">Evangelium nach Petrus</ti:title>
+   <ti:title xml:lang="deu">Petrusevangelium</ti:title>  
+
+   <ti:edition urn="urn:cts:greekLit:tlg1371.tlg001.src-MsA" workUrn="urn:cts:greekLit:tlg1371.tlg001" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Peter</ti:label>
+      <ti:description xml:lang="eng">Diplomatic edition of Bibliotheca Alexandrina Antiquities Museum 0522, by Mark G. Bilby. 2025.</ti:description>
+   </ti:edition>
+
+   <ti:edition urn="urn:cts:greekLit:tlg1371.tlg001.src-MsB" workUrn="urn:cts:greekLit:tlg1371.tlg001" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Peter</ti:label>
+      <ti:description xml:lang="eng">Diplomatic edition of P.Oxy. XL 2949, by Mark G. Bilby. 2025.</ti:description>
+   </ti:edition>
+ 
+   <ti:edition urn="urn:cts:greekLit:tlg1371.tlg001.src-grc1" workUrn="urn:cts:greekLit:tlg1371.tlg001" xml:lang="grc">
+      <ti:label xml:lang="eng">Gospel of Peter</ti:label>
+      <ti:description xml:lang="eng">Born digital critical edition of the Gospel of Peter, by Mark G. Bilby. 2025.</ti:description>
+   </ti:edition>
+        
+</ti:work>
