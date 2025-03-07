@@ -30,7 +30,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>
-					Clavis Consulting, LLC (Kansas)
+					Clavis Consulting, LLC, Kansas
 				</publisher>
 				<pubPlace>
 					Kansas City, KS, USA
@@ -44,7 +44,7 @@
 						Creative Commons Attribution 4.0 International License
 					</licence>
 					<p>
-						© 2025 Clavis Consulting, LLC (Kansas)
+						© 2025 Clavis Consulting, LLC, Kansas
 					</p>
 				</availability>
 			</publicationStmt>
@@ -61,6 +61,12 @@
 							Journal of Open Humanities Data
 						</title>
 						<idno type="DOI">
+							10.5334/johd.63
+						</idno>
+						<ref target="https://doi.org/10.5334/johd.63">
+							https://doi.org/10.5334/johd.63
+						</ref>
+						<idno type="DOI">
 							10.7910/DVN/BYNHX6
 						</idno>
 						<ref target="https://doi.org/10.7910/DVN/BYNHX6">
@@ -68,26 +74,29 @@
 						</ref>
 					</analytic>
 					<analytic>
-						<author ref="https://viaf.org/viaf/22941633">
+						<author xml:id="Zahn" ref="https://viaf.org/viaf/22941633">
 							Theodor Zahn
 						</author>
 						<title level="a">
-							Geschichte des neutestamentlichen Kanons
+							V. Marcions Neues Testament
 						</title>
-						<idno type="ARK">
-							13960/t8cf9s958
-						</idno>
-						<ref target="https://n2t.net/ark:/13960/t8cf9s958">
-							https://n2t.net/ark:/13960/t8cf9s958
-						</ref>
 					</analytic>
 					<monogr>
+						<author ref="https://viaf.org/viaf/22941633">
+							Theodor Zahn
+						</author>
 						<title level="m">
 							Geschichte des neutestamentlichen Kanons
 						</title>
 						<idno type="LC">
 							37029996
 						</idno>
+						<idno type="ARK">
+							13960/t8cf9s958
+						</idno>
+						<ref target="https://n2t.net/ark:/13960/t8cf9s958">
+							https://n2t.net/ark:/13960/t8cf9s958
+						</ref>
 						<respStmt>
 							<resp>
 								von
@@ -119,31 +128,6 @@
 					</monogr>
 				</biblStruct>
 				<listBibl>
-					<bibl xml:id="Zahn">
-						<title level="m">
-							Geschichte des neutestamentlichen Kanons
-						</title>
-						<idno type="LC">
-							37029996
-						</idno>
-						<respStmt>
-							<resp>
-								von
-							</resp>
-							<name>
-								Theodor Zahn
-							</name>
-						</respStmt>
-						<biblScope unit="volume">
-							2
-						</biblScope>
-						<biblScope unit="part">
-							2
-						</biblScope>
-						<biblScope unit="page">
-							455-494
-						</biblScope>
-					</bibl>
 					<bibl xml:id="EOCM">
 						<abbr type="siglum">
 							EOCM
@@ -194,6 +178,11 @@
 				</cRefPattern>
 			</refsDecl>
 		</encodingDesc>
+		<revisionDesc status="draft">
+			<change when="2025-03-08" who="#MGB">
+				Initial Perseus and Patristic Text Archive edition released
+			</change>
+		</revisionDesc>
 	</teiHeader>
 	<text xml:lang="grc">
 		<body>
@@ -205,7 +194,7 @@
 					</head>
 					<div type="textpart" subtype="chapter" n="3">
 						<div type="textpart" subtype="verse" n="1a">
-							<p>
+							<p xml:id="Ev3.1">
 								<milestone unit="para" />
 								Ἐν τῷ πεντεκαιδεκάτῳ ἔτει Τιβερίου Καίσαρος ἐπι τῶν χρόνων Ποντίου
 								<app type="variants">
@@ -222,7 +211,7 @@
 					</div>
 					<div type="textpart" subtype="chapter" n="4">
 						<div type="textpart" subtype="verse" n="31">
-							<p>
+							<p xml:id="Ev4.31" corresp="#Ev3.1">
 								κατῆλθεν
 								<pb n="456" />
 								ὁ Ἰησοῦς εἰς Καφαρναόυμ,
@@ -251,21 +240,34 @@
 						<div type="textpart" subtype="verse" n="34">
 							<p>
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									τί ἡμῖν καὶ σοὶ,
-									Ἰησοῦ;
-									ἦλθες ἀπολέσαι ἡμᾶς·
-									οἶδά σε τίς εἶ,
-									ὁ ἅγιος τοῦ θεοῦ.
+									<s>
+										τί ἡμῖν καὶ σοὶ,
+										Ἰησοῦ;
+									</s>
+									<s>
+										ἦλθες ἀπολέσαι ἡμᾶς·
+									</s>
+									<s>
+										οἶδά σε τίς εἶ,
+										ὁ ἅγιος τοῦ θεοῦ.
+									</s>
 								</supplied>
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="35">
 							<p>
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									καὶ ἐπετίμησεν αὐτῷ ὁ Ἰησοῦς λέγων·
-									φιμώθητι καὶ ἔξελθε ἐξ αὐτοῦ.
-									καὶ ῥῖψαν αὐτὸν τὸ δαιμόνιον εἰς τὸ μέσον ἐξῆλθεν ἀπ᾽ αὐτοῦ,
-									μηδὲν βλάψαν αὐτόν.
+									<s>
+										καὶ ἐπετίμησεν αὐτῷ ὁ Ἰησοῦς,
+										λέγων·
+									</s>
+									<s>
+										φιμώθητι καὶ ἔξελθε ἐξ αὐτοῦ.
+									</s>
+									<s>
+										καὶ ῥῖψαν αὐτὸν τὸ δαιμόνιον εἰς τὸ μέσον ἐξῆλθεν ἀπ᾽ αὐτοῦ,
+										μηδὲν βλάψαν αὐτόν.
+									</s>
 								</supplied>
 							</p>
 						</div>

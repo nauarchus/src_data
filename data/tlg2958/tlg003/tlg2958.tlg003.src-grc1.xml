@@ -62,6 +62,86 @@
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
+					<analytic>
+						<author ref="http://viaf.org/viaf/307315499">
+							Mark Glen Bilby
+						</author>
+						<author ref="https://orcid.org/0000-0003-0797-2710">
+							K. Lance Lotharp
+						</author>
+						<author ref="https://orcid.org/0000-0003-4606-239X">
+							Jack Bull
+						</author>
+						<title level="a">
+							Normalized Datasets of Zahn’s, van Manen’s, and Harnack’s
+							Greek Reconstructions of Marcion's Apostolos
+						</title>
+						<title level="j">
+							Journal of Open Humanities Data
+						</title>
+						<idno type="issn">
+							2059-481X
+						</idno>
+						<idno type="doi">
+							10.5334/johd.122
+						</idno>
+						<ref target="https://doi.org/10.5334/johd.122">
+							https://doi.org/10.5334/johd.122
+						</ref>
+						<idno type="doi">
+							10.7910/DVN/ZUVKQW
+						</idno>
+						<ref target="https://doi.org/10.7910/DVN/ZUVKQW">
+							https://doi.org/10.7910/DVN/ZUVKQW
+						</ref>
+						<date>
+							2023
+						</date>
+					</analytic>
+					<monogr>
+						<author ref="http://viaf.org/viaf/307315499">
+							Mark Glen Bilby
+						</author>
+						<author ref="https://orcid.org/0000-0003-0797-2710">
+							K. Lance Lotharp
+						</author>
+						<author ref="https://orcid.org/0000-0003-4606-239X">
+							Jack Bull
+						</author>
+						<title level="a">
+							Normalized Datasets of Zahn’s, van Manen’s, and Harnack’s
+							Greek Reconstructions of Marcion's Apostolos
+						</title>
+						<title level="j">
+							Journal of Open Humanities Data
+						</title>
+						<idno type="issn">
+							2059-481X
+						</idno>
+						<idno type="doi">
+							10.5334/johd.122
+						</idno>
+						<ref target="https://doi.org/10.5334/johd.122">
+							https://doi.org/10.5334/johd.122
+						</ref>
+						<idno type="doi">
+							10.7910/DVN/ZUVKQW
+						</idno>
+						<ref target="https://doi.org/10.7910/DVN/ZUVKQW">
+							https://doi.org/10.7910/DVN/ZUVKQW
+						</ref>
+						<imprint>
+							<publisher>
+								Ubiquity Press
+							</publisher>
+							<date>
+								2023
+							</date>
+						</imprint>
+						<biblScope unit="page">
+							1-5
+						</biblScope>
+					</monogr>
 					<monogr>
 						<author ref="https://viaf.org/viaf/59890715">
 							Willem Christiaan van Manen
@@ -131,64 +211,6 @@
 							451-533
 						</biblScope>
 					</monogr>
-					<monogr>
-						<author ref="http://viaf.org/viaf/307315499">
-							Mark Glen Bilby
-						</author>
-						<author ref="https://orcid.org/0000-0003-0797-2710">
-							K. Lance Lotharp
-						</author>
-						<author ref="https://orcid.org/0000-0003-4606-239X">
-							Jack Bull
-						</author>
-						<title level="a">
-							Normalized Datasets of Zahn’s, van Manen’s, and Harnack’s
-							Greek Reconstructions of Marcion's Apostolos
-						</title>
-						<title level="j">
-							Journal of Open Humanities Data
-						</title>
-						<idno type="issn">
-							2059-481X
-						</idno>
-						<idno type="doi">
-							10.5334/johd.122
-						</idno>
-						<ref target="https://doi.org/10.5334/johd.122">
-							https://doi.org/10.5334/johd.122
-						</ref>
-						<idno type="doi">
-							10.7910/DVN/ZUVKQW
-						</idno>
-						<ref target="https://doi.org/10.7910/DVN/ZUVKQW">
-							https://doi.org/10.7910/DVN/ZUVKQW
-						</ref>
-						<respStmt>
-							<resp>
-								by
-							</resp>
-							<name>
-								Mark G. Bilby
-							</name>
-							<name>
-								Jack Bull
-							</name>
-							<name>
-								K. Lance Lotharp
-							</name>
-						</respStmt>
-						<imprint>
-							<publisher>
-								Ubiquity Press
-							</publisher>
-							<date>
-								2023
-							</date>
-						</imprint>
-						<biblScope unit="page">
-							1-5
-						</biblScope>
-					</monogr>
 				</biblStruct>
 				<listBibl>
 					<bibl xml:id="EOCM">
@@ -256,14 +278,14 @@
 						<div type="textpart" subtype="verse" n="1">
 							<milestone unit="para" />
 							<p>
-								Παῦλος, 
+								Παῦλος,
 								ἀπόστολος οὐκ ἀπ᾽ ἀνθρώπων οὐδὲ δι᾽ ἀνθρώπου,
 								ἀλλὰ διὰ Ἰησοῦ Χριστοῦ τοῦ ἐγείραντος αὑτὸν ἐκ νεκρῶν,
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="2">
 							<p>
-								καὶ οἱ σὺν ἐμοὶ, 
+								καὶ οἱ σὺν ἐμοὶ,
 								πάντες ἀδελφοί ταῖς ἐκκλησίαις τῆς Γαλατίας·
 							</p>
 						</div>
@@ -293,7 +315,7 @@
 						<div type="textpart" subtype="verse" n="7">
 							<p>
 								ὃ οὐκ ἔστιν,
-								εἰ μή τινές εἰσιν οἱ ταράσσοντες ὑμᾶς, 
+								εἰ μή τινές εἰσιν οἱ ταράσσοντες ὑμᾶς,
 								καὶ θέλοντες μεταστρέψαι τὸ εὐαγγέλιον τοῦ Χριστοῦ.
 							</p>
 						</div>

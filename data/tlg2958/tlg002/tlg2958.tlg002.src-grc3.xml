@@ -30,7 +30,7 @@
 			</titleStmt>
 			<publicationStmt>
 				<publisher>
-					Clavis Consulting, LLC (Kansas)
+					Clavis Consulting, LLC, Kansas
 				</publisher>
 				<pubPlace>
 					Kansas City, KS, USA
@@ -44,12 +44,46 @@
 						Creative Commons Attribution 4.0 International License
 					</licence>
 					<p>
-						© 2025 Clavis Consulting, LLC (Kansas)
+						© 2025 Clavis Consulting, LLC, Kansas
 					</p>
 				</availability>
 			</publicationStmt>
 			<sourceDesc>
 				<biblStruct>
+					<analytic>
+						<author ref="https://viaf.org/viaf/307315499">
+							Mark G. Bilby
+						</author>
+						<title level="a">
+							Normalized Datasets of Harnack's Reconstructions of Marcion's Gospel
+						</title>
+						<title level="j">
+							Journal of Open Humanities Data
+						</title>
+						<date>
+							2021
+						</date>
+						<idno type="DOI">
+							10.5334/johd.24
+						</idno>
+						<ref target="https://doi.org/10.5334/johd.24">
+							https://doi.org/10.5334/johd.24
+						</ref>
+						<idno type="DOI">
+							10.7910/DVN/5TEA5A
+						</idno>
+						<ref target="https://doi.org/10.7910/DVN/5TEA5A">
+							https://doi.org/10.7910/DVN/5TEA5A
+						</ref>
+					</analytic>
+					<analytic>
+						<author ref="https://viaf.org/viaf/9886393">
+							Adolf von Harnack
+						</author>
+						<title level="a">
+							Beilage IV: Das Evangelium Marcions
+						</title>
+					</analytic>
 					<monogr>
 						<author ref="https://viaf.org/viaf/9886393">
 							Adolf von Harnack
@@ -57,15 +91,15 @@
 						<title level="m">
 							Marcion: Das Evangelium vom Fremden Gott
 						</title>
+						<idno type="LC">
+							4964885
+						</idno>
 						<idno type="ARK">
 							13960/t3611sv4v
 						</idno>
 						<ref target="https://n2t.net/ark:/13960/t3611sv4v">
 							https://n2t.net/ark:/13960/t3611sv4v
 						</ref>
-						<idno type="LC">
-							4964885
-						</idno>
 						<respStmt>
 							<resp>
 								von
@@ -144,8 +178,11 @@
 				</cRefPattern>
 			</refsDecl>
 		</encodingDesc>
-		<profileDesc>
-		</profileDesc>
+		<revisionDesc status="draft">
+			<change when="2025-03-08" who="#MGB">
+				Initial Perseus and Patristic Text Archive edition released
+			</change>
+		</revisionDesc>
 	</teiHeader>
 	<text xml:lang="grc">
 		<body>
@@ -158,7 +195,7 @@
 					<milestone unit="para" />
 					<div type="textpart" subtype="chapter" n="3">
 						<div type="textpart" subtype="verse" n="1">
-							<p>
+							<p xml:id="Ev3.1">
 								Ἐν τῷ
 								<choice>
 									<expan>
@@ -179,7 +216,7 @@
 					</div>
 					<div type="textpart" subtype="chapter" n="4">
 						<div type="textpart" subtype="verse" n="31">
-							<p>
+							<p xml:id="Ev4.31" corresp="#Ev3.1">
 								κατῆλθεν ὁ Ἰησοῦς
 								<gap reason="missing" extent="unknown" source="#Harnack" />
 								<gap reason="missing" extent="unknown" source="#Harnack" />
@@ -200,11 +237,17 @@
 						<pb n="185*" />
 						<div type="textpart" subtype="verse" n="34">
 							<p>
-								τί ἡμῖν καὶ σοί,
-								Ἰησοῦ;
-								ἦλθες ἀπολέσαι ἡμᾶς.
-								οἶδα τίς εἶ,
-								ὁ ἅγιος τοῦ θεοῦ.
+								<s>
+									τί ἡμῖν καὶ σοί,
+									Ἰησοῦ;
+								</s>
+								<s>
+									ἦλθες ἀπολέσαι ἡμᾶς.
+								</s>
+								<s>
+									οἶδα τίς εἶ,
+									ὁ ἅγιος τοῦ θεοῦ.
+								</s>
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="35">
@@ -248,17 +291,27 @@
 						</div>
 						<div type="textpart" subtype="verse" n="41">
 							<p>
+								<s>
 								ἐξήρχετο δαιμόνια κράζοντα·
+								</s>
+								<s>
 								Σὺ εἶ ὁ υἱὸς τοῦ θεοῦ.
+								</s>
+								<s>
 								ἐπιτιμῶν οὐκ εἴα αὐτὰ λαλεῖν.
+								</s>
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="42">
 							<p>
+							<s>
 								ἐπορεύθη εἰς ἔρημον
+								</s>
 								<gap reason="missing" extent="unknown" source="#Harnack" />
 								.
+								<s>
 								κατεῖχον αὐτόν.
+								</s>
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="43">

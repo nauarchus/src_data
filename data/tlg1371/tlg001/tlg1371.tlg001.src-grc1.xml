@@ -28,7 +28,7 @@
 			</editionStmt>
 			<publicationStmt>
 				<publisher>
-					Clavis Consulting, LLC (Kansas)
+					Clavis Consulting, LLC, Kansas
 				</publisher>
 				<distributor>
 					@nauarchus account on GitHub
@@ -38,7 +38,7 @@
 						Available under a Creative Commons Attribution Non-Commercial ShareAlike 4.0 International License
 					</licence>
 					<p>
-						© 2025 Clavis Consulting, LLC (Kansas)
+						© 2025 Clavis Consulting, LLC, Kansas
 					</p>
 				</availability>
 				<date when="2025-01-29">
@@ -687,20 +687,8 @@
 			</textClass>
 		</profileDesc>
 		<revisionDesc status="draft">
-			<change when="2025-01-29" who="#MGB">
-				Initial critical edition released based on collation of BAAM 0522 and P.Oxy. 2949
-			</change>
-			<change when="2025-02-01" who="#MGB">
-				added listBibl entries; updated listPerson; changed resp to source for print editions; supplemented apparatus; applied PTA TEI-XML guidance received from AVS
-			</change>
-			<change when="2025-02-04" who="#MGB">
-				for direct speech, changed "quote" tags to "said" tags according to PTA documentation 3.4.9.6; adjusted scripture paraphrases to confirm to PTA documentation 3.4.9.4
-			</change>
-			<change when="2025-02-24" who="#MGB">
-				removed duplicate declaration of Gebhardt
-			</change>
-			<change when="2025-02-26" who="#MGB">
-				supplemented title types in listbibl header entries and standardized XML indentation
+			<change when="2025-03-08" who="#MGB">
+				Initial Perseus and Patristic Text Archive edition released based on collation of BAAM 0522 and P.Oxy. 2949
 			</change>
 		</revisionDesc>
 	</teiHeader>
@@ -710,25 +698,29 @@
 				<div type="textpart" subtype="chapter" n="Passio">
 					<div type="textpart" subtype="verse" n="1">
 						<p>
-							τῶν δὲ Ἰουδαίων οὐδείς ἐνίψατο τὰς χεῖρας,
-							οὐδὲ Ἡρῴδης οὐδὲ τις τῶν
-							<app type="variants">
-								<lem wit="#A" source="#Hilgenfeld #KrausNicklas" resp="#MGB">
-									οὐδὲ τις τῶν
-								</lem>
-								<rdg source="#Zahn #Vaganay #Mara #EhrmanPleše">
-									οὐδὲ εἷς τῶν
-								</rdg>
-								<rdg source="#Harnack #Robinson #Foster">
-									οὐδ᾽ εἷς τῶν
-								</rdg>
-								<rdg source="#Bruston">
-									οὐδὲ ἐτέρων
-								</rdg>
-							</app>
-							κριτῶν αὐτοῦ.
-							καὶ μὴ βουληθέντων νίψασθαι,
-							ἀνέστη Πειλᾶτος.
+							<s>
+								τῶν δὲ Ἰουδαίων οὐδείς ἐνίψατο τὰς χεῖρας,
+								οὐδὲ Ἡρῴδης οὐδὲ τις τῶν
+								<app type="variants">
+									<lem wit="#A" source="#Hilgenfeld #KrausNicklas" resp="#MGB">
+										οὐδὲ τις τῶν
+									</lem>
+									<rdg source="#Zahn #Vaganay #Mara #EhrmanPleše">
+										οὐδὲ εἷς τῶν
+									</rdg>
+									<rdg source="#Harnack #Robinson #Foster">
+										οὐδ᾽ εἷς τῶν
+									</rdg>
+									<rdg source="#Bruston">
+										οὐδὲ ἐτέρων
+									</rdg>
+								</app>
+								κριτῶν αὐτοῦ.
+							</s>
+							<s>
+								καὶ μὴ βουληθέντων νίψασθαι,
+								ἀνέστη Πειλᾶτος.
+							</s>
 						</p>
 					</div>
 					<div type="textpart" subtype="verse" n="2">
@@ -751,7 +743,8 @@
 								</rdg>
 							</app>
 							τὸν κύριον,
-							εἰπὼν αὐτοῖς ὅτι ὅσα ἐκέλευσα ὑμῖν ποιῆσαι αὐτῷ,
+							εἰπὼν αὐτοῖς,
+							ὅτι ὅσα ἐκέλευσα ὑμῖν ποιῆσαι αὐτῷ,
 							ποιήσατε.
 						</p>
 					</div>
@@ -772,7 +765,7 @@
 									Ἰωσὴφ
 								</lem>
 							</app>
-							, 
+							,
 							ὁ
 							<app type="variants">
 								<lem wit="#A #B">
@@ -803,7 +796,7 @@
 									καὶ τοῦ κυρίου
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ εἰδὼς
 							<app type="variants">
 								<lem wit="#A">
@@ -847,7 +840,7 @@
 									μέλλουσιν
 								</rdg>
 							</app>
-							, 
+							,
 							ἐλθών
 							<app type="variants">
 								<lem wit="#B" source="#Coles #Lührmann" resp="#MGB">
@@ -876,7 +869,7 @@
 									Πειλάτον
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ ἤτησε τὸ
 							<app type="variants">
 								<lem wit="#A">
@@ -931,65 +924,83 @@
 					</div>
 					<div type="textpart" subtype="verse" n="4">
 						<p>
-							καὶ
-							<app type="variants">
-								<rdg type="omission" resp="#MGB" />
-								<rdg wit="#A" source="#Mara #KrausNicklas #Foster">
-									ὁ
-								</rdg>
-							</app>
-							Πειλᾶτος
-							<supplied reason="conjecture" source="#Lührmann" resp="#MGB">
-								ἔφη
-							</supplied>
-							<app type="variants">
-								<rdg type="omission" resp="#MGB" />
-								<rdg wit="#A" source="#Mara #KrausNicklas #Foster">
-									πέμψας
-								</rdg>
-							</app>
-							πρὸς Ἡρῴδην
-							<app type="variants">
-								<lem wit="#A" source="#Mara #KrausNicklas #Foster">
-									Ἡρῴδην
-								</lem>
-								<rdg type="conjecture" resp="#MGB">
-									Ἡρῴδην
-								</rdg>
-							</app>
-							·
-							<said who="Pilate">
-								ἤτησα
+							<s>
+								καὶ
 								<app type="variants">
-									<lem wit="#B" source="#Lührmann" resp="#MGB">
-										ἤτησα
-									</lem>
+									<rdg type="omission" resp="#MGB" />
 									<rdg wit="#A" source="#Mara #KrausNicklas #Foster">
-										ἤτησε
-									</rdg>
-									<rdg type="conjecture" source="#Coles">
-										ἡτήσαμεν
+										ὁ
 									</rdg>
 								</app>
-								αὐτοῦ τὸ σῶμα.
-							</said>
+								Πειλᾶτος
+								<supplied reason="conjecture" source="#Lührmann" resp="#MGB">
+									ἔφη,
+								</supplied>
+								<app type="variants">
+									<rdg type="omission" resp="#MGB" />
+									<rdg wit="#A" source="#Mara #KrausNicklas #Foster">
+										πέμψας
+									</rdg>
+								</app>
+								πρὸς Ἡρῴδην
+								<app type="variants">
+									<lem wit="#A" source="#Mara #KrausNicklas #Foster">
+										Ἡρῴδην
+									</lem>
+									<rdg type="conjecture" resp="#MGB">
+										Ἡρῴδην
+									</rdg>
+								</app>
+								·
+							</s>
+							<s>
+								<said who="Pilate">
+									ἤτησα
+									<app type="variants">
+										<lem wit="#B" source="#Lührmann" resp="#MGB">
+											ἤτησα
+										</lem>
+										<rdg wit="#A" source="#Mara #KrausNicklas #Foster">
+											ἤτησε
+										</rdg>
+										<rdg type="conjecture" source="#Coles">
+											ἡτήσαμεν
+										</rdg>
+									</app>
+									αὐτοῦ τὸ σῶμα.
+								</said>
+							</s>
 						</p>
 					</div>
 					<div type="textpart" subtype="verse" n="5">
 						<p>
-							καὶ ὁ Ἡρῴδης ἔφη·
-							<said who="HerodAntipas">
-								ἀδελφέ Πειλάτε,
-								εἰ καὶ μή τις αὐτὸν ᾔτηκει,
-								ἡμεῖς αὐτὸν ἐθάπτομεν,
-								ἐπεὶ καὶ σάββατον ἐπιφώσκει·
-								γέγραπται γὰρ ἐν τῷ νόμῳ
-								<quote type="paraphrasis">
-									ἥλιον μὴ δῦναι ἐπὶ πεφονευμένῳ.
-									<ref decls="#biblical" cRef="LXX:Dt:21:23" />
-								</quote>
-							</said>
-							καὶ παρέδωκεν αὐτὸν τῷ λαῷ πρὸ μιᾶς τῶν ἀζύμων τῆς ἑορτῆς αὐτῶν.
+							<s>
+								καὶ ὁ Ἡρῴδης ἔφη·
+							</s>
+							<s>
+								<said who="HerodAntipas">
+									ἀδελφέ Πειλάτε,
+									εἰ καὶ μή τις αὐτὸν ᾔτηκει,
+									ἡμεῖς αὐτὸν ἐθάπτομεν,
+									ἐπεὶ καὶ σάββατον ἐπιφώσκει·
+								</said>
+							</s>
+							<s>
+								<said who="HerodAntipas">
+									γέγραπται γὰρ ἐν τῷ νόμῳ
+								</said>
+							</s>
+							<s>
+								<said who="HerodAntipas">
+									<quote type="paraphrasis">
+										ἥλιον μὴ δῦναι ἐπὶ πεφονευμένῳ.
+										<ref decls="#biblical" cRef="LXX:Dt:21:23" />
+									</quote>
+								</said>
+							</s>
+							<s>
+								καὶ παρέδωκεν αὐτὸν τῷ λαῷ πρὸ μιᾶς τῶν ἀζύμων τῆς ἑορτῆς αὐτῶν.
+							</s>
 						</p>
 					</div>
 					<div type="textpart" subtype="verse" n="6">
@@ -1021,7 +1032,7 @@
 									περιέβαλον
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ ἐκάθισαν αὐτὸν ἐπὶ καθέδραν κρίσεως,
 							λέγοντες·
 							<said who="mockers">
@@ -1235,7 +1246,7 @@
 									σινδόνι
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ εἰσήγαγεν εἰς ἴδιον τάφον καλούμενον κῆπον Ἰωσήφ.
 						</p>
 					</div>
@@ -1389,7 +1400,7 @@
 									ἐνοίγη
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ ἀμφότεροι οἱ νεανίσκοι εἰσῆλθον.
 						</p>
 					</div>
@@ -1421,7 +1432,7 @@
 									ἄνδρεϲ
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ τοὺς δύο τὸν ἕνα ὑπορθοῦντας,
 							καὶ σταυρὸν ἀκολουθοῦντα αὐτοῖς.
 						</p>
@@ -1484,7 +1495,7 @@
 									κατελθόν
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ εἰσελθὼν εἰς τὸ μνῆμα.
 						</p>
 					</div>
@@ -1548,7 +1559,7 @@
 									κεντύριων
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ τοῖς στρατιώταις μηδὲν
 							<app type="variants">
 								<lem wit="#A" source="#Foster #KrausNicklas" resp="#MGB">
@@ -1567,7 +1578,7 @@
 							<said who="all">
 								συμφέρει γάρ
 							</said>
-							, 
+							,
 							φασίν,
 							<said who="all">
 								ἡμῖν ὀφλῆσαι μεγίστην ἁμαρτίαν ἔμπροσθεν τοῦ θεοῦ,
@@ -1598,7 +1609,7 @@
 									κεντυρίων
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ τοῖς στρατιώταις μηδὲν εἰπεῖν.
 						</p>
 					</div>
@@ -1652,7 +1663,7 @@
 										κόψεσθαι
 									</rdg>
 								</app>
-								, 
+								,
 								καὶ νῦν ἐπὶ τοῦ μνήματος αὐτοῦ ποιήσωμεν ταῦτα.
 							</said>
 						</p>
@@ -1722,7 +1733,7 @@
 									ἠνεωιγμένον
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ προσελθοῦσαι παρέκυψαν ἐκεῖ,
 							καὶ ὁρῶσιν ἐκεῖ τινα νεανίσκον καθεζόμενον
 							<app type="variants">
@@ -1773,7 +1784,7 @@
 										πιστεύετε
 									</rdg>
 								</app>
-								, 
+								,
 								παρακύψατε καὶ ἴδατε τὸν τόπον ἐνθὰ ἔκειτο
 								<app type="variants">
 									<lem wit="#A" source="#Mara" resp="#MGB">
@@ -1854,7 +1865,7 @@
 									θάλλασσαν
 								</rdg>
 							</app>
-							, 
+							,
 							καὶ ἦν σὺν ἡμῖν Λευεὶς ὁ τοῦ Ἀλφαίου,
 							ὃν κύριος
 						</p>
