@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg1443" projid="greekLit:tlg1443" urn="urn:cts:greekLit:tlg1443.tlg001" xml:lang="grc">
+	<title xml:lang="eng">
+		Three Short Letters of Ignatius of Antioch
+	</title>
+	<title xml:lang="lat">
+		Epistulae breves iii Ignatiii Antiocheni
+	</title>
+	<edition urn="urn:cts:greekLit:tlg1443.tlg001.src-grc1" workUrn="urn:cts:greekLit:tlg1443.tlg001" xml:lang="grc">
+		<label xml:lang="eng">
+			Three Short Letters of Ignatius of Antioch
+		</label>
+		<description xml:lang="eng">
+			Cureton, William. Corpus Ignatianum: A Complete Collection of the Ignatian Epistles. Berlin: Asher and Co., 1859, pp. 1-55.
+			Digital transcription edited by Jack Bull, then corrected and encoded in TEI-XML by Mark G. Bilby.
+		</description>
+	</edition>
+</work>
