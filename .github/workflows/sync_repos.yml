@@ -1,0 +1,55 @@
+name: Sync CTS Data Repositories
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  sync-repos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout src_data repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Set up Git
+        run: |
+          git config --global user.email "193622162+nauarchus@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Clone and Merge Data Folders
+        run: |
+          # Define repositories
+          REPOS=(
+            "https://github.com/nauarchus/Marcion_Evangelion.git"
+            "https://github.com/nauarchus/Evangelium_Petri.git"
+            "https://github.com/nauarchus/Marcion_Apostolos.git"
+            "https://github.com/nauarchus/Ignatius_Epistulae.git"
+          )
+
+          # Ensure data directory exists
+          mkdir -p data
+
+          for REPO in "${REPOS[@]}"; do
+            REPO_NAME=$(basename "$REPO" .git)
+            echo "Processing $REPO_NAME..."
+
+            # Clone repo in a temp directory
+            git clone --depth=1 "$REPO" "$REPO_NAME"
+            
+            # Copy only the "data/" directory to the combined "data/" folder
+            if [ -d "$REPO_NAME/data" ]; then
+              rsync -av --exclude="README.md" --exclude="LICENSE.md" "$REPO_NAME/data/" data/
+            fi
+
+            # Clean up the cloned repository
+            rm -rf "$REPO_NAME"
+          done
+
+      - name: Commit and Push Changes
+        run: |
+          git add data/
+          git commit -m "Auto-sync CTS data from source repositories - $(date)" || exit 0
+          git push origin main
