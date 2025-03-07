@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg1443" projid="greekLit:tlg1443" urn="urn:cts:greekLit:tlg1443.tlg001" xml:lang="grc">
-    <title xml:lang="eng">Three Short Letters of Ignatius of Antioch</title>
-    <title xml:lang="lat">Epistulae breves III Ignatii Antiocheni</title>
-    <author xml:lang="lat">Ignatius Antiochenus</author>
+<ti:work xmlns:ti="http://chs.harvard.edu/xmlns/cts" groupUrn="urn:cts:greekLit:tlg1443" projid="greekLit:tlg1443" urn="urn:cts:greekLit:tlg1443.tlg001" xml:lang="grc">
+    <ti:title xml:lang="eng">Three Short Letters of Ignatius of Antioch</title>
+    <ti:title xml:lang="lat">Epistulae breves III Ignatii Antiocheni</title>
+    <ti:author xml:lang="lat">Ignatius Antiochenus</author>
     
-    <edition urn="urn:cts:greekLit:tlg1443.tlg001.src-grc1" workUrn="urn:cts:greekLit:tlg1443.tlg001" xml:lang="grc">
-        <label xml:lang="eng">Three Short Letters of Ignatius of Antioch</label>
-        <description xml:lang="eng">
+    <ti:edition urn="urn:cts:greekLit:tlg1443.tlg001.src-grc1" workUrn="urn:cts:greekLit:tlg1443.tlg001" xml:lang="grc">
+        <ti:label xml:lang="eng">Three Short Letters of Ignatius of Antioch</label>
+        <ti:description xml:lang="eng">
             Cureton, William. Corpus Ignatianum: A Complete Collection of the Ignatian Epistles. Berlin: Asher and Co., 1859, pp. 1-55.
             Digital transcription edited by Jack Bull, then corrected and encoded in TEI-XML by Mark G. Bilby.
         </description>
-        <editor xml:lang="eng">Jack Bull</editor>
-        <editor xml:lang="eng">Mark G. Bilby</editor>
+        <ti:editor xml:lang="eng">Jack Bull</editor>
+        <ti:editor xml:lang="eng">Mark G. Bilby</editor>
     </edition>
 </work>
