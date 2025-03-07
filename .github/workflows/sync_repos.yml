@@ -12,7 +12,7 @@ jobs:
       - name: Checkout src_data repository
         uses: actions/checkout@v3
         with:
-          persist-credentials: false
+          persist-credentials: false  # Prevents issues with default authentication
 
       - name: Set up Git
         run: |
@@ -54,4 +54,4 @@ jobs:
         run: |
           git add data/
           git commit -m "Auto-sync CTS XML data from source repositories - $(date)" || echo "No changes to commit"
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/nauarchus/src_data.git public
+          git push origin public
