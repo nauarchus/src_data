@@ -1,0 +1,95 @@
+name: Hooktest and Release
+
+on:
+  push:
+    branches:
+      - public  # Trigger on push to the `public` branch
+  pull_request:
+
+jobs:
+  run_hooktest:
+    name: Run Hooktest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Setup Python
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.11"
+
+      # Setup Java for Hooktest
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: "zulu"
+          java-version: "11"
+
+      - name: Install Hooktest
+        run: pip3 install HookTest
+
+      - name: Run Hooktest
+        run: |
+          hooktest --console --scheme auto --guidelines 2.epidoc --workers 3 --verbose 7 --manifest --countword ./
+
+      - name: Export manifest.txt
+        id: export_manifest
+        uses: actions/upload-artifact@v3
+        with:
+          name: manifest-txt
+          path: manifest.txt
+
+  create_release:
+    name: Create Release
+    if: success() && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    needs: run_hooktest
+    env:
+      MAJOR_VERSION: 1
+      MINOR_VERSION: 1
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Setup Python
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.11"
+
+      # Setup Java for Hooktest
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: "zulu"
+          java-version: "11"
+
+      - name: Install Hooktest
+        run: pip3 install HookTest
+
+      - name: Restore manifest.txt
+        id: restore_manifest
+        uses: actions/download-artifact@v3
+        with:
+          name: manifest-txt
+
+      - name: Prepare Tag and Release
+        run: |
+          hooktest-build --travis --txt ./
+          results=$(cat manifest.txt)
+          DATE=`date +%Y-%m-%d`
+          git config --global user.email "193622162+nauarchus@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          export GIT_TAG=$MAJOR_VERSION.$MINOR_VERSION.$GITHUB_RUN_ID
+          git add -A
+          git commit -m "Removed failing files" -m "Release $GIT_TAG"
+          git tag $GIT_TAG -a -m "$DATE" -m "PASSING FILES" -m "$results"
+          git push -q origin "${GIT_TAG}"
+          ls -R
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ env.MAJOR_VERSION }}.${{ env.MINOR_VERSION }}.${{ github.run_id }}
