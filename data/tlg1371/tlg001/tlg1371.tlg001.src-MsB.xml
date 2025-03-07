@@ -318,8 +318,8 @@
 			<change when="2025-02-24" who="#MGB">
 				added Revel Coles persName; PTA schema update required removal of "ana" attributes for unclear text and addition of page numbers for manuscript
 			</change>
-         <change when="2025-02-24" who="#MGB">
-				standardized XML indentation 
+			<change when="2025-02-24" who="#MGB">
+				standardized XML indentation
 			</change>
 		</revisionDesc>
 	</teiHeader>
@@ -328,219 +328,219 @@
 			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1371.tlg001.src-MsB">
 				<div type="textpart" subtype="chapter" n="Passio">
 					<div type="textpart" subtype="fragment" n="1">
-				<pb n="1" facs="https://portal.sds.ox.ac.uk/ndownloader/files/37536061" />
-				<lb n="frg1_ln1" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					<unclear reason="damage">
-						<supplied resp="#Coles #Lührmann #KrausNicklas">
-							τ
-						</supplied>
-					</unclear>
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg1_ln2" />
-					<gap reason="damage" unit="line" extent="1" />
-					<lb n="frg1_ln3" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					ν
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg1_ln4" />
-				<p>
-					<gap reason="damage" unit="line" extent="1" />
-				</p>
-					<lb n="frg1_ln5" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					<supplied resp="#Lührmann">
-						Ϊωϲηφ
-					</supplied>
-					<unclear reason="damage">
-						<supplied resp="#Coles #Lührmann #KrausNicklas">
-							ο
-						</supplied>
-					</unclear>
-					φιλοϲ
-					π
-					<unclear reason="damage">
-						<supplied resp="#Coles #Lührmann #KrausNicklas">
-							ε
-						</supplied>
-					</unclear>
-					ιλα
-					<unclear reason="damage">
-						<supplied resp="#Lührmann #KrausNicklas">
-							τ
-						</supplied>
-					</unclear>
-					ου
-					<unclear reason="damage">
-						<supplied resp="#Coles #Lührmann">
-							κ
-						</supplied>
-					</unclear>
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg1_ln6" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					<supplied resp="#Lührmann">
-						ειδ
-					</supplied>
-					<unclear reason="damage">
-						<supplied resp="#Lührmann">
-							ω
-						</supplied>
-						<supplied resp="#Coles #KrausNicklas">
-							ι
-						</supplied>
-					</unclear>
-					ϲ οτι εκελευϲεν
-					<gap reason="damage" unit="character" extent="unknown" />
-					<supplied resp="#Lührmann">
-						Ηρωδηϲ
-					</supplied>
-				</p>
-					<lb n="frg1_ln7" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					<supplied resp="#Lührmann">
-						ελ
-					</supplied>
-					<supplied resp="#Coles #KrausNicklas #Lührmann">
-						θ
-					</supplied>
-					ων προϲ πειλατ
-					<gap reason="damage" unit="character" extent="1" />
-					<supplied resp="#Coles #Lührmann">
-						ο
-					</supplied>
-					<supplied resp="#Lührmann #KrausNicklas">
-						ν
-					</supplied>
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg1_ln8" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					<gap reason="damage" unit="character" extent="1" />
-					<supplied resp="#Lührmann">
-						το
-					</supplied>
-					<unclear reason="damage">
-						<supplied resp="#Coles #Lührmann">
-							ϲ
-						</supplied>
-					</unclear>
-					<unclear reason="damage">
-						<supplied resp="#Coles #Lührmann #KrausNicklas">
-							ω
-						</supplied>
-					</unclear>
-					μα ειϲ ταφην
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg1_ln9" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					<supplied resp="#Lührmann">
-						Ηρωδ
-					</supplied>
-					<unclear reason="damage">
-						<supplied resp="#Coles #Lührmann #KrausNicklas">
-							η
-						</supplied>
-					</unclear>
-					ν ητηϲα
-					<gap reason="damage" unit="character" extent="2" />
-					<supplied resp="#Lührmann #KrausNicklas">
-						το
-					</supplied>
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg1_ln10" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					<gap reason="damage" unit="character" extent="1" />
-					<supplied resp="#Lührmann">
-						ν
-					</supplied>
-					ηναι ειπω
-					<gap reason="damage" unit="character" extent="1" />
-					<supplied resp="#Lührmann #KrausNicklas">
-						ν
-					</supplied>
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg1_ln11" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					<unclear>
-						<supplied resp="#Lührmann">
-							η
-						</supplied>
-						<supplied resp="#Coles #KrausNicklas">
-							αι
-						</supplied>
-					</unclear>
-					τηϲα
-					<gap reason="damage" unit="character" extent="unknown" />
-					<supplied resp="#Coles">
-						μεν
-					</supplied>
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg1_ln12" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					αυτον
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg1_ln13" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					οτι α
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg1_ln14" />
-				<p>
-					<gap reason="damage" unit="line" extent="unknown" />
-				</p>
-				</div>
+						<pb n="1" facs="https://portal.sds.ox.ac.uk/ndownloader/files/37536061" />
+						<lb n="frg1_ln1" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							<unclear reason="damage">
+								<supplied resp="#Coles #Lührmann #KrausNicklas">
+									τ
+								</supplied>
+							</unclear>
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg1_ln2" />
+						<gap reason="damage" unit="line" extent="1" />
+						<lb n="frg1_ln3" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							ν
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg1_ln4" />
+						<p>
+							<gap reason="damage" unit="line" extent="1" />
+						</p>
+						<lb n="frg1_ln5" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							<supplied resp="#Lührmann">
+								Ϊωϲηφ
+							</supplied>
+							<unclear reason="damage">
+								<supplied resp="#Coles #Lührmann #KrausNicklas">
+									ο
+								</supplied>
+							</unclear>
+							φιλοϲ
+							π
+							<unclear reason="damage">
+								<supplied resp="#Coles #Lührmann #KrausNicklas">
+									ε
+								</supplied>
+							</unclear>
+							ιλα
+							<unclear reason="damage">
+								<supplied resp="#Lührmann #KrausNicklas">
+									τ
+								</supplied>
+							</unclear>
+							ου
+							<unclear reason="damage">
+								<supplied resp="#Coles #Lührmann">
+									κ
+								</supplied>
+							</unclear>
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg1_ln6" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							<supplied resp="#Lührmann">
+								ειδ
+							</supplied>
+							<unclear reason="damage">
+								<supplied resp="#Lührmann">
+									ω
+								</supplied>
+								<supplied resp="#Coles #KrausNicklas">
+									ι
+								</supplied>
+							</unclear>
+							ϲ οτι εκελευϲεν
+							<gap reason="damage" unit="character" extent="unknown" />
+							<supplied resp="#Lührmann">
+								Ηρωδηϲ
+							</supplied>
+						</p>
+						<lb n="frg1_ln7" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							<supplied resp="#Lührmann">
+								ελ
+							</supplied>
+							<supplied resp="#Coles #KrausNicklas #Lührmann">
+								θ
+							</supplied>
+							ων προϲ πειλατ
+							<gap reason="damage" unit="character" extent="1" />
+							<supplied resp="#Coles #Lührmann">
+								ο
+							</supplied>
+							<supplied resp="#Lührmann #KrausNicklas">
+								ν
+							</supplied>
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg1_ln8" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							<gap reason="damage" unit="character" extent="1" />
+							<supplied resp="#Lührmann">
+								το
+							</supplied>
+							<unclear reason="damage">
+								<supplied resp="#Coles #Lührmann">
+									ϲ
+								</supplied>
+							</unclear>
+							<unclear reason="damage">
+								<supplied resp="#Coles #Lührmann #KrausNicklas">
+									ω
+								</supplied>
+							</unclear>
+							μα ειϲ ταφην
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg1_ln9" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							<supplied resp="#Lührmann">
+								Ηρωδ
+							</supplied>
+							<unclear reason="damage">
+								<supplied resp="#Coles #Lührmann #KrausNicklas">
+									η
+								</supplied>
+							</unclear>
+							ν ητηϲα
+							<gap reason="damage" unit="character" extent="2" />
+							<supplied resp="#Lührmann #KrausNicklas">
+								το
+							</supplied>
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg1_ln10" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							<gap reason="damage" unit="character" extent="1" />
+							<supplied resp="#Lührmann">
+								ν
+							</supplied>
+							ηναι ειπω
+							<gap reason="damage" unit="character" extent="1" />
+							<supplied resp="#Lührmann #KrausNicklas">
+								ν
+							</supplied>
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg1_ln11" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							<unclear>
+								<supplied resp="#Lührmann">
+									η
+								</supplied>
+								<supplied resp="#Coles #KrausNicklas">
+									αι
+								</supplied>
+							</unclear>
+							τηϲα
+							<gap reason="damage" unit="character" extent="unknown" />
+							<supplied resp="#Coles">
+								μεν
+							</supplied>
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg1_ln12" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							αυτον
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg1_ln13" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							οτι α
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg1_ln14" />
+						<p>
+							<gap reason="damage" unit="line" extent="unknown" />
+						</p>
+					</div>
 					<div type="textpart" subtype="fragment" n="2">
-				<lb n="frg2_ln1" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					μου
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg2_ln2" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					πειλ
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg2_ln3" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					τιϲ α
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-					<lb n="frg2_ln4" />
-				<p>
-					<gap reason="damage" unit="character" extent="unknown" />
-					μ
-					<unclear reason="damage">
-						<supplied resp="#MGB">
-							ελ
-						</supplied>
-					</unclear>
-					<gap reason="damage" unit="character" extent="unknown" />
-				</p>
-			</div>
-			</div>
+						<lb n="frg2_ln1" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							μου
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg2_ln2" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							πειλ
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg2_ln3" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							τιϲ α
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+						<lb n="frg2_ln4" />
+						<p>
+							<gap reason="damage" unit="character" extent="unknown" />
+							μ
+							<unclear reason="damage">
+								<supplied resp="#MGB">
+									ελ
+								</supplied>
+							</unclear>
+							<gap reason="damage" unit="character" extent="unknown" />
+						</p>
+					</div>
+				</div>
 			</div>
 		</body>
 	</text>
