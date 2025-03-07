@@ -1,5 +1,5 @@
 # src_data
-funnels data from document-level repositories into a shared data library for release and api tarball generation
+funnels xml data from document-level repositories into a combined cts_urn data library for release and api tarball generation
 
 For document-level README.md and LICENSE.md information, see the respective repositories:
 - https://github.com/nauarchus/Evangelium_Petri
