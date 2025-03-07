@@ -229,7 +229,7 @@
 					<bibl>
 						Text Type Classification by
 						<ref target="https://www.comphistsem.org/46.html">
-							"Computational Historical Semantics
+							Computational Historical Semantics
 						</ref>
 					</bibl>
 				</taxonomy>
@@ -326,6 +326,8 @@
 	<text>
 		<body>
 			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1371.tlg001.src-MsB">
+				<div type="textpart" subtype="chapter" n="Passio">
+					<div type="textpart" subtype="fragment" n="1">
 				<pb n="1" facs="https://portal.sds.ox.ac.uk/ndownloader/files/37536061" />
 				<lb n="frg1_ln1" />
 				<p>
@@ -336,15 +338,21 @@
 						</supplied>
 					</unclear>
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg1_ln2" />
 					<gap reason="damage" unit="line" extent="1" />
 					<lb n="frg1_ln3" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					ν
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg1_ln4" />
+				<p>
 					<gap reason="damage" unit="line" extent="1" />
+				</p>
 					<lb n="frg1_ln5" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					<supplied resp="#Lührmann">
 						Ϊωϲηφ
@@ -374,7 +382,9 @@
 						</supplied>
 					</unclear>
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg1_ln6" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					<supplied resp="#Lührmann">
 						ειδ
@@ -392,7 +402,9 @@
 					<supplied resp="#Lührmann">
 						Ηρωδηϲ
 					</supplied>
+				</p>
 					<lb n="frg1_ln7" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					<supplied resp="#Lührmann">
 						ελ
@@ -409,7 +421,9 @@
 						ν
 					</supplied>
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg1_ln8" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					<gap reason="damage" unit="character" extent="1" />
 					<supplied resp="#Lührmann">
@@ -427,7 +441,9 @@
 					</unclear>
 					μα ειϲ ταφην
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg1_ln9" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					<supplied resp="#Lührmann">
 						Ηρωδ
@@ -443,7 +459,9 @@
 						το
 					</supplied>
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg1_ln10" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					<gap reason="damage" unit="character" extent="1" />
 					<supplied resp="#Lührmann">
@@ -455,7 +473,9 @@
 						ν
 					</supplied>
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg1_ln11" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					<unclear>
 						<supplied resp="#Lührmann">
@@ -471,31 +491,45 @@
 						μεν
 					</supplied>
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg1_ln12" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					αυτον
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg1_ln13" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					οτι α
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg1_ln14" />
+				<p>
 					<gap reason="damage" unit="line" extent="unknown" />
 				</p>
+				</div>
+					<div type="textpart" subtype="fragment" n="2">
 				<lb n="frg2_ln1" />
 				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					μου
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg2_ln2" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					πειλ
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg2_ln3" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					τιϲ α
 					<gap reason="damage" unit="character" extent="unknown" />
+				</p>
 					<lb n="frg2_ln4" />
+				<p>
 					<gap reason="damage" unit="character" extent="unknown" />
 					μ
 					<unclear reason="damage">
@@ -505,6 +539,8 @@
 					</unclear>
 					<gap reason="damage" unit="character" extent="unknown" />
 				</p>
+			</div>
+			</div>
 			</div>
 		</body>
 	</text>
