@@ -54,4 +54,5 @@ jobs:
         run: |
           git add data/
           git commit -m "Auto-sync CTS XML data from source repositories - $(date)" || echo "No changes to commit"
-          git push origin public
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/nauarchus/src_data.git public
+
