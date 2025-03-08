@@ -155,25 +155,27 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<!--
-			<tagsDecl>
-			<rendition id="large"> </rendition>
-			<rendition id="blockquote"> </rendition>
-			<rendition id="header"> </rendition>
-			<tagUsage render="header" gi="head"> </tagUsage>
-			<tagUsage render="blockquote" gi="q"> poetical language within the running text </tagUsage>
-			<tagUsage render="large" gi="quote"> material quoted from other biblical texts </tagUsage>
-			</tagsDecl>
-			-->
 			<refsDecl n="CTS">
-				<cRefPattern n="verse" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+				<!-- Pattern for chapter.verse (e.g. 6.36, 6.36a, 4a.36b) -->
+				<cRefPattern n="verse" matchPattern="(\d+[a-z]?)\.(\d+[a-z]?)" replacementPattern="#xpath(
+            /tei:TEI/tei:text/tei:body
+            /tei:div
+            /tei:div[@type='textpart' and @subtype='chapter' and @n='$1']
+            /tei:div[@type='textpart' and @subtype='verse' and @n='$2']
+        )">
 					<p>
-						This pointer pattern extracts chapter and verse
+						This pattern extracts the chapter (including optional letter) in $1
+						and the verse (including optional letter) in $2.
 					</p>
 				</cRefPattern>
-				<cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+				<!-- Pattern for chapter-only references (e.g. 6, 4a) -->
+				<cRefPattern n="chapter" matchPattern="(\d+[a-z]?)" replacementPattern="#xpath(
+            /tei:TEI/tei:text/tei:body
+            /tei:div
+            /tei:div[@type='textpart' and @subtype='chapter' and @n='$1']
+        )">
 					<p>
-						This pointer pattern extracts chapter
+						This pattern extracts a chapter number (digits plus optional letter).
 					</p>
 				</cRefPattern>
 			</refsDecl>

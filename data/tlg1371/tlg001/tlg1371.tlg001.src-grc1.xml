@@ -694,7 +694,7 @@
 	</teiHeader>
 	<text>
 		<body>
-			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1371.tlg001.src">
+			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg1371.tlg001.src-grc1">
 				<div type="textpart" subtype="chapter" n="Passio">
 					<div type="textpart" subtype="verse" n="1">
 						<p>
