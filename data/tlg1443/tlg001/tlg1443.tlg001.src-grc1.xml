@@ -115,16 +115,9 @@
 		</fileDesc>
 		<encodingDesc>
 			<refsDecl n="CTS">
-				<cRefPattern n="verse" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-					<p>
-						This pointer pattern extracts chapter and verse
-					</p>
-				</cRefPattern>
-				<cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-					<p>
-						This pointer pattern extracts chapter
-					</p>
-				</cRefPattern>
+				<cRefPattern n="verse" matchPattern="(.+).(.+).([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1']/tei:div[@subtype='chapter'][@n='$2']/tei:div[@subtype='verse'][@n='$3'])" />
+				<cRefPattern n="chapter" matchPattern="(.+).(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1']/tei:div[@subtype='chapter'][@n='$2'])" />
+				<cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1'])" />
 			</refsDecl>
 		</encodingDesc>
 		<profileDesc>
@@ -548,11 +541,10 @@
 							<p>
 								<s>
 									Ἀσπάζομαι τὸν μέλλοντα καταξιοῦσθαι τοῦ εἰς Ἀντιοχείαν πορεύεσθαι
-									
-<supplied reason="omission" source="#Cureton">
-ἀντ’ ἐμοῦ, καθὼς ἐνετείλαμήν σοι
-</supplied>
-.
+									<supplied reason="omission" source="#Cureton">
+										ἀντ’ ἐμοῦ, καθὼς ἐνετείλαμήν σοι
+									</supplied>
+									.
 								</s>
 							</p>
 						</div>
