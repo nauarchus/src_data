@@ -213,27 +213,10 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<!--
-			<tagsDecl>
-			<rendition id="large"> </rendition>
-			<rendition id="blockquote"> </rendition>
-			<rendition id="header"> </rendition>
-			<tagUsage render="header" gi="head"> </tagUsage>
-			<tagUsage render="blockquote" gi="q"> poetical language within the running text </tagUsage>
-			<tagUsage render="large" gi="quote"> material quoted from other biblical texts </tagUsage>
-			</tagsDecl>
-			-->
 			<refsDecl n="CTS">
-				<cRefPattern n="verse" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-					<p>
-						This pointer pattern extracts chapter and verse
-					</p>
-				</cRefPattern>
-				<cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-					<p>
-						This pointer pattern extracts chapter
-					</p>
-				</cRefPattern>
+				<cRefPattern n="verse" matchPattern="([A-Za-z]+[0-9]*).([0-9]+[a-z]?).([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1']/tei:div[@subtype='chapter'][@n='$2']/tei:div[@subtype='verse'][@n='$3'])" />
+				<cRefPattern n="chapter" matchPattern="([A-Za-z]+[0-9]*).([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1']/tei:div[@subtype='chapter'][@n='$2'])" />
+				<cRefPattern n="book" matchPattern="([A-Za-z]+[0-9]*)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1'])" />
 			</refsDecl>
 		</encodingDesc>
 		<revisionDesc status="draft">
@@ -266,7 +249,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="6">
-							<p xml:id="Gal1.6">
+							<p xml:id="Γαλ1.6">
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
 									θαυμάζω ὅτι οὕτως ταχέως μετατίθεσθε ἀπὸ τοῦ καλέσαντος ὑμᾶς
 								</supplied>
@@ -276,7 +259,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="7">
-							<p xml:id="Gal1.7" corresp="#Gal1.6">
+							<p xml:id="Γαλ1.7" corresp="#Γαλ1.6">
 								ὃ πάντως
 								<app type="variants">
 									<lem resp="#Zahn">
@@ -328,7 +311,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="15">
-							<p xml:id="Gal1.15">
+							<p xml:id="Γαλ1.15">
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
 									ὅτε δὲ εὐδόκησεν,
 									ὁ ἀφορίσας με ἐκ κοιλίας μητρός μου,
@@ -337,7 +320,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="16">
-							<p xml:id="Gal1.16" corresp="#Gal1.15">
+							<p xml:id="Γαλ1.16" corresp="#Γαλ1.15">
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
 									ἀποκαλύψαι τὸν υἱὸν αὐτοῦ ἐν ἐμοὶ,
 									ἵνα εὐαγγελίζωμαι αὐτὸν ἐν τοῖς ἔθνεσιν,
@@ -346,7 +329,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="17">
-							<p xml:id="Gal1.17a" corresp="#Gal1.15">
+							<p xml:id="Γαλ1.17a" corresp="#Γαλ1.15">
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
 									οὐδὲ ἀνῆλθον εἰς Ἱεροσόλυμα πρὸς τοὺς πρὸ ἐμοῦ ἀποστόλους.
 								</supplied>
@@ -384,7 +367,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="3">
-							<p xml:id="Gal2.3">
+							<p xml:id="Γαλ2.3">
 								ἀλλ᾽ οὐδὲ Τίτος
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
 									ὁ σὺν ἐμοί,
@@ -394,7 +377,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="4">
-							<p xml:id="Gal2.4" corresp="#Gal2.3">
+							<p xml:id="Γαλ2.4" corresp="#Γαλ2.3">
 								διὰ τοὺς παρεισάκτους
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
 									ψευδαδέλφους,
@@ -415,7 +398,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="9">
-							<p xml:id="Gal2.9">
+							<p xml:id="Γαλ2.9">
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
 									καὶ γνόντες τὴν χάριν τὴν δοθεῖσάν μοι,
 								</supplied>
@@ -429,7 +412,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="10">
-							<p xml:id="Gal2.10" corresp="#Gal2.9">
+							<p xml:id="Γαλ2.10" corresp="#Γαλ2.9">
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
 									μόνον τῶν πτωχῶν ἵνα μνημονεύωμεν,
 									ὃ καὶ ἐσπούδασα αὐτὸ τοῦτο ποιῆσαι.
@@ -3937,7 +3920,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="Eph">
+				<div type="textpart" subtype="book" n="Lao">
 					<head>
 						Πρὸς Λαοδικεῖς.
 					</head>

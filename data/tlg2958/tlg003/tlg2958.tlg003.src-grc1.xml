@@ -240,27 +240,10 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<!--
-			<tagsDecl>
-			<rendition id="large"> </rendition>
-			<rendition id="blockquote"> </rendition>
-			<rendition id="header"> </rendition>
-			<tagUsage render="header" gi="head"> </tagUsage>
-			<tagUsage render="blockquote" gi="q"> poetical language within the running text </tagUsage>
-			<tagUsage render="large" gi="quote"> material quoted from other biblical texts </tagUsage>
-			</tagsDecl>
-			-->
 			<refsDecl n="CTS">
-				<cRefPattern n="verse" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-					<p>
-						This pointer pattern extracts chapter and verse
-					</p>
-				</cRefPattern>
-				<cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-					<p>
-						This pointer pattern extracts chapter
-					</p>
-				</cRefPattern>
+				<cRefPattern n="verse" matchPattern="(.+).([0-9]+[a-z]?).([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1']/tei:div[@subtype='chapter'][@n='$2']/tei:div[@subtype='verse'][@n='$3'])" />
+				<cRefPattern n="chapter" matchPattern="(.+).([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1']/tei:div[@subtype='chapter'][@n='$2'])" />
+				<cRefPattern n="book" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1'])" />
 			</refsDecl>
 		</encodingDesc>
 		<profileDesc>
@@ -270,7 +253,7 @@
 		<body>
 			<div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg2958.tlg003.src-grc1">
 				<pb n="528" />
-				<div type="textpart" subtype="book" n="Gal">
+				<div type="textpart" subtype="book" n="Gal1">
 					<head>
 						ΠΡΟΣ ΓΑΛΑΤΑΣ
 					</head>
@@ -806,7 +789,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="Gal">
+				<div type="textpart" subtype="book" n="Gal2">
 					<div type="textpart" subtype="chapter" n="4">
 						<div type="textpart" subtype="verse" n="26">
 							<p>

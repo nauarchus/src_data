@@ -156,28 +156,8 @@
 		</fileDesc>
 		<encodingDesc>
 			<refsDecl n="CTS">
-				<!-- Pattern for chapter.verse (e.g. 6.36, 6.36a, 4a.36b) -->
-				<cRefPattern n="verse" matchPattern="(\d+[a-z]?)\.(\d+[a-z]?)" replacementPattern="#xpath(
-            /tei:TEI/tei:text/tei:body
-            /tei:div
-            /tei:div[@type='textpart' and @subtype='chapter' and @n='$1']
-            /tei:div[@type='textpart' and @subtype='verse' and @n='$2']
-        )">
-					<p>
-						This pattern extracts the chapter (including optional letter) in $1
-						and the verse (including optional letter) in $2.
-					</p>
-				</cRefPattern>
-				<!-- Pattern for chapter-only references (e.g. 6, 4a) -->
-				<cRefPattern n="chapter" matchPattern="(\d+[a-z]?)" replacementPattern="#xpath(
-            /tei:TEI/tei:text/tei:body
-            /tei:div
-            /tei:div[@type='textpart' and @subtype='chapter' and @n='$1']
-        )">
-					<p>
-						This pattern extracts a chapter number (digits plus optional letter).
-					</p>
-				</cRefPattern>
+				<cRefPattern n="verse" matchPattern="([0-9]+[a-z]?).([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='chapter'][@n='$1']/tei:div[@subtype='verse'][@n='$2'])" />
+				<cRefPattern n="chapter" matchPattern="([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='chapter'][@n='$1'])" />
 			</refsDecl>
 		</encodingDesc>
 		<revisionDesc status="draft">
@@ -211,7 +191,7 @@
 							</p>
 						</div>
 					</div>
-					<div type="textpart" subtype="chapter" n="4">
+					<div type="textpart" subtype="chapter" n="4a">
 						<div type="textpart" subtype="verse" n="31">
 							<p xml:id="Ev4.31" corresp="#Ev3.1">
 								κατῆλθεν
@@ -4017,7 +3997,7 @@
 							</p>
 						</div>
 					</div>
-					<div type="textpart" subtype="chapter" n="17">
+					<div type="textpart" subtype="chapter" n="17a">
 						<div type="textpart" subtype="verse" n="1">
 							<p>
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
@@ -4092,14 +4072,14 @@
 							</p>
 						</div>
 					</div>
-					<div type="textpart" subtype="chapter" n="4">
+					<div type="textpart" subtype="chapter" n="4b">
 						<div type="textpart" subtype="verse" n="27">
 							<p>
 								πολλοὶ λεπροὶ ἦσαν ἐν τῷ Ἰσραὴλ ἐν ἡμέραις Ἐλισσαίου τοῦ προφήτου καὶ οὐκ ἐκαθαρίσθη εἰ μὴ Νεεμὰν ὁ Σύρος.
 							</p>
 						</div>
 					</div>
-					<div type="textpart" subtype="chapter" n="17">
+					<div type="textpart" subtype="chapter" n="17b">
 						<div type="textpart" subtype="verse" n="14b">
 							<p>
 								<supplied reason="omission" source="#EOCM" resp="#MGB">

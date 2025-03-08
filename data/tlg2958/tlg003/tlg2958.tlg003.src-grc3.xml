@@ -209,27 +209,10 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<!--
-			<tagsDecl>
-			<rendition id="large"> </rendition>
-			<rendition id="blockquote"> </rendition>
-			<rendition id="header"> </rendition>
-			<tagUsage render="header" gi="head"> </tagUsage>
-			<tagUsage render="blockquote" gi="q"> poetical language within the running text </tagUsage>
-			<tagUsage render="large" gi="quote"> material quoted from other biblical texts </tagUsage>
-			</tagsDecl>
-			-->
 			<refsDecl n="CTS">
-				<cRefPattern n="verse" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-					<p>
-						This pointer pattern extracts chapter and verse
-					</p>
-				</cRefPattern>
-				<cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-					<p>
-						This pointer pattern extracts chapter
-					</p>
-				</cRefPattern>
+				<cRefPattern n="verse" matchPattern="([A-Za-z]+[0-9]*).([0-9]+[a-z]?).([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1']/tei:div[@subtype='chapter'][@n='$2']/tei:div[@subtype='verse'][@n='$3'])" />
+				<cRefPattern n="chapter" matchPattern="([A-Za-z]+[0-9]*).([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1']/tei:div[@subtype='chapter'][@n='$2'])" />
+				<cRefPattern n="book" matchPattern="([A-Za-z]+[0-9]*)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1'])" />
 			</refsDecl>
 		</encodingDesc>
 		<revisionDesc status="draft">
@@ -245,14 +228,14 @@
 				<head>
 					ΑΠΟΣΤΟΛΙΚΟΝ.
 				</head>
-				<div type="textpart" subtype="book" n="Gal">
+				<div type="textpart" subtype="book" n="Gal1">
 					<head>
 						Προς Γαλατας.
 					</head>
 					<milestone unit="para" />
 					<div type="textpart" subtype="chapter" n="1">
 						<div type="textpart" subtype="verse" n="1">
-							<p xml:id="Gal1.1">
+							<p xml:id="Γαλ1.1">
 								Παῦλος ἀπόστολος,
 								οὐκ ἀπ᾽ ἀνθρώπων οὐδὲ δι᾽ ἀνθρώπου,
 								ἀλλὰ διὰ Ἰησοῦ Χριστοῦ τοῦ ἐγείραντος αὑτὸν ἐκ νεκρῶν.
@@ -260,7 +243,7 @@
 						</div>
 						<pb n="68*" />
 						<div type="textpart" subtype="verse" n="2">
-							<p xml:id="Gal1.2" corresp="#Gal1.1">
+							<p xml:id="Γαλ1.2" corresp="#Γαλ1.1">
 								<supplied reason="omission" source="#Harnack">
 									καὶ οἱ σὺν ἐμοὶ πάντες ἀδελφοί,
 									ταῖς ἐκκλησίαις τῆς Γαλατίας.
@@ -268,7 +251,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="3">
-							<p xml:id="Gal1.3">
+							<p xml:id="Γαλ1.3">
 								χάρις καὶ εἰρήνη
 								<supplied reason="omission" source="#Harnack">
 									ἀπὸ θεοῦ πατρὸς καὶ κυρίου ἡμῶν Ἰησοῦ Χριστοῦ,
@@ -276,7 +259,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="4">
-							<p xml:id="Gal1.4" corresp="#Gal1.3">
+							<p xml:id="Γαλ1.4" corresp="#Γαλ1.3">
 								<supplied reason="omission" source="#Harnack">
 									τοῦ δόντος ἑαυτὸν περὶ τῶν ἁμαρτιῶν ἡμῶν,
 									ὅπως ἐξέληται ἡμᾶς ἐκ τοῦ αἰῶνος τοῦ ἐνεστῶτος πονηροῦ,
@@ -285,7 +268,7 @@
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="5">
-							<p xml:id="Gal1.5" corresp="#Gal1.5">
+							<p xml:id="Γαλ1.5" corresp="#Γαλ1.5">
 								<supplied reason="omission" source="#EOCM" resp="#MGB">
 									ᾧ ἡ δόξα εἰς τοὺς αἰῶνας τῶν αἰώνων,
 									ἀμήν.
@@ -294,12 +277,12 @@
 						</div>
 						<milestone unit="para" />
 						<div type="textpart" subtype="verse" n="6">
-							<p xml:id="Gal1.6">
+							<p xml:id="Γαλ1.6">
 								θαυμάζω ὅτι οὕτως ταχέως μετατίθεσθε ἀπὸ τοῦ καλέσαντος ὑμᾶς ἐν χάριτι εἰς ἕτερον εὐαγγέλιον,
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="7">
-							<p xml:id="Gal1.7" corresp="#Gal1.6">
+							<p xml:id="Γαλ1.7" corresp="#Γαλ1.6">
 								ὃ
 								ἄλλο
 								<app type="variants">
@@ -942,7 +925,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="Gal">
+				<div type="textpart" subtype="book" n="Gal2">
 					<div type="textpart" subtype="chapter" n="4">
 						<div type="textpart" subtype="verse" n="26">
 							<p>
@@ -4150,7 +4133,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="Eph">
+				<div type="textpart" subtype="book" n="Lao">
 					<head>
 						Πρὸς Λαοδικέας.
 					</head>

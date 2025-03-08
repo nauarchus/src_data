@@ -155,27 +155,9 @@
 			</sourceDesc>
 		</fileDesc>
 		<encodingDesc>
-			<!--
-			<tagsDecl>
-			<rendition id="large"> </rendition>
-			<rendition id="blockquote"> </rendition>
-			<rendition id="header"> </rendition>
-			<tagUsage render="header" gi="head"> </tagUsage>
-			<tagUsage render="blockquote" gi="q"> poetical language within the running text </tagUsage>
-			<tagUsage render="large" gi="quote"> material quoted from other biblical texts </tagUsage>
-			</tagsDecl>
-			-->
 			<refsDecl n="CTS">
-				<cRefPattern n="verse" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
-					<p>
-						This pointer pattern extracts chapter and verse
-					</p>
-				</cRefPattern>
-				<cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
-					<p>
-						This pointer pattern extracts chapter
-					</p>
-				</cRefPattern>
+				<cRefPattern n="verse" matchPattern="([0-9]+[a-z]?).([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='chapter'][@n='$1']/tei:div[@subtype='verse'][@n='$2'])" />
+				<cRefPattern n="chapter" matchPattern="([0-9]+[a-z]?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='chapter'][@n='$1'])" />
 			</refsDecl>
 		</encodingDesc>
 		<revisionDesc status="draft">
@@ -214,7 +196,7 @@
 							</p>
 						</div>
 					</div>
-					<div type="textpart" subtype="chapter" n="4">
+					<div type="textpart" subtype="chapter" n="4a">
 						<div type="textpart" subtype="verse" n="31">
 							<p xml:id="Ev4.31" corresp="#Ev3.1">
 								κατῆλθεν ὁ Ἰησοῦς
@@ -292,25 +274,25 @@
 						<div type="textpart" subtype="verse" n="41">
 							<p>
 								<s>
-								ἐξήρχετο δαιμόνια κράζοντα·
+									ἐξήρχετο δαιμόνια κράζοντα·
 								</s>
 								<s>
-								Σὺ εἶ ὁ υἱὸς τοῦ θεοῦ.
+									Σὺ εἶ ὁ υἱὸς τοῦ θεοῦ.
 								</s>
 								<s>
-								ἐπιτιμῶν οὐκ εἴα αὐτὰ λαλεῖν.
+									ἐπιτιμῶν οὐκ εἴα αὐτὰ λαλεῖν.
 								</s>
 							</p>
 						</div>
 						<div type="textpart" subtype="verse" n="42">
 							<p>
-							<s>
-								ἐπορεύθη εἰς ἔρημον
+								<s>
+									ἐπορεύθη εἰς ἔρημον
 								</s>
 								<gap reason="missing" extent="unknown" source="#Harnack" />
 								.
 								<s>
-								κατεῖχον αὐτόν.
+									κατεῖχον αὐτόν.
 								</s>
 							</p>
 						</div>
@@ -3705,7 +3687,7 @@
 						</div>
 					</div>
 					<milestone unit="para" />
-					<div type="textpart" subtype="chapter" n="17">
+					<div type="textpart" subtype="chapter" n="17a">
 						<div type="textpart" subtype="verse" n="1">
 							<p>
 								<gap reason="missing" extent="unknown" source="#Harnack" />
@@ -3822,2040 +3804,2044 @@
 							</p>
 						</div>
 						<pb n="223*" />
-						<div type="textpart" subtype="verse" n="27">
-							<p>
-								πολλοὶ λεπροὶ ἦσαν ἐν τῷ Ἰσραήλ ἐν ἡμέραις Ἐλισσαίου τοῦ προφήτου καὶ οὐκ ἐκαθαρίσθη εἰ μὴ Νεεμὰν ὁ Σύρος.
-							</p>
-						</div>
-						<pb n="224*" />
-						<div type="textpart" subtype="verse" n="14b">
-							<p>
-								πορευθέντες δείξατε ἑαυτοὺς τοῖς ἱερεῦσιν·
-								καὶ ἐγένετο ἐν τῷ ὑπάγειν ἐκαθαρίσθησαν.
-								<app type="variants">
-									<lem resp="#Harnack">
-										καὶ ἐγένετο ἐν τῷ ὑπάγειν ἐκαθαρίσθησαν.
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										καὶ ἐγένετο ἐν τῷ ὑπάγειν ἐκαθαρίσθησαν.
-									</rdg>
-								</app>
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="15">
-							<p>
-								εἷς ἐξ αὐτῶν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								δοξάζων τὸν θεόν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="16">
-							<p>
-								αὐτὸς ἦν
-								<app type="variants">
-									<lem resp="#Harnack">
-										αὐτὸς ἦν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										αὐτὸς ἦν
-									</rdg>
-								</app>
-								Σαμαρίτης
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="17">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="18">
-							<p>
-								δοῦναι δόξαν τῷ θεῷ
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="19">
-							<p>
-								καὶ
-								<app type="variants">
-									<lem resp="#Harnack">
-										καὶ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										καὶ
-									</rdg>
-								</app>
-								θαυμάσας αὐτόν εἶπεν αὐτῷ
-								<app type="variants">
-									<lem resp="#Harnack">
-										εἶπεν αὐτῷ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										εἶπεν αὐτῷ
-									</rdg>
-								</app>
-								·
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἡ πίστις σου σέσωκέν σε.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="20">
-							<p>
-								Ἐπερωτηθεὶς δὲ ὑπὸ τῶν Φαρισαίων πότε ἔρχεται ἡ βασιλεία τοῦ θεοῦ
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								εἶπεν
-								<app type="variants">
-									<lem resp="#Harnack">
-										εἶπεν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										εἶπεν
-									</rdg>
-								</app>
-								·
-								οὐκ ἔρχεται ἡ βασιλεία τοῦ θεοῦ μετὰ παρατηρήσεως,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="21">
-							<p>
-								οὐδὲ ἐροῦσιν·
-								ἰδοὺ ὧδε,
-								ἰδοὺ ἐκεῖ·
-								ἰδοῦ γὰρ ἡ βασιλεία τοῦ θεοῦ ἐντὸς ὑμῶν ἐστίν.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="22">
-							<p>
-								Ἐλεύσονται ἡμέραι,
-								ὅταν ἐπιθυμήσητε ἰδεῖν μίαν τῶν ἡμερῶν τοῦ υἱοῦ τοῦ ἀνθρώπου
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="25">
-							<p>
-								πρῶτον δεῖ τὸν υἱὸν ἀνθρώπου
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								πολλὰ παθεῖν καὶ ἀποδοκιμασθῆναι
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="26">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="27">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="28">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="29">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="30">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="31">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="32">
-							<p>
-								μνημονεύετε τῆς γυναικὸς Λώτ.
-							</p>
-						</div>
 					</div>
-					<milestone unit="para" />
-					<div type="textpart" subtype="chapter" n="18">
-						<div type="textpart" subtype="verse" n="1">
-							<p>
-								πρὸς τὸ δεῖν πάντοτε προσεύχεσθαι αὐτοὺς καὶ μὴ ἐγκακεῖν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								παραβολήν.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="2">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								κριτής τις
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								χήρα
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="3">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="4">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="5">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="6">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="7">
-							<p>
-								ὁ θεός
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								<pb n="225*" />
-								ποιήσει τὴν ἐκδίκησιν τῶν ἐκλεκτῶν αὐτοῦ.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="8">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="9">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="10">
-							<p>
-								ἄνθρωποι δύο
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								εἰς τὸ ἱερὸν προσεύξασθαι,
-								ὁ εἷς Φαρισαῖος καὶ ὁ ἕτερος τελώνης
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="11">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="12">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="13">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="14">
-							<p>
-								δεδικαιωμένος
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ὁ ταπεινῶν.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="15">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="16">
-							<p>
-								ἄφετε τὰ παιδία ἔρχεσθαι πρός με·
-								τῶν γὰρ τοιούτων ἐστὶν ἡ βασιλεία τῶν οὐρανῶν.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="17">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="18">
-							<p>
-								εἶπέ τις
-								<pb n="226*" />
-								πρὸς αὐτόν·
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									διδάσκαλε ἀγαθέ τί ποιήσας ζωὴν αἰώνιον κληρονομήσω
-								</supplied>
-								;
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="19">
-							<p>
-								ὁ δὲ·
-								τί με λέγεις ἀγαθόν;
-								εἷς ἐστὶν ἀγαθὸς,
+					<div type="textpart" subtype="chapter" n="4b">
+					</div>
+					<div type="textpart" subtype="verse" n="27">
+						<p>
+							πολλοὶ λεπροὶ ἦσαν ἐν τῷ Ἰσραήλ ἐν ἡμέραις Ἐλισσαίου τοῦ προφήτου καὶ οὐκ ἐκαθαρίσθη εἰ μὴ Νεεμὰν ὁ Σύρος.
+						</p>
+					</div>
+				</div>
+				<div type="textpart" subtype="chapter" n="17b">
+				</div>
+				<pb n="224*" />
+				<div type="textpart" subtype="verse" n="14b">
+					<p>
+						πορευθέντες δείξατε ἑαυτοὺς τοῖς ἱερεῦσιν·
+						καὶ ἐγένετο ἐν τῷ ὑπάγειν ἐκαθαρίσθησαν.
+						<app type="variants">
+							<lem resp="#Harnack">
+								καὶ ἐγένετο ἐν τῷ ὑπάγειν ἐκαθαρίσθησαν.
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								καὶ ἐγένετο ἐν τῷ ὑπάγειν ἐκαθαρίσθησαν.
+							</rdg>
+						</app>
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="15">
+					<p>
+						εἷς ἐξ αὐτῶν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						δοξάζων τὸν θεόν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="16">
+					<p>
+						αὐτὸς ἦν
+						<app type="variants">
+							<lem resp="#Harnack">
+								αὐτὸς ἦν
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								αὐτὸς ἦν
+							</rdg>
+						</app>
+						Σαμαρίτης
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="17">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="18">
+					<p>
+						δοῦναι δόξαν τῷ θεῷ
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="19">
+					<p>
+						καὶ
+						<app type="variants">
+							<lem resp="#Harnack">
+								καὶ
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								καὶ
+							</rdg>
+						</app>
+						θαυμάσας αὐτόν εἶπεν αὐτῷ
+						<app type="variants">
+							<lem resp="#Harnack">
+								εἶπεν αὐτῷ
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								εἶπεν αὐτῷ
+							</rdg>
+						</app>
+						·
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἡ πίστις σου σέσωκέν σε.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="20">
+					<p>
+						Ἐπερωτηθεὶς δὲ ὑπὸ τῶν Φαρισαίων πότε ἔρχεται ἡ βασιλεία τοῦ θεοῦ
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						εἶπεν
+						<app type="variants">
+							<lem resp="#Harnack">
+								εἶπεν
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								εἶπεν
+							</rdg>
+						</app>
+						·
+						οὐκ ἔρχεται ἡ βασιλεία τοῦ θεοῦ μετὰ παρατηρήσεως,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="21">
+					<p>
+						οὐδὲ ἐροῦσιν·
+						ἰδοὺ ὧδε,
+						ἰδοὺ ἐκεῖ·
+						ἰδοῦ γὰρ ἡ βασιλεία τοῦ θεοῦ ἐντὸς ὑμῶν ἐστίν.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="22">
+					<p>
+						Ἐλεύσονται ἡμέραι,
+						ὅταν ἐπιθυμήσητε ἰδεῖν μίαν τῶν ἡμερῶν τοῦ υἱοῦ τοῦ ἀνθρώπου
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="25">
+					<p>
+						πρῶτον δεῖ τὸν υἱὸν ἀνθρώπου
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						πολλὰ παθεῖν καὶ ἀποδοκιμασθῆναι
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="26">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="27">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="28">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="29">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="30">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="31">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="32">
+					<p>
+						μνημονεύετε τῆς γυναικὸς Λώτ.
+					</p>
+				</div>
+			</div>
+			<milestone unit="para" />
+			<div type="textpart" subtype="chapter" n="18">
+				<div type="textpart" subtype="verse" n="1">
+					<p>
+						πρὸς τὸ δεῖν πάντοτε προσεύχεσθαι αὐτοὺς καὶ μὴ ἐγκακεῖν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						παραβολήν.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="2">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						κριτής τις
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						χήρα
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="3">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="4">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="5">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="6">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="7">
+					<p>
+						ὁ θεός
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						<pb n="225*" />
+						ποιήσει τὴν ἐκδίκησιν τῶν ἐκλεκτῶν αὐτοῦ.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="8">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="9">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="10">
+					<p>
+						ἄνθρωποι δύο
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						εἰς τὸ ἱερὸν προσεύξασθαι,
+						ὁ εἷς Φαρισαῖος καὶ ὁ ἕτερος τελώνης
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="11">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="12">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="13">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="14">
+					<p>
+						δεδικαιωμένος
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ὁ ταπεινῶν.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="15">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="16">
+					<p>
+						ἄφετε τὰ παιδία ἔρχεσθαι πρός με·
+						τῶν γὰρ τοιούτων ἐστὶν ἡ βασιλεία τῶν οὐρανῶν.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="17">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="18">
+					<p>
+						εἶπέ τις
+						<pb n="226*" />
+						πρὸς αὐτόν·
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							διδάσκαλε ἀγαθέ τί ποιήσας ζωὴν αἰώνιον κληρονομήσω
+						</supplied>
+						;
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="19">
+					<p>
+						ὁ δὲ·
+						τί με λέγεις ἀγαθόν;
+						εἷς ἐστὶν ἀγαθὸς,
+						θεὸς ὁ πατήρ
+						<app type="variants">
+							<lem resp="#Harnack">
 								θεὸς ὁ πατήρ
-								<app type="variants">
-									<lem resp="#Harnack">
-										θεὸς ὁ πατήρ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										θεὸς ὁ πατήρ
-									</rdg>
-								</app>
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="20">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								θεὸς ὁ πατήρ
+							</rdg>
+						</app>
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="20">
+					<p>
+						τὰς ἐντολὰς οἶδας
+						<app type="variants">
+							<lem resp="#Harnack">
 								τὰς ἐντολὰς οἶδας
-								<app type="variants">
-									<lem resp="#Harnack">
-										τὰς ἐντολὰς οἶδας
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										τὰς ἐντολὰς οἶδας
-									</rdg>
-								</app>
-								μὴ φονεύσῃς,
-								μὴ μοιχεύσῃς,
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									μὴ κλέψῃς,
-									μὴ ψευδομαρτυρήσῃς,
-									τίμα τὸν πατέρα σου καὶ τὴν μητέρα.
-								</supplied>
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="21">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								τὰς ἐντολὰς οἶδας
+							</rdg>
+						</app>
+						μὴ φονεύσῃς,
+						μὴ μοιχεύσῃς,
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							μὴ κλέψῃς,
+							μὴ ψευδομαρτυρήσῃς,
+							τίμα τὸν πατέρα σου καὶ τὴν μητέρα.
+						</supplied>
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="21">
+					<p>
+						καὶ,
+						φησιν,
+						ταῦτα
+						<app type="variants">
+							<lem resp="#Harnack">
 								καὶ,
 								φησιν,
 								ταῦτα
-								<app type="variants">
-									<lem resp="#Harnack">
-										καὶ,
-										φησιν,
-										ταῦτα
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										καὶ,
-										φησιν,
-										ταῦτα
-									</rdg>
-								</app>
-								πάντα ἐφύλαξα ἐκ νεότητος.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="22">
-							<p>
-								ἀκούσας ταῦτα ὁ Ἰησους εἶπεν·
-								ἕν σοι λείπει·
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									πάντα ὅσα ἔχεις πώλησον καὶ διάδος πτωχοῖς,
-									καὶ ἕξεις θησαυρὸν ἐν οὐρανοῖς,
-									καὶ δεῦρο ἀκολούθει μοι.
-								</supplied>
-							</p>
-						</div>
-						<milestone unit="para" />
-						<milestone unit="para" />
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="35">
-							<p>
-								Ἐγένετο δὲ ἐν τῷ ἐγγίζειν αὐτὸν εἰς Ἰεριχώ,
-								καὶ ἰδού
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἰδού
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἰδού
-									</rdg>
-								</app>
-								τις τυφλὸς ἐπαιτῶν ἐκάθητο παρὰ τὴν ὁδόν.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="36">
-							<p>
-								ἀκούσας δὲ ὄχλου
-								<pb n="227*" />
-								διαπορευομένου ἐπυνθάνετο,
-								τί ἂν εἴη τοῦτο;
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="37">
-							<p>
-								ἀπηγγέλθη δὲ αὐτῷ,
-								ὅτι Ἰησοῦς παρέρχεται.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="38">
-							<p>
-								καὶ ἐβόησε λέγων·
-								Ἰησοῦ,
-								υἱέ Δαυΐδ,
-								ἐλέησόν με.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="39">
-							<p>
-								οἱ δὲ προάγοντες ἐπετίμων αὐτῷ ἵνα σιωπήσῃ.
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								καὶ,
+								φησιν,
+								ταῦτα
+							</rdg>
+						</app>
+						πάντα ἐφύλαξα ἐκ νεότητος.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="22">
+					<p>
+						ἀκούσας ταῦτα ὁ Ἰησους εἶπεν·
+						ἕν σοι λείπει·
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							πάντα ὅσα ἔχεις πώλησον καὶ διάδος πτωχοῖς,
+							καὶ ἕξεις θησαυρὸν ἐν οὐρανοῖς,
+							καὶ δεῦρο ἀκολούθει μοι.
+						</supplied>
+					</p>
+				</div>
+				<milestone unit="para" />
+				<milestone unit="para" />
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="35">
+					<p>
+						Ἐγένετο δὲ ἐν τῷ ἐγγίζειν αὐτὸν εἰς Ἰεριχώ,
+						καὶ ἰδού
+						<app type="variants">
+							<lem resp="#Harnack">
+								ἰδού
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἰδού
+							</rdg>
+						</app>
+						τις τυφλὸς ἐπαιτῶν ἐκάθητο παρὰ τὴν ὁδόν.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="36">
+					<p>
+						ἀκούσας δὲ ὄχλου
+						<pb n="227*" />
+						διαπορευομένου ἐπυνθάνετο,
+						τί ἂν εἴη τοῦτο;
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="37">
+					<p>
+						ἀπηγγέλθη δὲ αὐτῷ,
+						ὅτι Ἰησοῦς παρέρχεται.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="38">
+					<p>
+						καὶ ἐβόησε λέγων·
+						Ἰησοῦ,
+						υἱέ Δαυΐδ,
+						ἐλέησόν με.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="39">
+					<p>
+						οἱ δὲ προάγοντες ἐπετίμων αὐτῷ ἵνα σιωπήσῃ.
+						αὐτὸς δὲ πολλῷ μᾶλλον ἔκραζεν·
+						υἱὲ Δαυίδ,
+						ἐλέησόν με.
+						<app type="variants">
+							<lem resp="#Harnack">
 								αὐτὸς δὲ πολλῷ μᾶλλον ἔκραζεν·
 								υἱὲ Δαυίδ,
 								ἐλέησόν με.
-								<app type="variants">
-									<lem resp="#Harnack">
-										αὐτὸς δὲ πολλῷ μᾶλλον ἔκραζεν·
-										υἱὲ Δαυίδ,
-										ἐλέησόν με.
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										αὐτὸς δὲ πολλῷ μᾶλλον ἔκραζεν·
-										υἱὲ Δαυίδ,
-										ἐλέησόν με.
-									</rdg>
-								</app>
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="40">
-							<p>
-								σταθεὶς δὲ
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									ὁ Ἰησοῦς
-								</supplied>
-								ἐκέλευσεν αὐτὸν ἀχθῆναι
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									πρὸς αὐτόν
-								</supplied>
-								.
-								ἐγγίσαντος δὲ αὐτοῦ ἐπηρώτησεν αὐτόν,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="41">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								αὐτὸς δὲ πολλῷ μᾶλλον ἔκραζεν·
+								υἱὲ Δαυίδ,
+								ἐλέησόν με.
+							</rdg>
+						</app>
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="40">
+					<p>
+						σταθεὶς δὲ
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							ὁ Ἰησοῦς
+						</supplied>
+						ἐκέλευσεν αὐτὸν ἀχθῆναι
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							πρὸς αὐτόν
+						</supplied>
+						.
+						ἐγγίσαντος δὲ αὐτοῦ ἐπηρώτησεν αὐτόν,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="41">
+					<p>
+						λέγων
+						<app type="variants">
+							<lem resp="#Harnack">
 								λέγων
-								<app type="variants">
-									<lem resp="#Harnack">
-										λέγων
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										λέγων
-									</rdg>
-								</app>
-								·
-								τί σοι θέλεις ποιήσω;
-								ὁ δὲ εἶπε·
-								κύριε,
-								ἵνα ἀναβλέψω.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="42">
-							<p>
-								καὶ ἀποκριθεὶς εἶπεν ὁ Ἰησοῦς·
-								ἀνάβλεψον·
-								ἡ πίστις σου σέσωκέ σε.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="43">
-							<p>
-								καὶ παραχρῆμα ἀνέβλεψεν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								,
-								καὶ πᾶς ὁ λαὸς αἶνον ἔδωκεν τῷ θεῷ.
-							</p>
-						</div>
-					</div>
-					<milestone unit="para" />
-					<div type="textpart" subtype="chapter" n="19">
-						<div type="textpart" subtype="verse" n="1">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="2">
-							<p>
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									καὶ ἰδοὺ ἀνὴρ ὀνόματι καλούμενος
-								</supplied>
-								Ζακχαῖος,
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									καὶ αὐτὸς ἦν ἀρχιτελώνης,
-									καὶ ἦν πλούσιος·
-								</supplied>
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="3">
-							<p>
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									καὶ ἐζήτει ἰδεῖν τὸν Ἰησοῦν τίς ἐστιν,
-									καὶ οὐκ ἠδύνατο ἀπὸ τοῦ ὄχλου,
-									ὅτι τῇ ἡλικίᾳ μικρὸς ἦν.
-								</supplied>
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="4">
-							<p>
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									καὶ προδραμὼν εἰς τὸ ἔμπροσθεν ἀνέβη ἐπὶ συκομορέαν,
-									ἵνα ἴδῃ αὐτόν,
-									ὅτι ἐκείνης ἤμελλεν διέρχεσθαι.
-								</supplied>
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="5">
-							<p>
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									καὶ ὡς ἦλθεν ἐπὶ τὸν τόπον,
-									ἀναβλέψας ὁ Ἰησοῦς εἶπεν πρὸς αὐτόν·
-									Ζακχαῖε,
-									σπεύσας κατάβηθι·
-									σήμερον γὰρ ἐν τῷ οἴκῳ σου δεῖ με μεῖναι.
-								</supplied>
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="6">
-							<p>
-								ὑπεδέξατο αὐτόν.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="7">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="8">
-							<p>
-								τὰ ἡμίσεια
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								τῶν ὑπαρχόντων
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								δίδωμι,
-								καὶ εἴ τινός τι ἐσυκοφάντησα,
-								τετραπλοῦν ἀποδίδωμι.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="9">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								·
-								σήμερον σωτηρία τούτῳ τῷ οἴκῳ.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="10">
-							<p>
-								ἦλθεν γὰρ ὁ υἱὸς τοῦ ἀνθρώπου σῶσαι τὸ ἀπολωλός.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<pb n="228*" />
-						<div type="textpart" subtype="verse" n="11">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="12">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="13">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								δούλους
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἔδωκεν αὐτοῖς
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								μνᾶς
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								·
-								πραγματεύσασθε
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="14">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="15">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="16">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="17">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="18">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="19">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="20">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="21">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="22">
-							<p>
-								αὐστηρός,
-								ἄιρων ὃ οὐκ ἔθηκα καὶ θερίζων ὃ οὐκ ἔσπειρα
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="23">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="24">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="25">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="26">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								λέγων
+							</rdg>
+						</app>
+						·
+						τί σοι θέλεις ποιήσω;
+						ὁ δὲ εἶπε·
+						κύριε,
+						ἵνα ἀναβλέψω.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="42">
+					<p>
+						καὶ ἀποκριθεὶς εἶπεν ὁ Ἰησοῦς·
+						ἀνάβλεψον·
+						ἡ πίστις σου σέσωκέ σε.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="43">
+					<p>
+						καὶ παραχρῆμα ἀνέβλεψεν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						,
+						καὶ πᾶς ὁ λαὸς αἶνον ἔδωκεν τῷ θεῷ.
+					</p>
+				</div>
+			</div>
+			<milestone unit="para" />
+			<div type="textpart" subtype="chapter" n="19">
+				<div type="textpart" subtype="verse" n="1">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="2">
+					<p>
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							καὶ ἰδοὺ ἀνὴρ ὀνόματι καλούμενος
+						</supplied>
+						Ζακχαῖος,
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							καὶ αὐτὸς ἦν ἀρχιτελώνης,
+							καὶ ἦν πλούσιος·
+						</supplied>
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="3">
+					<p>
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							καὶ ἐζήτει ἰδεῖν τὸν Ἰησοῦν τίς ἐστιν,
+							καὶ οὐκ ἠδύνατο ἀπὸ τοῦ ὄχλου,
+							ὅτι τῇ ἡλικίᾳ μικρὸς ἦν.
+						</supplied>
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="4">
+					<p>
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							καὶ προδραμὼν εἰς τὸ ἔμπροσθεν ἀνέβη ἐπὶ συκομορέαν,
+							ἵνα ἴδῃ αὐτόν,
+							ὅτι ἐκείνης ἤμελλεν διέρχεσθαι.
+						</supplied>
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="5">
+					<p>
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							καὶ ὡς ἦλθεν ἐπὶ τὸν τόπον,
+							ἀναβλέψας ὁ Ἰησοῦς εἶπεν πρὸς αὐτόν·
+							Ζακχαῖε,
+							σπεύσας κατάβηθι·
+							σήμερον γὰρ ἐν τῷ οἴκῳ σου δεῖ με μεῖναι.
+						</supplied>
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="6">
+					<p>
+						ὑπεδέξατο αὐτόν.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="7">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="8">
+					<p>
+						τὰ ἡμίσεια
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						τῶν ὑπαρχόντων
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						δίδωμι,
+						καὶ εἴ τινός τι ἐσυκοφάντησα,
+						τετραπλοῦν ἀποδίδωμι.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="9">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						·
+						σήμερον σωτηρία τούτῳ τῷ οἴκῳ.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="10">
+					<p>
+						ἦλθεν γὰρ ὁ υἱὸς τοῦ ἀνθρώπου σῶσαι τὸ ἀπολωλός.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<pb n="228*" />
+				<div type="textpart" subtype="verse" n="11">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="12">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="13">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						δούλους
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἔδωκεν αὐτοῖς
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						μνᾶς
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						·
+						πραγματεύσασθε
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="14">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="15">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="16">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="17">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="18">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="19">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="20">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="21">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="22">
+					<p>
+						αὐστηρός,
+						ἄιρων ὃ οὐκ ἔθηκα καὶ θερίζων ὃ οὐκ ἔσπειρα
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="23">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="24">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="25">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="26">
+					<p>
+						ἀπὸ τοῦ μὴ ἔχοντος
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἀπὸ τοῦ μὴ ἔχοντος
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἀπὸ τοῦ μὴ ἔχοντος
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἀπὸ τοῦ μὴ ἔχοντος
-									</rdg>
-								</app>
-								καὶ ὃ δοκεῖ ἔχειν ἀρθήσεται.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<milestone unit="para" />
-						<milestone unit="para" />
-					</div>
-					<milestone unit="para" />
-					<div type="textpart" subtype="chapter" n="20">
-						<div type="textpart" subtype="verse" n="1">
-							<p>
-								οἱ Φαρισαῖοι
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="2">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="3">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="4">
-							<p>
-								τὸ βάπτισμα τὸ Ἰωάννου
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="5">
-							<p>
-								ἐξ οὐρανῶν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								,
-								διατί οὐκ ἐπιστεύσατε αὐτῷ;
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="6">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἀπὸ τοῦ μὴ ἔχοντος
+							</rdg>
+						</app>
+						καὶ ὃ δοκεῖ ἔχειν ἀρθήσεται.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<milestone unit="para" />
+				<milestone unit="para" />
+			</div>
+			<milestone unit="para" />
+			<div type="textpart" subtype="chapter" n="20">
+				<div type="textpart" subtype="verse" n="1">
+					<p>
+						οἱ Φαρισαῖοι
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="2">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="3">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="4">
+					<p>
+						τὸ βάπτισμα τὸ Ἰωάννου
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="5">
+					<p>
+						ἐξ οὐρανῶν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						,
+						διατί οὐκ ἐπιστεύσατε αὐτῷ;
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="6">
+					<p>
+						ἐξ ἀνθρώπων
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἐξ ἀνθρώπων
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἐξ ἀνθρώπων
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἐξ ἀνθρώπων
-									</rdg>
-								</app>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἐξ ἀνθρώπων
+							</rdg>
+						</app>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						καταλιθάσει ἡμᾶς
+						<app type="variants">
+							<lem resp="#Harnack">
 								καταλιθάσει ἡμᾶς
-								<app type="variants">
-									<lem resp="#Harnack">
-										καταλιθάσει ἡμᾶς
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										καταλιθάσει ἡμᾶς
-									</rdg>
-								</app>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="7">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="8">
-							<p>
-								οὐδὲ ἐγὼ λέγω ὑμῖν ἐν ποίᾳ ἐξουσίᾳ ταῦτα ποιῶ.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="19">
-							<p>
-								καὶ ἐζήτησαν ἐπιβαλεῖν ἐπ᾽ αὐτὸν τὰς χεῖρας καὶ ἐφοβήθησαν.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="20">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="21">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="22">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="23">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="24">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="25">
-							<p>
-								ἀπόδοτε τὰ Κάσαρος Καίσαρι καὶ τὰ τοῦ θεοῦ τῷ θεῷ.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="26">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<pb n="229*" />
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="27">
-							<p>
-								Σαδδουκαῖοι
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="28">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								καταλιθάσει ἡμᾶς
+							</rdg>
+						</app>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="7">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="8">
+					<p>
+						οὐδὲ ἐγὼ λέγω ὑμῖν ἐν ποίᾳ ἐξουσίᾳ ταῦτα ποιῶ.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="19">
+					<p>
+						καὶ ἐζήτησαν ἐπιβαλεῖν ἐπ᾽ αὐτὸν τὰς χεῖρας καὶ ἐφοβήθησαν.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="20">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="21">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="22">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="23">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="24">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="25">
+					<p>
+						ἀπόδοτε τὰ Κάσαρος Καίσαρι καὶ τὰ τοῦ θεοῦ τῷ θεῷ.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="26">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<pb n="229*" />
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="27">
+					<p>
+						Σαδδουκαῖοι
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="28">
+					<p>
+						Μωϋσῆς ἔγραψε
+						<app type="variants">
+							<lem resp="#Harnack">
 								Μωϋσῆς ἔγραψε
-								<app type="variants">
-									<lem resp="#Harnack">
-										Μωϋσῆς ἔγραψε
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										Μωϋσῆς ἔγραψε
-									</rdg>
-								</app>
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="29">
-							<p>
-								ἑπτὰ ἀδελφοί
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="30">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="31">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								Μωϋσῆς ἔγραψε
+							</rdg>
+						</app>
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="29">
+					<p>
+						ἑπτὰ ἀδελφοί
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="30">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="31">
+					<p>
+						οἱ ἑπτὰ ἀπέθανον
+						<app type="variants">
+							<lem resp="#Harnack">
 								οἱ ἑπτὰ ἀπέθανον
-								<app type="variants">
-									<lem resp="#Harnack">
-										οἱ ἑπτὰ ἀπέθανον
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										οἱ ἑπτὰ ἀπέθανον
-									</rdg>
-								</app>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="32">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="33">
-							<p>
-								τίνος αὐτῶν γίνεται γυνή ἐν τῇ ἀναστάσει;
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="34">
-							<p>
-								ἀποκριθείς·
-								οἱ υἱοί τοῦ αἰῶνος τούτου γαμοῦσιν καὶ γαμίσκονται,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="35">
-							<p>
-								οὓς δέ κατηξίωσεν ὁ θεὸς τοῦ αἰῶνος ἐκείνου τυχεῖν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								τῆς ἀναστάσεως τῆς ἐκ νεκρῶν,
-								οὔτε γαμοῦσιν οὔτε γαμίζονται,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="36">
-							<p>
-								οὐδὲ γὰρ ἀποθανεῖν ἔτι μέλλουσιν,
-								ἰσάγγελοι γὰρ εἰσιν τοῦ θεοῦ,
-								τῆς ἀναστάσεως υἱοὶ
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="39">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								οἱ ἑπτὰ ἀπέθανον
+							</rdg>
+						</app>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="32">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="33">
+					<p>
+						τίνος αὐτῶν γίνεται γυνή ἐν τῇ ἀναστάσει;
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="34">
+					<p>
+						ἀποκριθείς·
+						οἱ υἱοί τοῦ αἰῶνος τούτου γαμοῦσιν καὶ γαμίσκονται,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="35">
+					<p>
+						οὓς δέ κατηξίωσεν ὁ θεὸς τοῦ αἰῶνος ἐκείνου τυχεῖν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						τῆς ἀναστάσεως τῆς ἐκ νεκρῶν,
+						οὔτε γαμοῦσιν οὔτε γαμίζονται,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="36">
+					<p>
+						οὐδὲ γὰρ ἀποθανεῖν ἔτι μέλλουσιν,
+						ἰσάγγελοι γὰρ εἰσιν τοῦ θεοῦ,
+						τῆς ἀναστάσεως υἱοὶ
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="39">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						γραμματεῖς
+						<app type="variants">
+							<lem resp="#Harnack">
 								γραμματεῖς
-								<app type="variants">
-									<lem resp="#Harnack">
-										γραμματεῖς
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										γραμματεῖς
-									</rdg>
-								</app>
-								εἶπαν·
-								διδάσκαλε,
-								καλῶς εἶπας.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="41">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								γραμματεῖς
+							</rdg>
+						</app>
+						εἶπαν·
+						διδάσκαλε,
+						καλῶς εἶπας.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="41">
+					<p>
+						τί ὑμῖν
+						<app type="variants">
+							<lem resp="#Harnack">
 								τί ὑμῖν
-								<app type="variants">
-									<lem resp="#Harnack">
-										τί ὑμῖν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										τί ὑμῖν
-									</rdg>
-								</app>
-								δοκεῖ περὶ τοῦ
-								<app type="variants">
-									<lem resp="#Harnack">
-										περὶ τοῦ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										περὶ τοῦ
-									</rdg>
-								</app>
-								Χριστοῦ;
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								τί ὑμῖν
+							</rdg>
+						</app>
+						δοκεῖ περὶ τοῦ
+						<app type="variants">
+							<lem resp="#Harnack">
+								περὶ τοῦ
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								περὶ τοῦ
+							</rdg>
+						</app>
+						Χριστοῦ;
+						τίνος
+						<app type="variants">
+							<lem resp="#Harnack">
 								τίνος
-								<app type="variants">
-									<lem resp="#Harnack">
-										τίνος
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										τίνος
-									</rdg>
-								</app>
-								υἱός ἐστιν
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἐστιν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἐστιν
-									</rdg>
-								</app>
-								;
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								τίνος
+							</rdg>
+						</app>
+						υἱός ἐστιν
+						<app type="variants">
+							<lem resp="#Harnack">
+								ἐστιν
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἐστιν
+							</rdg>
+						</app>
+						;
+						λέγουσιν αὐτῷ
+						<app type="variants">
+							<lem resp="#Harnack">
 								λέγουσιν αὐτῷ
-								<app type="variants">
-									<lem resp="#Harnack">
-										λέγουσιν αὐτῷ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										λέγουσιν αὐτῷ
-									</rdg>
-								</app>
-								·
-								Δαυείδ.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="42">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="43">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="44">
-							<p>
-								Δαυείδ κύριον αὐτὸν καλεῖ.
-							</p>
-						</div>
-					</div>
-					<pb n="230*" />
-					<milestone unit="para" />
-					<milestone unit="para" />
-					<div type="textpart" subtype="chapter" n="21">
-						<div type="textpart" subtype="verse" n="5">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="6">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="7">
-							<p>
-								ἐπηρώτησαν αὐτὸν οἱ μαθηταί
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="8">
-							<p>
-								πολλοὶ ἐλεύσονται ἐπὶ τῷ ὀνόματί μου
-								<app type="variants">
-									<lem resp="#Harnack">
-										μου
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										μου
-									</rdg>
-								</app>
-								,
-								λέγοντες·
-								ἐγώ εἰμι ὁ Χριστός
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="9">
-							<p>
-								πολέμους
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								δεῖ ταῦτα γενέσθαι
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="10">
-							<p>
-								βασιλείαν ἐπὶ βασιλείαν καὶ ἔθνος ἐπ᾽ ἔθνος.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="11">
-							<p>
-								λοιμοὶ καὶ λιμοὶ σεισμοί τε,
-								φόβητρά τε καὶ σημεῖα ἀπ᾽ οὐρανοῦ
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="12">
-							<p>
-								πρὸ δὲ τούτων
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								διώξουσιν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="13">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								λέγουσιν αὐτῷ
+							</rdg>
+						</app>
+						·
+						Δαυείδ.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="42">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="43">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="44">
+					<p>
+						Δαυείδ κύριον αὐτὸν καλεῖ.
+					</p>
+				</div>
+			</div>
+			<pb n="230*" />
+			<milestone unit="para" />
+			<milestone unit="para" />
+			<div type="textpart" subtype="chapter" n="21">
+				<div type="textpart" subtype="verse" n="5">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="6">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="7">
+					<p>
+						ἐπηρώτησαν αὐτὸν οἱ μαθηταί
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="8">
+					<p>
+						πολλοὶ ἐλεύσονται ἐπὶ τῷ ὀνόματί μου
+						<app type="variants">
+							<lem resp="#Harnack">
+								μου
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								μου
+							</rdg>
+						</app>
+						,
+						λέγοντες·
+						ἐγώ εἰμι ὁ Χριστός
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="9">
+					<p>
+						πολέμους
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						δεῖ ταῦτα γενέσθαι
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="10">
+					<p>
+						βασιλείαν ἐπὶ βασιλείαν καὶ ἔθνος ἐπ᾽ ἔθνος.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="11">
+					<p>
+						λοιμοὶ καὶ λιμοὶ σεισμοί τε,
+						φόβητρά τε καὶ σημεῖα ἀπ᾽ οὐρανοῦ
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="12">
+					<p>
+						πρὸ δὲ τούτων
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						διώξουσιν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="13">
+					<p>
+						ἀποβήσεται ὑμῖν
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἀποβήσεται ὑμῖν
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἀποβήσεται ὑμῖν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἀποβήσεται ὑμῖν
-									</rdg>
-								</app>
-								εἰς μαρτύριον καὶ σωτηρίαν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="14">
-							<p>
-								μὴ προμελετᾶν ἀπολογηθῆναι
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="15">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἀποβήσεται ὑμῖν
+							</rdg>
+						</app>
+						εἰς μαρτύριον καὶ σωτηρίαν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="14">
+					<p>
+						μὴ προμελετᾶν ἀπολογηθῆναι
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="15">
+					<p>
+						ἐγὼ δώσω ὑμῖν
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἐγὼ δώσω ὑμῖν
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἐγὼ δώσω ὑμῖν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἐγὼ δώσω ὑμῖν
-									</rdg>
-								</app>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								σοφίαν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="16">
-							<p>
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									συγγενῶν
-								</supplied>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="17">
-							<p>
-								μισούμενοι
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								<pb n="231*" />
-								διὰ τὸ ὄνομά μου.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="19">
-							<p>
-								ἐν δὲ τῇ ὑπομονῇ σώσετε ἑαυτούς
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="20">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἐγὼ δώσω ὑμῖν
+							</rdg>
+						</app>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						σοφίαν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="16">
+					<p>
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							συγγενῶν
+						</supplied>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="17">
+					<p>
+						μισούμενοι
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						<pb n="231*" />
+						διὰ τὸ ὄνομά μου.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="19">
+					<p>
+						ἐν δὲ τῇ ὑπομονῇ σώσετε ἑαυτούς
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="20">
+					<p>
+						ὅταν δὲ ἴδητε
+						<app type="variants">
+							<lem resp="#Harnack">
 								ὅταν δὲ ἴδητε
-								<app type="variants">
-									<lem resp="#Harnack">
-										ὅταν δὲ ἴδητε
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ὅταν δὲ ἴδητε
-									</rdg>
-								</app>
-								κυκλουμένην ὑπὸ στρατοπέδων Ἰερουσαλήμ
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="25">
-							<p>
-								σημεῖα ἐν ἡλιῳ καὶ σελήνῃ καὶ ἄστροις καὶ ἐπὶ τῆς γῆς συνοχὴ ἐθνῶν ἐν ἀπορίᾳ ὡς ἤχους θαλάσσης κυμαινούσης,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="26">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								προσδοκίας τῶν ἐπερχομένων τῇ οἰκουμένῃ αὐταὶ γὰρ αἱ δυνάμεις τῶν οὐρανῶν σαλευθήσονται.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="27">
-							<p>
-								καὶ τότε ὄψονται τὸν υἱὸν τοῦ ἀνθρώπου ἐρχόμενον ἀπὸ τῶν οὐρανῶν μετὰ δυνάμεως πολλῆς.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="28">
-							<p>
-								τούτων δὲ γινομένων ἀνακύψατε καὶ ἐπάρατε τὰς κεφαλάς,
-								διότι ἤγγικεν ἡ ἀπολύτρωσις ὑμῶν.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="29">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								παραβολήν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἴδετε τὴν συκῆν καὶ πάντα τὰ δένδρα,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="30">
-							<p>
-								ὅταν προβάλωσιν τὸν καρπὸν αὐτῶν
-								<app type="variants">
-									<lem resp="#Harnack">
-										αὐτῶν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										αὐτῶν
-									</rdg>
-								</app>
-								,
-								γινώσκουσιν οἱ ἄνθρωποι,
-								ὅτι
-								<pb n="232*" />
-								τὸ θέρος ἤγγικεν·
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="31">
-							<p>
-								οὕτως καὶ ὑμεῖς,
-								ὅταν ἴδητε ταῦτα γινόμενα,
-								γινώσκετε ὅτι ἐγγύς ἐστιν ἡ βασιλεία τοῦ θεοῦ.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="32">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ὅταν δὲ ἴδητε
+							</rdg>
+						</app>
+						κυκλουμένην ὑπὸ στρατοπέδων Ἰερουσαλήμ
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="25">
+					<p>
+						σημεῖα ἐν ἡλιῳ καὶ σελήνῃ καὶ ἄστροις καὶ ἐπὶ τῆς γῆς συνοχὴ ἐθνῶν ἐν ἀπορίᾳ ὡς ἤχους θαλάσσης κυμαινούσης,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="26">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						προσδοκίας τῶν ἐπερχομένων τῇ οἰκουμένῃ αὐταὶ γὰρ αἱ δυνάμεις τῶν οὐρανῶν σαλευθήσονται.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="27">
+					<p>
+						καὶ τότε ὄψονται τὸν υἱὸν τοῦ ἀνθρώπου ἐρχόμενον ἀπὸ τῶν οὐρανῶν μετὰ δυνάμεως πολλῆς.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="28">
+					<p>
+						τούτων δὲ γινομένων ἀνακύψατε καὶ ἐπάρατε τὰς κεφαλάς,
+						διότι ἤγγικεν ἡ ἀπολύτρωσις ὑμῶν.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="29">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						παραβολήν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἴδετε τὴν συκῆν καὶ πάντα τὰ δένδρα,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="30">
+					<p>
+						ὅταν προβάλωσιν τὸν καρπὸν αὐτῶν
+						<app type="variants">
+							<lem resp="#Harnack">
+								αὐτῶν
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								αὐτῶν
+							</rdg>
+						</app>
+						,
+						γινώσκουσιν οἱ ἄνθρωποι,
+						ὅτι
+						<pb n="232*" />
+						τὸ θέρος ἤγγικεν·
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="31">
+					<p>
+						οὕτως καὶ ὑμεῖς,
+						ὅταν ἴδητε ταῦτα γινόμενα,
+						γινώσκετε ὅτι ἐγγύς ἐστιν ἡ βασιλεία τοῦ θεοῦ.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="32">
+					<p>
+						ἀμὴν λέγω ὑμῖν
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἀμὴν λέγω ὑμῖν
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἀμὴν λέγω ὑμῖν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἀμὴν λέγω ὑμῖν
-									</rdg>
-								</app>
-								οὐ μὴ παρέλθῃ ὁ οὐρανὸς καὶ ἡ γῆ,
-								εἰ μὴ πάντα γένηται
-								<app type="variants">
-									<lem resp="#Harnack">
-										γένηται
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										γένηται
-									</rdg>
-								</app>
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="33">
-							<p>
-								ἡ
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								γῆ καὶ ὁ οὐρανὸς παρελεύσεται,
-								ὁ δὲ λόγος μου μένει εἰς τὸν αἰῶνα.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="34">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἀμὴν λέγω ὑμῖν
+							</rdg>
+						</app>
+						οὐ μὴ παρέλθῃ ὁ οὐρανὸς καὶ ἡ γῆ,
+						εἰ μὴ πάντα γένηται
+						<app type="variants">
+							<lem resp="#Harnack">
+								γένηται
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								γένηται
+							</rdg>
+						</app>
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="33">
+					<p>
+						ἡ
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						γῆ καὶ ὁ οὐρανὸς παρελεύσεται,
+						ὁ δὲ λόγος μου μένει εἰς τὸν αἰῶνα.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="34">
+					<p>
+						προσέχετε δὲ ἑαυτοῖς
+						<app type="variants">
+							<lem resp="#Harnack">
 								προσέχετε δὲ ἑαυτοῖς
-								<app type="variants">
-									<lem resp="#Harnack">
-										προσέχετε δὲ ἑαυτοῖς
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										προσέχετε δὲ ἑαυτοῖς
-									</rdg>
-								</app>
-								,
-								μήποτε βαρηθῶσιν ὑμῶν αἱ καρδίαι ἐν
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἐν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἐν
-									</rdg>
-								</app>
-								κραιπάλῃ καὶ μέθῃ καὶ βιωτικαῖς μερίμναις.
-								καὶ ἐπιστῇ ἐφ᾽ ὑμᾶς αἰφνίδιος ἡ ἡμέρα ἐκείνη
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="35a">
-							<p>
-								ὡς παγίς.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="37">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								προσέχετε δὲ ἑαυτοῖς
+							</rdg>
+						</app>
+						,
+						μήποτε βαρηθῶσιν ὑμῶν αἱ καρδίαι ἐν
+						<app type="variants">
+							<lem resp="#Harnack">
+								ἐν
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἐν
+							</rdg>
+						</app>
+						κραιπάλῃ καὶ μέθῃ καὶ βιωτικαῖς μερίμναις.
+						καὶ ἐπιστῇ ἐφ᾽ ὑμᾶς αἰφνίδιος ἡ ἡμέρα ἐκείνη
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="35a">
+					<p>
+						ὡς παγίς.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="37">
+					<p>
+						ἦν δὲ
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἦν δὲ
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἦν δὲ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἦν δὲ
-									</rdg>
-								</app>
-								τὰς ἡμέρας ἐν τῷ ἱερῷ διδάσκων,
-								τάς νύκτας ἐξερχόμενος
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								εἰς Ἐλαιών.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="38">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἦν δὲ
+							</rdg>
+						</app>
+						τὰς ἡμέρας ἐν τῷ ἱερῷ διδάσκων,
+						τάς νύκτας ἐξερχόμενος
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						εἰς Ἐλαιών.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="38">
+					<p>
+						καὶ πᾶς ὁ λαὸς
+						<app type="variants">
+							<lem resp="#Harnack">
 								καὶ πᾶς ὁ λαὸς
-								<app type="variants">
-									<lem resp="#Harnack">
-										καὶ πᾶς ὁ λαὸς
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										καὶ πᾶς ὁ λαὸς
-									</rdg>
-								</app>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ὤρθηριζεν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								καὶ πᾶς ὁ λαὸς
+							</rdg>
+						</app>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ὤρθηριζεν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἐν τῷ ἱερῷ
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἐν τῷ ἱερῷ
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἐν τῷ ἱερῷ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἐν τῷ ἱερῷ
-									</rdg>
-								</app>
-								ἀκούειν αὐτοῦ.
-							</p>
-						</div>
-					</div>
-					<milestone unit="para" />
-					<div type="textpart" subtype="chapter" n="22">
-						<div type="textpart" subtype="verse" n="1">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἑορτὴ
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								πάσχα.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="3">
-							<p>
-								ἀπελθὼν δὲ Ἰούδας ὁ καλούμενος Ἰσκαριώτης,
-								ὢν ἐκ τοῦ ἀριθμοῦ τῶν δώδεκα.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="4">
-							<p>
-								συνελάλησε τοῖς στρατηγοῖς τὸ πῶς αὐτὸν παραδῷ αὐτοῖς.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="5">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἀργύριον
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="8">
-							<p>
-								καὶ εἶπεν τῷ Πέτρῳ καὶ τοῖς
-								<pb n="233*" />
-								λοιποῖς·
-								ἀπελθόντες ἑτοιμάσατε,
-								ἵνα φάγωμεν τὸ πάσχα.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="14">
-							<p>
-								καὶ ἀνέπεσε,
-								καὶ οἱ δώδεκα ἀπόστολοι σὺν αὐτῷ,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="15">
-							<p>
-								εἶπεν πρὸς αὐτούς·
-								ἐπιθυμίᾳ ἐπεθύμησα
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								τὸ πάσχα φαγεῖν μεθ᾿ ὑμῶν πρὸ τοῦ με παθεῖν.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="19a">
-							<p>
-								λαβὼν ἄρτον
-								<gap reason="missing" extent="unknown" source="#Harnack" />
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἐν τῷ ἱερῷ
+							</rdg>
+						</app>
+						ἀκούειν αὐτοῦ.
+					</p>
+				</div>
+			</div>
+			<milestone unit="para" />
+			<div type="textpart" subtype="chapter" n="22">
+				<div type="textpart" subtype="verse" n="1">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἑορτὴ
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						πάσχα.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="3">
+					<p>
+						ἀπελθὼν δὲ Ἰούδας ὁ καλούμενος Ἰσκαριώτης,
+						ὢν ἐκ τοῦ ἀριθμοῦ τῶν δώδεκα.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="4">
+					<p>
+						συνελάλησε τοῖς στρατηγοῖς τὸ πῶς αὐτὸν παραδῷ αὐτοῖς.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="5">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἀργύριον
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="8">
+					<p>
+						καὶ εἶπεν τῷ Πέτρῳ καὶ τοῖς
+						<pb n="233*" />
+						λοιποῖς·
+						ἀπελθόντες ἑτοιμάσατε,
+						ἵνα φάγωμεν τὸ πάσχα.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="14">
+					<p>
+						καὶ ἀνέπεσε,
+						καὶ οἱ δώδεκα ἀπόστολοι σὺν αὐτῷ,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="15">
+					<p>
+						εἶπεν πρὸς αὐτούς·
+						ἐπιθυμίᾳ ἐπεθύμησα
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						τὸ πάσχα φαγεῖν μεθ᾿ ὑμῶν πρὸ τοῦ με παθεῖν.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="19a">
+					<p>
+						λαβὼν ἄρτον
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						εὐλογήσας
+						<app type="variants">
+							<lem resp="#Harnack">
 								εὐλογήσας
-								<app type="variants">
-									<lem resp="#Harnack">
-										εὐλογήσας
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										εὐλογήσας
-									</rdg>
-								</app>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἔδωκεν τοῖς μαθηταῖς
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								τοῦτό ἐστιν τὸ σῶμά μου,
-								τὸ ὑπὲρ ὑμῶν διδόμενον
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="20">
-							<p>
-								καὶ τὸ ποτήριον ὡσαύτως
-								<gap reason="missing" extent="unknown" source="#Harnack" />
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								εὐλογήσας
+							</rdg>
+						</app>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἔδωκεν τοῖς μαθηταῖς
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						τοῦτό ἐστιν τὸ σῶμά μου,
+						τὸ ὑπὲρ ὑμῶν διδόμενον
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="20">
+					<p>
+						καὶ τὸ ποτήριον ὡσαύτως
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						τοῦτο τὸ ποτήριον
+						<app type="variants">
+							<lem resp="#Harnack">
 								τοῦτο τὸ ποτήριον
-								<app type="variants">
-									<lem resp="#Harnack">
-										τοῦτο τὸ ποτήριον
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										τοῦτο τὸ ποτήριον
-									</rdg>
-								</app>
-								ἡ διαθήκη ἐν τῷ αἵματι μου.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="22b">
-							<p>
-								οὐαί δι᾽ οὗ παραδίδοται ὁ υἱὸς τοῦ ἀνθρώπου.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="31">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="32">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="33">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="34">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								τοῦτο τὸ ποτήριον
+							</rdg>
+						</app>
+						ἡ διαθήκη ἐν τῷ αἵματι μου.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="22b">
+					<p>
+						οὐαί δι᾽ οὗ παραδίδοται ὁ υἱὸς τοῦ ἀνθρώπου.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="31">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="32">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="33">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="34">
+					<p>
+						ἀπαρνήσῃ
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἀπαρνήσῃ
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἀπαρνήσῃ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἀπαρνήσῃ
-									</rdg>
-								</app>
-								.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<pb n="234*" />
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="41">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἀπαρνήσῃ
+							</rdg>
+						</app>
+						.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<pb n="234*" />
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="41">
+					<p>
+						καὶ αὐτὸς
+						<app type="variants">
+							<lem resp="#Harnack">
 								καὶ αὐτὸς
-								<app type="variants">
-									<lem resp="#Harnack">
-										καὶ αὐτὸς
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										καὶ αὐτὸς
-									</rdg>
-								</app>
-								ἀπεσπάσθη ἀπ᾿ αὐτῶν ὡσεὶ λίθου βολὴν καὶ θεὶς τὰ γόνατα προσηύχετο.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="47">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								Ἰούδας
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								καὶ ἤγγισε καταφιλῆσαι αὐτόν καὶ εἶπεν·
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								καὶ αὐτὸς
+							</rdg>
+						</app>
+						ἀπεσπάσθη ἀπ᾿ αὐτῶν ὡσεὶ λίθου βολὴν καὶ θεὶς τὰ γόνατα προσηύχετο.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="47">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						Ἰούδας
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						καὶ ἤγγισε καταφιλῆσαι αὐτόν καὶ εἶπεν·
+						χαῖρε ῥαββί
+						<app type="variants">
+							<lem resp="#Harnack">
 								χαῖρε ῥαββί
-								<app type="variants">
-									<lem resp="#Harnack">
-										χαῖρε ῥαββί
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										χαῖρε ῥαββί
-									</rdg>
-								</app>
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="48">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								φιλήματι
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								παραδίδως.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<milestone unit="para" />
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="63">
-							<p>
-								οἱ συνέχοντες ἐνέπαιζον δέροντες
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="64">
-							<p>
-								καὶ τύπτοντες καὶ λέγοντες·
-								προφήτευσον τίς ἐστιν ὁ παίσας σε;
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="66">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἀπήγαγον εἰς τὸ συνέδριον
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="67">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								·
-								εἰ σὺ εἶ Χριστός
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-								εἶπεν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								·
-								ἐὰν εἴπω ὑμῖν,
-								μὴ πιστεύσητε.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="69">
-							<p>
-								ἀπὸ τοῦ νῦν ἔσται ὁ υἱὸς τοῦ ἀνθρώπου καθήμενος ἐξ δεξιῶν τῆς δυνάμεως τοῦ θεοῦ.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="70">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								σὺ οὖν ὁ υἱὸς τοῦ θεοῦ εἶ;
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								χαῖρε ῥαββί
+							</rdg>
+						</app>
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="48">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						φιλήματι
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						παραδίδως.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<milestone unit="para" />
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="63">
+					<p>
+						οἱ συνέχοντες ἐνέπαιζον δέροντες
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="64">
+					<p>
+						καὶ τύπτοντες καὶ λέγοντες·
+						προφήτευσον τίς ἐστιν ὁ παίσας σε;
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="66">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἀπήγαγον εἰς τὸ συνέδριον
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="67">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						·
+						εἰ σὺ εἶ Χριστός
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+						εἶπεν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						·
+						ἐὰν εἴπω ὑμῖν,
+						μὴ πιστεύσητε.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="69">
+					<p>
+						ἀπὸ τοῦ νῦν ἔσται ὁ υἱὸς τοῦ ἀνθρώπου καθήμενος ἐξ δεξιῶν τῆς δυνάμεως τοῦ θεοῦ.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="70">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						σὺ οὖν ὁ υἱὸς τοῦ θεοῦ εἶ;
+						ὁ δὲ ἀπεκρίθη
+						<app type="variants">
+							<lem resp="#Harnack">
 								ὁ δὲ ἀπεκρίθη
-								<app type="variants">
-									<lem resp="#Harnack">
-										ὁ δὲ ἀπεκρίθη
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ὁ δὲ ἀπεκρίθη
-									</rdg>
-								</app>
-								·
-								ὑμεῖς λέγετε.
-							</p>
-						</div>
-					</div>
-					<pb n="235*" />
-					<milestone unit="para" />
-					<div type="textpart" subtype="chapter" n="23">
-						<div type="textpart" subtype="verse" n="1">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ὁ δὲ ἀπεκρίθη
+							</rdg>
+						</app>
+						·
+						ὑμεῖς λέγετε.
+					</p>
+				</div>
+			</div>
+			<pb n="235*" />
+			<milestone unit="para" />
+			<div type="textpart" subtype="chapter" n="23">
+				<div type="textpart" subtype="verse" n="1">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἠγαγον
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἠγαγον
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἠγαγον
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἠγαγον
-									</rdg>
-								</app>
-								αὐτὸν ἐπί τὸν Πειλᾶτον·
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="2">
-							<p>
-								ἤρξαντο δὲ
-								<app type="variants">
-									<lem resp="#Harnack">
-										δὲ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										δὲ
-									</rdg>
-								</app>
-								κατηγορεῖν αὐτοῦ λέγοντες
-								<app type="variants">
-									<lem resp="#Harnack">
-										αὐτοῦ λέγοντες
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										αὐτοῦ λέγοντες
-									</rdg>
-								</app>
-								·
-								τοῦτον εὕρομεν διαστρέφοντα τὸ ἔθνος καὶ καταλύοντα τὸν νόμον καὶ τοὺς προφήτας καὶ
-								<app type="variants">
-									<lem resp="#Harnack">
-										καὶ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										καὶ
-									</rdg>
-								</app>
-								κελεύοντα φόρους μὴ δοῦναι καὶ ἀποστρέφοντα τὰς γυναῖκας καὶ τὰ τέκνα καὶ λέγοντα ἑαυτὸν βασιλέα Χριστόν·
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="3">
-							<p>
-								ὁ Πειλᾶτος ἠρώτησεν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								σὺ εἶ ὁ Χριστός;
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἠγαγον
+							</rdg>
+						</app>
+						αὐτὸν ἐπί τὸν Πειλᾶτον·
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="2">
+					<p>
+						ἤρξαντο δὲ
+						<app type="variants">
+							<lem resp="#Harnack">
+								δὲ
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								δὲ
+							</rdg>
+						</app>
+						κατηγορεῖν αὐτοῦ λέγοντες
+						<app type="variants">
+							<lem resp="#Harnack">
+								αὐτοῦ λέγοντες
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								αὐτοῦ λέγοντες
+							</rdg>
+						</app>
+						·
+						τοῦτον εὕρομεν διαστρέφοντα τὸ ἔθνος καὶ καταλύοντα τὸν νόμον καὶ τοὺς προφήτας καὶ
+						<app type="variants">
+							<lem resp="#Harnack">
+								καὶ
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								καὶ
+							</rdg>
+						</app>
+						κελεύοντα φόρους μὴ δοῦναι καὶ ἀποστρέφοντα τὰς γυναῖκας καὶ τὰ τέκνα καὶ λέγοντα ἑαυτὸν βασιλέα Χριστόν·
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="3">
+					<p>
+						ὁ Πειλᾶτος ἠρώτησεν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						σὺ εἶ ὁ Χριστός;
+						ἔφη
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἔφη
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἔφη
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἔφη
-									</rdg>
-								</app>
-								·
-								σὺ λέγεις.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="6">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="7">
-							<p>
-								Πειλᾶτος ἀνέπεμψεν αὐτὸν πρὸς Ἡρῴδην
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="8">
-							<p>
-								ὁ Ἡρῴδης ἰδὼν τὸν Ἰησοῦν ἐχάρη λίαν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="9">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἔφη
+							</rdg>
+						</app>
+						·
+						σὺ λέγεις.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="6">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="7">
+					<p>
+						Πειλᾶτος ἀνέπεμψεν αὐτὸν πρὸς Ἡρῴδην
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="8">
+					<p>
+						ὁ Ἡρῴδης ἰδὼν τὸν Ἰησοῦν ἐχάρη λίαν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="9">
+					<p>
+						αὐτὸς δὲ οὐδὲν ἀπεκρίνατο αὐτῷ
+						<app type="variants">
+							<lem resp="#Harnack">
 								αὐτὸς δὲ οὐδὲν ἀπεκρίνατο αὐτῷ
-								<app type="variants">
-									<lem resp="#Harnack">
-										αὐτὸς δὲ οὐδὲν ἀπεκρίνατο αὐτῷ
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										αὐτὸς δὲ οὐδὲν ἀπεκρίνατο αὐτῷ
-									</rdg>
-								</app>
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="10">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="11">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="12">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="18">
-							<p>
-								Βαραββᾶν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="19">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								διὰ φόνον
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="20">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἀπέλυσεν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								,
-								Χριστόν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="21">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="22">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								αὐτὸς δὲ οὐδὲν ἀπεκρίνατο αὐτῷ
+							</rdg>
+						</app>
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="10">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="11">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="12">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="18">
+					<p>
+						Βαραββᾶν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="19">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						διὰ φόνον
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="20">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἀπέλυσεν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						,
+						Χριστόν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="21">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="22">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						τί κακὸν ἐποίησε;
+						<app type="variants">
+							<lem resp="#Harnack">
 								τί κακὸν ἐποίησε;
-								<app type="variants">
-									<lem resp="#Harnack">
-										τί κακὸν ἐποίησε;
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										τί κακὸν ἐποίησε;
-									</rdg>
-								</app>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="23">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								αἰτούμενοι αὐτὸν σταυρωθῆναι
-								<app type="variants">
-									<lem resp="#Harnack">
-										σταυρωθῆναι
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										σταυρωθῆναι
-									</rdg>
-								</app>
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="24">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="25">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="32">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								τί κακὸν ἐποίησε;
+							</rdg>
+						</app>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="23">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						αἰτούμενοι αὐτὸν σταυρωθῆναι
+						<app type="variants">
+							<lem resp="#Harnack">
+								σταυρωθῆναι
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								σταυρωθῆναι
+							</rdg>
+						</app>
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="24">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="25">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="32">
+					<p>
+						ἤγοντο
+						<app type="variants">
+							<lem resp="#Harnack">
 								ἤγοντο
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἤγοντο
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἤγοντο
-									</rdg>
-								</app>
-								δὲ καὶ δυό κακοῦργοι
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="33b">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἐσταύρωσαν ὃν
-								<app type="variants">
-									<lem resp="#Harnack">
-										ὃν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ὃν
-									</rdg>
-								</app>
-								<pb n="236*" />
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἤγοντο
+							</rdg>
+						</app>
+						δὲ καὶ δυό κακοῦργοι
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="33b">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἐσταύρωσαν ὃν
+						<app type="variants">
+							<lem resp="#Harnack">
+								ὃν
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ὃν
+							</rdg>
+						</app>
+						<pb n="236*" />
+						μὲν ἑκ δεξιῶν,
+						ὃν δὲ ἐξ ἀριστερῶν.
+						<app type="variants">
+							<lem resp="#Harnack">
 								μὲν ἑκ δεξιῶν,
 								ὃν δὲ ἐξ ἀριστερῶν.
-								<app type="variants">
-									<lem resp="#Harnack">
-										μὲν ἑκ δεξιῶν,
-										ὃν δὲ ἐξ ἀριστερῶν.
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										μὲν ἑκ δεξιῶν,
-										ὃν δὲ ἐξ ἀριστερῶν.
-									</rdg>
-								</app>
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="33a">
-							<p>
-								καὶ ἐλθόντες εἰς τόπον λεγόμενον Κρανίου ἐσταύρωσαν αὐτὸν.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="34a">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								·
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									πάτερ,
-									ἄφες αὐτοῖς,
-									οὐ γὰρ οἴδασιν τί ποιοῦσιν.
-								</supplied>
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="44">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ὥρα ἕκτη,
-								καὶ σκότος ἐγένετο
-								<app type="variants">
-									<lem resp="#Harnack">
-										ἐγένετο
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ἐγένετο
-									</rdg>
-								</app>
-								ἐφ᾽ ὅλην
-								<app type="variants">
-									<lem resp="#Harnack">
-										ὅλην
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ὅλην
-									</rdg>
-								</app>
-								τὴν γῆν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="45">
-							<p>
-								καὶ ἐσκοτίσθη ὁ ἥλιος
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-								ἐσχίσθη καὶ τὸ καταπέτασμα τοῦ ναοῦ.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="46">
-							<p>
-								καὶ φωνήσας μεγάλῃ φωνῇ ὁ Ἰησοῦς εἶπεν·
-								πάτερ,
-								εἰς χεῖράς σου παρατίθημι τὸ πνεῦμά μου·
-								τοῦτο δὲ εἰπὼν ἐξέπνευσεν.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<pb n="237*" />
-						<div type="textpart" subtype="verse" n="50">
-							<p>
-								καὶ ἰδοὺ ἀνὴρ ὀνόματι Ἰωσήφ
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="51">
-							<p>
-								οὐκ ἦν συγκατατιθέμενος τῇ βουλῇ καὶ τῇ πράξει αὐτῶν
-								<app type="variants">
-									<lem resp="#Harnack">
-										τῇ βουλῇ καὶ τῇ πράξει αὐτῶν
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										τῇ βουλῇ καὶ τῇ πράξει αὐτῶν
-									</rdg>
-								</app>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="52">
-							<p>
-								τῷ Πειλάτῳ ᾐτήσατο τὸ σῶμα
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="53">
-							<p>
-								καθελὼν τὸ σῶμα ἐνετύλιξε σινδόνι καὶ ἔθηκεν ἐν μνήματι λαξευτῷ.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="56">
-							<p>
-								ὑποστρέψασαι ἡτοίμασαν ἀρώματα καὶ μύρα
-								<app type="variants">
-									<lem resp="#Harnack">
-										καὶ μύρα
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										καὶ μύρα
-									</rdg>
-								</app>
-								·
-								καὶ τὸ σάββατον ἡσύχασαν κατὰ τὸν νόμον.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="55">
-							<p>
-								<supplied reason="omission" source="#EOCM" resp="#MGB">
-									κατακολουθήσασαι δὲ γυναῖκες,
-									αἵτινες ἦσαν συνεληλυθυῖαι ἐκ τῆς Γαλιλαίας αὐτῷ,
-									ἐθεάσαντο τὸ μνημεῖον καὶ ὡς ἐτέθη τὸ σῶμα αὐτοῦ.
-								</supplied>
-							</p>
-						</div>
-					</div>
-					<milestone unit="para" />
-					<div type="textpart" subtype="chapter" n="24">
-						<div type="textpart" subtype="verse" n="1">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								μὲν ἑκ δεξιῶν,
+								ὃν δὲ ἐξ ἀριστερῶν.
+							</rdg>
+						</app>
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="33a">
+					<p>
+						καὶ ἐλθόντες εἰς τόπον λεγόμενον Κρανίου ἐσταύρωσαν αὐτὸν.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="34a">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						·
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							πάτερ,
+							ἄφες αὐτοῖς,
+							οὐ γὰρ οἴδασιν τί ποιοῦσιν.
+						</supplied>
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="44">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ὥρα ἕκτη,
+						καὶ σκότος ἐγένετο
+						<app type="variants">
+							<lem resp="#Harnack">
+								ἐγένετο
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ἐγένετο
+							</rdg>
+						</app>
+						ἐφ᾽ ὅλην
+						<app type="variants">
+							<lem resp="#Harnack">
+								ὅλην
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ὅλην
+							</rdg>
+						</app>
+						τὴν γῆν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="45">
+					<p>
+						καὶ ἐσκοτίσθη ὁ ἥλιος
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+						ἐσχίσθη καὶ τὸ καταπέτασμα τοῦ ναοῦ.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="46">
+					<p>
+						καὶ φωνήσας μεγάλῃ φωνῇ ὁ Ἰησοῦς εἶπεν·
+						πάτερ,
+						εἰς χεῖράς σου παρατίθημι τὸ πνεῦμά μου·
+						τοῦτο δὲ εἰπὼν ἐξέπνευσεν.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<pb n="237*" />
+				<div type="textpart" subtype="verse" n="50">
+					<p>
+						καὶ ἰδοὺ ἀνὴρ ὀνόματι Ἰωσήφ
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="51">
+					<p>
+						οὐκ ἦν συγκατατιθέμενος τῇ βουλῇ καὶ τῇ πράξει αὐτῶν
+						<app type="variants">
+							<lem resp="#Harnack">
+								τῇ βουλῇ καὶ τῇ πράξει αὐτῶν
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								τῇ βουλῇ καὶ τῇ πράξει αὐτῶν
+							</rdg>
+						</app>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="52">
+					<p>
+						τῷ Πειλάτῳ ᾐτήσατο τὸ σῶμα
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="53">
+					<p>
+						καθελὼν τὸ σῶμα ἐνετύλιξε σινδόνι καὶ ἔθηκεν ἐν μνήματι λαξευτῷ.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="56">
+					<p>
+						ὑποστρέψασαι ἡτοίμασαν ἀρώματα καὶ μύρα
+						<app type="variants">
+							<lem resp="#Harnack">
+								καὶ μύρα
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								καὶ μύρα
+							</rdg>
+						</app>
+						·
+						καὶ τὸ σάββατον ἡσύχασαν κατὰ τὸν νόμον.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="55">
+					<p>
+						<supplied reason="omission" source="#EOCM" resp="#MGB">
+							κατακολουθήσασαι δὲ γυναῖκες,
+							αἵτινες ἦσαν συνεληλυθυῖαι ἐκ τῆς Γαλιλαίας αὐτῷ,
+							ἐθεάσαντο τὸ μνημεῖον καὶ ὡς ἐτέθη τὸ σῶμα αὐτοῦ.
+						</supplied>
+					</p>
+				</div>
+			</div>
+			<milestone unit="para" />
+			<div type="textpart" subtype="chapter" n="24">
+				<div type="textpart" subtype="verse" n="1">
+					<p>
+						ὄρθρου βαθέως
+						<app type="variants">
+							<lem resp="#Harnack">
 								ὄρθρου βαθέως
-								<app type="variants">
-									<lem resp="#Harnack">
-										ὄρθρου βαθέως
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										ὄρθρου βαθέως
-									</rdg>
-								</app>
-								ἦλθον ἐπὶ τὸ μνήμα φέρουσαι
-								<app type="variants">
-									<lem resp="#Harnack">
-										φέρουσαι
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										φέρουσαι
-									</rdg>
-								</app>
-								ἃ ἡτοίμασαν ἀρώματα.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="3">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								οὐχ εὗρον τὸ σῶμα
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="4">
-							<p>
-								ἐν τῷ ἀπορεῖσθαι αὐτὰς περὶ τούτου,
-								καὶ
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								δύο
-								<pb n="238*" />
-								ἄγγελοι ἐν ἐσθῆτι λαμπρᾷ
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								·
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="5">
-							<p>
-								τί ζητεῖτε τὸν ζῶντα μετὰ τῶν νεκρῶν;
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="6">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἠγέρθη,
-								μνήσθητε ὅσα ἐλάλησεν ὑμῖν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἐν τῇ Γαλιλαίᾳ,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="7">
-							<p>
-								λέγων ὅτι δεῖ παραδοθῆναι τὸν υἱὸν τοῦ ἀνθρώπου καὶ σταυρωθῆναι καὶ τῇ τρίτῃ ἡμέρᾳ ἀναστῆναι.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="9">
-							<p>
-								ὑποστρέψασαι ἀπὸ τοῦ μνημείου ἀπήγγειλαν πάντα ταῦτα τοῖς ἕνδεκα
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="10">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="11">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἠπίστουν.
-							</p>
-						</div>
-						<milestone unit="para" />
-						<div type="textpart" subtype="verse" n="13">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="14">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="15">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="16">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="17">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="18">
-							<p>
-								Κλεοπᾶς
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="19">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="20">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								·
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="21a">
-							<p>
-								ἡμεις δὲ ἐνομίζομεν,
-								ὅτι αὐτός ἐστιν ὁ λυτρωτὴς τοῦ Ἰσραήλ.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="25">
-							<p>
-								ὦ ἀνόητοι καὶ βραδεῖς τῇ καρδίᾳ τοῦ
-								<pb n="239*" />
-								πιστεύειν ἐπὶ πᾶσιν οἷς ἐλάλησεν πρὸς ὑμᾶς,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="26">
-							<p>
-								ὅτι ἔδει ταῦτα παθεῖν τὸν Χριστόν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								,
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="30">
-							<p>
-								τὸν ἄρτον
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								κλάσας
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="31">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἠνεῴχθησαν αὐτῶν οἱ ὀφθαλμοὶ καὶ ἐπέγνωσαν αὐτόν.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="37">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἐδόκουν αὐτόν φάντασμα εἶναι.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="38">
-							<p>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								ὄρθρου βαθέως
+							</rdg>
+						</app>
+						ἦλθον ἐπὶ τὸ μνήμα φέρουσαι
+						<app type="variants">
+							<lem resp="#Harnack">
+								φέρουσαι
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								φέρουσαι
+							</rdg>
+						</app>
+						ἃ ἡτοίμασαν ἀρώματα.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="3">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						οὐχ εὗρον τὸ σῶμα
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="4">
+					<p>
+						ἐν τῷ ἀπορεῖσθαι αὐτὰς περὶ τούτου,
+						καὶ
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						δύο
+						<pb n="238*" />
+						ἄγγελοι ἐν ἐσθῆτι λαμπρᾷ
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						·
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="5">
+					<p>
+						τί ζητεῖτε τὸν ζῶντα μετὰ τῶν νεκρῶν;
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="6">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἠγέρθη,
+						μνήσθητε ὅσα ἐλάλησεν ὑμῖν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἐν τῇ Γαλιλαίᾳ,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="7">
+					<p>
+						λέγων ὅτι δεῖ παραδοθῆναι τὸν υἱὸν τοῦ ἀνθρώπου καὶ σταυρωθῆναι καὶ τῇ τρίτῃ ἡμέρᾳ ἀναστῆναι.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="9">
+					<p>
+						ὑποστρέψασαι ἀπὸ τοῦ μνημείου ἀπήγγειλαν πάντα ταῦτα τοῖς ἕνδεκα
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="10">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="11">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἠπίστουν.
+					</p>
+				</div>
+				<milestone unit="para" />
+				<div type="textpart" subtype="verse" n="13">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="14">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="15">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="16">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="17">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="18">
+					<p>
+						Κλεοπᾶς
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="19">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="20">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						·
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="21a">
+					<p>
+						ἡμεις δὲ ἐνομίζομεν,
+						ὅτι αὐτός ἐστιν ὁ λυτρωτὴς τοῦ Ἰσραήλ.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="25">
+					<p>
+						ὦ ἀνόητοι καὶ βραδεῖς τῇ καρδίᾳ τοῦ
+						<pb n="239*" />
+						πιστεύειν ἐπὶ πᾶσιν οἷς ἐλάλησεν πρὸς ὑμᾶς,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="26">
+					<p>
+						ὅτι ἔδει ταῦτα παθεῖν τὸν Χριστόν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						,
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="30">
+					<p>
+						τὸν ἄρτον
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						κλάσας
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="31">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἠνεῴχθησαν αὐτῶν οἱ ὀφθαλμοὶ καὶ ἐπέγνωσαν αὐτόν.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="37">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἐδόκουν αὐτόν φάντασμα εἶναι.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="38">
+					<p>
+						καὶ εἶπεν αὐτοῖς
+						<app type="variants">
+							<lem resp="#Harnack">
 								καὶ εἶπεν αὐτοῖς
-								<app type="variants">
-									<lem resp="#Harnack">
-										καὶ εἶπεν αὐτοῖς
-									</lem>
-									<rdg resp="#Harnack" type="proposition" cert="low">
-										καὶ εἶπεν αὐτοῖς
-									</rdg>
-								</app>
-								·
-								τί τεταραγμένοι ἐστέ;
-								καὶ ἵνα τί διαλογισμοὶ ἀναβαίνουσιν εἰς τὴν καρδίαν ὑμῶν;
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="39">
-							<p>
-								ἴδετε τὰς χεῖράς μου καὶ τοὺς πόδας μου,
-								ὅτι ἐγώ εἰμι αὐτός,
-								ὅτι πνεῦμα ὀστέα οὐκ ἔχει,
-								καθὼς ἐμὲ θεωρεῖτε ἔχοντα.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="41">
-							<p>
-								ἔτι δὲ ἀπιστούντων
-								<pb n="240*" />
-								αὐτῶν
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								·
-								τι βρώσιμον
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="42">
-							<p>
-								ἰχθύος
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="43">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								ἔφαγεν.
-							</p>
-						</div>
-						<div type="textpart" subtype="verse" n="47">
-							<p>
-								<gap reason="missing" extent="unknown" source="#Harnack" />
-								κηρυχθῆναι εἰς πάντα τᾶ ἔθνη.
-							</p>
-						</div>
-					</div>
+							</lem>
+							<rdg resp="#Harnack" type="proposition" cert="low">
+								καὶ εἶπεν αὐτοῖς
+							</rdg>
+						</app>
+						·
+						τί τεταραγμένοι ἐστέ;
+						καὶ ἵνα τί διαλογισμοὶ ἀναβαίνουσιν εἰς τὴν καρδίαν ὑμῶν;
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="39">
+					<p>
+						ἴδετε τὰς χεῖράς μου καὶ τοὺς πόδας μου,
+						ὅτι ἐγώ εἰμι αὐτός,
+						ὅτι πνεῦμα ὀστέα οὐκ ἔχει,
+						καθὼς ἐμὲ θεωρεῖτε ἔχοντα.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="41">
+					<p>
+						ἔτι δὲ ἀπιστούντων
+						<pb n="240*" />
+						αὐτῶν
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						·
+						τι βρώσιμον
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="42">
+					<p>
+						ἰχθύος
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="43">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						ἔφαγεν.
+					</p>
+				</div>
+				<div type="textpart" subtype="verse" n="47">
+					<p>
+						<gap reason="missing" extent="unknown" source="#Harnack" />
+						κηρυχθῆναι εἰς πάντα τᾶ ἔθνη.
+					</p>
 				</div>
 			</div>
 		</body>
