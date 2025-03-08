@@ -4955,6 +4955,8 @@
 								ἔστιν γὰρ μοι τὸ ζῆν ἐν Χριστῷ καὶ τὸ ἀποθανεῖν χαρά.
 							</p>
 						</div>
+					</div>
+					<div type="textpart" subtype="chapter" n="2a">
 						<div type="textpart" subtype="verse" n="14">
 							<p>
 								πεποιθότας τοῖς δεσμοῖς μου περισσοτέρως τολμᾶν τὸν λόγον λαλεῖν,
@@ -4990,7 +4992,7 @@
 						</div>
 					</div>
 					<milestone unit="para" />
-					<div type="textpart" subtype="chapter" n="2">
+					<div type="textpart" subtype="chapter" n="2b">
 						<div type="textpart" subtype="verse" n="2">
 							<p>
 								τὴν αὐτὴν ἀγάπην ἔχοντες
