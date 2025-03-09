@@ -57,16 +57,13 @@
 				<date when="2025-01-29">
 				</date>
 				<idno type="TLG">
-					tlg1371.tlg001
+					tlg1443.tlg001
 				</idno>
-				<idno type="CANT">
-					13
-				</idno>
-				<idno type="BHG">
-					1486x
+				<idno type="CPG">
+					1025
 				</idno>
 				<idno type="Pinakes-Oeuvre">
-					16616
+					5996
 				</idno>
 			</publicationStmt>
 			<sourceDesc>
