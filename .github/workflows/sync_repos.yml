@@ -70,5 +70,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git add data/
-          git commit -m "$(date) - sync new/changed XML data from document repos" || echo "No changes to commit"
+          git commit -m "sync doc repos diff XML data - $(date)" || echo "No changes to commit"
           git push https://x-access-token:${GITHUB_TOKEN}@github.com/nauarchus/src_data.git public
