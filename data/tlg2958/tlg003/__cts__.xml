@@ -15,6 +15,10 @@
          "Normalized Datasets of Zahn’s, van Manen’s, and Harnack’s Greek Reconstructions of
          Marcion's Apostolos."
          Journal of Open Humanities Data 9.27 (2023) 1–5. doi: 10.5334/johd.122 </ti:description>
+              <ti:editor xml:lang="eng">Willem Christiaan van Manen</ti:editor>
+        <ti:editor xml:lang="eng">Mark G. Bilby</ti:editor>
+              <ti:editor xml:lang="eng">Jack Bull</ti:editor>
+        <ti:editor xml:lang="eng">K. Lance Lotharp</ti:editor>
    </ti:edition>
 
    <ti:edition urn="urn:cts:greekLit:tlg2958.tlg003.src-grc2"
@@ -24,6 +28,10 @@
          "Normalized Datasets of Zahn’s, van Manen’s, and Harnack’s Greek Reconstructions of
          Marcion's Apostolos."
          Journal of Open Humanities Data 9.27 (2023) 1–5. doi: 10.5334/johd.122 </ti:description>
+                    <ti:editor xml:lang="eng">Theodor Zahn</ti:editor>
+        <ti:editor xml:lang="eng">Mark G. Bilby</ti:editor>
+              <ti:editor xml:lang="eng">Jack Bull</ti:editor>
+        <ti:editor xml:lang="eng">K. Lance Lotharp</ti:editor>
    </ti:edition>
 
    <ti:edition urn="urn:cts:greekLit:tlg2958.tlg003.src-grc3"
@@ -33,6 +41,10 @@
          "Normalized Datasets of Zahn’s, van Manen’s, and Harnack’s Greek Reconstructions of
          Marcion's Apostolos."
          Journal of Open Humanities Data 9.27 (2023) 1–5. doi: 10.5334/johd.122 </ti:description>
+                    <ti:editor xml:lang="eng">Adolf von Harnack</ti:editor>
+        <ti:editor xml:lang="eng">Mark G. Bilby</ti:editor>
+              <ti:editor xml:lang="eng">Jack Bull</ti:editor>
+        <ti:editor xml:lang="eng">K. Lance Lotharp</ti:editor>
    </ti:edition>
 
 </ti:work>
