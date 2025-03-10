@@ -235,7 +235,7 @@
 				<head>
 					Πρὸς Γαλάτας.
 				</head>
-				<div type="textpart" subtype="book" n="Gal1">
+				<div type="textpart" subtype="book" n="GalA">
 					<div type="textpart" subtype="chapter" n="1">
 						<div type="textpart" subtype="verse" n="1">
 							<p>
@@ -684,7 +684,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="Gal2">
+				<div type="textpart" subtype="book" n="GalB">
 					<div type="textpart" subtype="chapter" n="1">
 						<div type="textpart" subtype="verse" n="26">
 							<p>
@@ -3734,7 +3734,7 @@
 					</div>
 				</div>
 				<pb n="520" />
-				<div type="textpart" subtype="book" n="1Th">
+				<div type="textpart" subtype="book" n="ThA">
 					<head>
 						Πρὸς Θεσσαλονικεῖς α᾽.
 					</head>
@@ -3819,7 +3819,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="2Th">
+				<div type="textpart" subtype="book" n="ThB">
 					<head>
 						Πρὸς Θεσσαλονικεῖς β΄.
 					</head>

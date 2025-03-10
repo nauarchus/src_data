@@ -228,7 +228,7 @@
 				<head>
 					ΑΠΟΣΤΟΛΙΚΟΝ.
 				</head>
-				<div type="textpart" subtype="book" n="Gal1">
+				<div type="textpart" subtype="book" n="GalA">
 					<head>
 						Προς Γαλατας.
 					</head>
@@ -925,7 +925,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="Gal2">
+				<div type="textpart" subtype="book" n="GalB">
 					<div type="textpart" subtype="chapter" n="4">
 						<div type="textpart" subtype="verse" n="26">
 							<p>
@@ -1255,7 +1255,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="1Cr">
+				<div type="textpart" subtype="book" n="ΚορΑ">
 					<head>
 						Πρὸς Κορινθίους Α.
 					</head>
@@ -2839,7 +2839,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="2Cr">
+				<div type="textpart" subtype="book" n="ΚορB">
 					<head>
 						Πρὸς Κορινθίους B.
 					</head>
@@ -3898,7 +3898,7 @@
 					</div>
 				</div>
 				<pb n="111*" />
-				<div type="textpart" subtype="book" n="1Th">
+				<div type="textpart" subtype="book" n="ThA">
 					<head>
 						Πρὸς Θεσσαλονικεῖς A.
 					</head>
@@ -4004,7 +4004,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="2Th">
+				<div type="textpart" subtype="book" n="ThB">
 					<head>
 						Πρὸς Θεσσαλονικεῖς Β.
 					</head>
