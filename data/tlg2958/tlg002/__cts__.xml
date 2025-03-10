@@ -12,6 +12,8 @@
       <ti:description xml:lang="eng">Bilby, Mark G. "Normalized Datasets of Hahn's and Zahn's
          Reconstructions of Marcion's Gospel." Journal of Open Humanities Data 7.31 (2021) 1–5. doi:
          10.5334/johd.63</ti:description>
+        <ti:editor xml:lang="eng">August Hahn</ti:editor>
+        <ti:editor xml:lang="eng">Mark G. Bilby</ti:editor>
    </ti:edition>
 
    <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-grc2"
@@ -20,6 +22,8 @@
       <ti:description xml:lang="eng">Bilby, Mark G. "Normalized Datasets of Hahn's and Zahn's
          Reconstructions of Marcion's Gospel." Journal of Open Humanities Data 7.31 (2021) 1–5. doi:
          10.5334/johd.63 </ti:description>
+              <ti:editor xml:lang="eng">Theodor Zahn</ti:editor>
+        <ti:editor xml:lang="eng">Mark G. Bilby</ti:editor>
    </ti:edition>
 
    <ti:edition urn="urn:cts:greekLit:tlg2958.tlg002.src-grc3"
@@ -27,6 +31,8 @@
       <ti:label xml:lang="eng">Gospel of Marcion [Harnack]</ti:label>
       <ti:description xml:lang="eng">Bilby, Mark G. "Normalized Datasets of Harnack's Reconstruction
          of Marcion's Gospel." Journal of Open Humanities Data 7.24 (2021) 1–7. doi: 10.5334/johd.47</ti:description>
+              <ti:editor xml:lang="eng">Adolf von Harnack</ti:editor>
+        <ti:editor xml:lang="eng">Mark G. Bilby</ti:editor>
    </ti:edition>
 
 </ti:work>
