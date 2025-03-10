@@ -899,7 +899,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="1Cr">
+				<div type="textpart" subtype="book" n="1Cor">
 					<head>
 						Πρὸς Κορινθίους α᾽.
 					</head>
@@ -2574,7 +2574,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="2Cr">
+				<div type="textpart" subtype="book" n="2Cor">
 					<head>
 						Πρὸς Κορινθίους β΄.
 					</head>
@@ -3734,7 +3734,7 @@
 					</div>
 				</div>
 				<pb n="520" />
-				<div type="textpart" subtype="book" n="ThA">
+				<div type="textpart" subtype="book" n="1Thes">
 					<head>
 						Πρὸς Θεσσαλονικεῖς α᾽.
 					</head>
@@ -3819,7 +3819,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="ThB">
+				<div type="textpart" subtype="book" n="2Thes">
 					<head>
 						Πρὸς Θεσσαλονικεῖς β΄.
 					</head>
@@ -4691,7 +4691,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="Phi">
+				<div type="textpart" subtype="book" n="Phlp">
 					<head>
 						Πρὸς Φιλιππησίους.
 					</head>
@@ -4845,7 +4845,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="Phm">
+				<div type="textpart" subtype="book" n="Phlm">
 					<head>
 						Πρὸς Φιλήμονα.
 					</head>

@@ -1255,7 +1255,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="ΚορΑ">
+				<div type="textpart" subtype="book" n="1Cor">
 					<head>
 						Πρὸς Κορινθίους Α.
 					</head>
@@ -2839,7 +2839,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="ΚορB">
+				<div type="textpart" subtype="book" n="2Cor">
 					<head>
 						Πρὸς Κορινθίους B.
 					</head>
@@ -3898,7 +3898,7 @@
 					</div>
 				</div>
 				<pb n="111*" />
-				<div type="textpart" subtype="book" n="ThA">
+				<div type="textpart" subtype="book" n="1Thes">
 					<head>
 						Πρὸς Θεσσαλονικεῖς A.
 					</head>
@@ -4004,7 +4004,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="ThB">
+				<div type="textpart" subtype="book" n="2Thes">
 					<head>
 						Πρὸς Θεσσαλονικεῖς Β.
 					</head>
@@ -5123,7 +5123,7 @@
 						</div>
 					</div>
 				</div>
-				<div type="textpart" subtype="book" n="Phm">
+				<div type="textpart" subtype="book" n="Phlm">
 					<head>
 						Πρὸς Φιλήμονα.
 					</head>
