@@ -10,7 +10,7 @@
 
    <ti:edition urn="urn:cts:greekLit:tlg2958.tlg003.src-grc1"
       workUrn="urn:cts:greekLit:tlg2958.tlg003" xml:lang="grc">
-      <ti:label xml:lang="eng">Apostolos of Marcion [Zahn]</ti:label>
+      <ti:label xml:lang="eng">Apostolos of Marcion [van Manen]</ti:label>
       <ti:description xml:lang="eng">Bilby, Mark G., Jack Bull, and K. Lance Lotharp.
          "Normalized Datasets of Zahn’s, van Manen’s, and Harnack’s Greek Reconstructions of
          Marcion's Apostolos."
@@ -19,7 +19,7 @@
 
    <ti:edition urn="urn:cts:greekLit:tlg2958.tlg003.src-grc2"
       workUrn="urn:cts:greekLit:tlg2958.tlg003" xml:lang="grc">
-      <ti:label xml:lang="eng">Apostolos of Marcion [van Manen]</ti:label>
+      <ti:label xml:lang="eng">Apostolos of Marcion [Zahn]</ti:label>
       <ti:description xml:lang="eng">Bilby, Mark G., Jack Bull, and K. Lance Lotharp.
          "Normalized Datasets of Zahn’s, van Manen’s, and Harnack’s Greek Reconstructions of
          Marcion's Apostolos."
