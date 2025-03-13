@@ -1,0 +1,17 @@
+data/tlg1371/__cts__.xml
+data/tlg1371/tlg001/__cts__.xml
+data/tlg1371/tlg001/tlg1371.tlg001.src-MsA.xml
+data/tlg1371/tlg001/tlg1371.tlg001.src-MsB.xml
+data/tlg1371/tlg001/tlg1371.tlg001.src-grc1.xml
+data/tlg1443/__cts__.xml
+data/tlg1443/tlg001/__cts__.xml
+data/tlg1443/tlg001/tlg1443.tlg001.src-grc1.xml
+data/tlg2958/__cts__.xml
+data/tlg2958/tlg002/__cts__.xml
+data/tlg2958/tlg002/tlg2958.tlg002.src-grc1.xml
+data/tlg2958/tlg002/tlg2958.tlg002.src-grc2.xml
+data/tlg2958/tlg002/tlg2958.tlg002.src-grc3.xml
+data/tlg2958/tlg003/__cts__.xml
+data/tlg2958/tlg003/tlg2958.tlg003.src-grc1.xml
+data/tlg2958/tlg003/tlg2958.tlg003.src-grc2.xml
+data/tlg2958/tlg003/tlg2958.tlg003.src-grc3.xml
